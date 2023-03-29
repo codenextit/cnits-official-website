@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeNext IT - Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./icons/cnit-favicon.png" type="image/x-icon" />
+  <!-- Favicon -->
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- CSS Link -->
+
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Link -->
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+
+  <!-- Fontawesome Kit -->
+  <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.min.css" />
+  <!-- Fontawesome Kit -->
+
+  <!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Jquery CDN -->
+
+<body>
+  <!-- Main Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container">
+      <a href="./index.html">
+        <img src="./img/cnits-logo-main.png" alt="cnit-main-logo" class="logo-main" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">হোম</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./portfolio.html">আমাদের কাজসমূহ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./web-hosting.html">ওয়েব হোস্টিং</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">আমাদের সম্পর্কে</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#footer-contact">কোর্সসমূহ</a>
+          </li> -->
+        </ul>
+        <a class="course-btn" href="./contact.html">যোগাযোগ</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!-- Main Navbar End -->
+
+  <!-- Portfolio Hero Start -->
+  <section id="portfolio-hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <div class="portfolio-hero-content">
+            <h4>দেখে নিন</h4>
+            <h1 class="portfolio-hero-title">আমাদের কিছু কাজ...</h1>
+            <p class="portfolio-hero-text">
+              ওয়েব ডেভেলপমেন্ট, সফটওয়্যার ডেভেলপমেন্ট, অ্যাপস ডেভেলপমেন্ট,
+              UI/UX ডিজাইন, গ্রাফিক্স ডিজাইন ইত্যাদি বিভিন্ন সেক্টরে কাজ করে
+              আমরা গড়ে তুলছি আমাদের নিজস্ব কিছু ডিজিটাল প্রোডাক্ট ও শক্তিশালী
+              পোর্টফলিও...
+            </p>
+            <a href="#portfolio-card" class="portfolio-hero-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              আরো দেখুন
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="portfolio-hero-image">
+            <img src="./img/portfolio/portfolio-hero-main.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Hero End -->
+
+  <!-- Portfolio Card Start -->
+  <section id="portfolio-card">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="portfolio-text text-center">
+            <p>
+              ওয়েব ডেভেলপমেন্ট, সফটওয়্যার ডেভেলপমেন্ট, অ্যাপস ডেভেলপমেন্ট,
+              UI/UX ডিজাইন, গ্রাফিক্স ডিজাইন ইত্যাদি বিভিন্ন সেক্টরে কাজ করে
+              আমরা গড়ে তুলছি আমাদের নিজস্ব কিছু ডিজিটাল প্রোডাক্ট ও শক্তিশালী
+              পোর্টফলিও...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="portfolio-card-tabs">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button"
+                  role="tab" aria-controls="all" aria-selected="true">
+                  All
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="web-develop-tab" data-bs-toggle="pill" data-bs-target="#web-develop"
+                  type="button" role="tab" aria-controls="web-develop" aria-selected="false">
+                  Web Development
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="graphics-tab" data-bs-toggle="pill" data-bs-target="#graphics"
+                  type="button" role="tab" aria-controls="graphics" aria-selected="false">
+                  Graphics Design
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="uiux-tab" data-bs-toggle="pill" data-bs-target="#uiux" type="button"
+                  role="tab" aria-controls="uiux" aria-selected="false">
+                  UI/UX Design
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-01.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            The Ultrasound Source
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-02.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Pabna Online</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://pabnaonline.net/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Pabna Online
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-03.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Grow Pins</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://growpins.com/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Grow Pins
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-04.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Mercedes Blue</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://mercedesblue.com/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Mercedes Blue
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-05.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Puzzle Bazaar BD</p>
+                      <div class="portfolio-card-list-btn">
+                        <a
+                          href="https://puzzlebazaarbd.com/"
+                          target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Puzzle Bazaar BD
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-06.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Dhaka Community Hospital Trust</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://dchtrust.org/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Dhaka Community Hospital Trust
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <!-- <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-web-dev-card-07.png" alt="" class="portfolio-card-img">
+                      <p>Disaster Health and Environment Management Foundation</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://dhem-bd.org/" target="_blank">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <!-- <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Disaster Health and Environment Management Foundation</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-07.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>
+                        Disaster Health and Environment Management
+                        Foundation
+                      </p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://dhem-bd.org/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Disaster Health and Environment Management
+                            Foundation
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-web-dev-card-02.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-11.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-05.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-08.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-web-dev-card-01.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-18.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-web-dev-card-03.png" alt="" class="portfolio-card-img">
+                      <p>Mercedes Blue</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Mercedes Blue</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-8.png" alt="" class="portfolio-card-img">
+                      <p>All in One Banner</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">All in One Banner</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-02.png" alt="" class="portfolio-card-img">
+                      <p>Barista</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Barista</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="porfolio-all-tab-btn text-center">
+                      <a href="#" class="portfolio-hero-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        আরো দেখুন
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="web-develop" role="tabpanel" aria-labelledby="web-develop-tab">
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-01.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            The Ultrasound Source
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-02.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Pabna Online</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://pabnaonline.net/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Pabna Online
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-03.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Grow Pins</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://growpins.com/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Grow Pins
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-04.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Mercedes Blue</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://mercedesblue.com/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Mercedes Blue
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-05.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Puzzle Bazaar BD</p>
+                      <div class="portfolio-card-list-btn">
+                        <a
+                          href="https://puzzlebazaarbd.com/"
+                          target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Puzzle Bazaar BD
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-06.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>Dhaka Community Hospital Trust</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://dchtrust.org/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Dhaka Community Hospital Trust
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <!-- <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-web-dev-card-07.png" alt="" class="portfolio-card-img">
+                      <p>Disaster Health and Environment Management Foundation</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://dhem-bd.org/" target="_blank">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <!-- <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Disaster Health and Environment Management Foundation</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img
+                        src="./img/portfolio/portfolio-web-dev-card-07.png"
+                        alt=""
+                        class="portfolio-card-img"
+                      />
+                      <p>
+                        Disaster Health and Environment Management
+                        Foundation
+                      </p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://dhem-bd.org/" target="_blank"
+                          >Live Preview</a
+                        >
+                        <a
+                          href="#"
+                          class="portfolio-card-view-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                          >View More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal modal-xl fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Disaster Health and Environment Management
+                            Foundation
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
+
+                <div
+                  class="about-header bg-white mb-5"
+                  style="border-radius: 5px"
+                >
+                  <div class="about-header-text">
+                    <h1 class="text-center pt-5 fw-bolder">শীঘ্রই আসছে...</h1>
+                  </div>
+                  <div class="coming-soon-banner">
+                    <img src="./img/desktop-wallpaper.jpg" alt="" />
+                  </div>
+                </div>
+
+                <!-- <div class="row">
+                  <div class="graphics-category-header">
+                    <h3>লোগো</h3>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-1.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/protfolio-graphics-2.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-3.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-card-40.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-card-41.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-10.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-7.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-8.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-graphic-9.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="graphics-category-header">
+                      <h3>বিজনেস কার্ড</h3>
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="graphics-category-header">
+                      <h3>সোস্যাল পোস্টার</h3>
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="graphics-category-header">
+                      <h3>ব্যানার</h3>
+                    </div>
+                  </div>
+
+
+
+                  <div class="row">
+                    <div class="graphics-category-header">
+                      <h3>লিফলেট ও লেটারহেড</h3>
+                    </div>
+                  </div>
+
+
+
+                  <div class="row">
+                    <div class="graphics-category-header">
+                      <h3>অন্যান্য</h3>
+                    </div>
+                  </div>
+
+                </div> -->
+              </div>
+
+              <div class="tab-pane fade" id="uiux" role="tabpanel" aria-labelledby="uiux-tab">
+
+                <div
+                  class="about-header bg-white mb-5"
+                  style="border-radius: 5px"
+                >
+                  <div class="about-header-text">
+                    <h1 class="text-center pt-5 fw-bolder">শীঘ্রই আসছে...</h1>
+                  </div>
+                  <div class="coming-soon-banner">
+                    <img src="./img/desktop-wallpaper.jpg" alt="" />
+                  </div>
+                </div>
+                
+                <!-- <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-08.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-07.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-06.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-05.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-04.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-03.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row portfolio-cards-item">
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-02.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-ui-card-01.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="portfolio-card-list">
+                      <img src="./img/portfolio/portfolio-web-dev-card-01.png" alt="" class="portfolio-card-img">
+                      <p>The Ultrasound</p>
+                      <div class="portfolio-card-list-btn">
+                        <a href="https://theultrasoundsource.com/">Live Preview</a>
+                        <a href="#" class="portfolio-card-view-btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Ultrasound Source</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="/img/portfolio/screencapture-codenextit-2022-12-29-18_46_26.png">
+                        </div>
+                        <div class="modal-footer">
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor id odit fuga debitis quo
+                            nobis sint quam nostrum minus neque.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Card End -->
+
+  <!-- Working Process Section Start -->
+  <section class="work-process">
+    <div class="container pt-5">
+      <div class="row align-items-center pt-5">
+        <div class="col-sm-4 col-md-4">
+          <div class="work-process-head">
+            <h2 class="service-heading">আমাদের কাজের প্রক্রিয়াসমূহ</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="work-process-divider">
+            <img src="./icons/divider.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-sm-3">
+          <div class="work-process-card text-center">
+            <img src="./icons/concept-icon.png" alt="" class="pb-3" />
+            <h5>কনসেপ্ট ডেভেলপমেন্ট</h5>
+            <p>
+              একটি সুন্দর কনসেপ্ট মনোমুগ্ধকর<br />ডিজাইনের পূর্বশর্ত<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="work-process-card text-center">
+            <img src="./icons/planning-icon.png" alt="" class="pb-3" />
+            <h5>প্ল্যানিং ও প্রসেসিং</h5>
+            <p>
+              কনসেপ্টের পরে, আমরা সম্ভাব্য সর্বোত্তম <br />
+              উপায়ে কাজটি সম্পন্ন করার জন্য প্ল্যান করি
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="work-process-card text-center">
+            <img src="./icons/research-icon.png" alt="" class="pb-3" />
+            <h5>রিসার্চ ও আইডিয়া জেনারেট</h5>
+            <p>
+              রিসার্চ প্রসেসিং এর মাধ্যমে আমরা<br />সর্বোত্তম পন্থা বের করি
+              কাজ করার<br />
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="work-process-card text-center">
+            <img src="./icons/result-icon.png" alt="" class="pb-3" />
+            <h5>এক্সিকিউট ও রেজাল্ট</h5>
+            <p>
+              ডেভেলপ করার পর সকল প্রজেক্ট এক্সিকিউট<br />করে বেস্ট রেজাল্ট
+              আনয়ন করা হয়
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Working Process Section End -->
+
+  <!-- Footer Section Start -->
+  <section class="footer" id="footer-contact" style="background-image: url(./img/footer-section-bg.png)">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="row align-items-center pt-5">
+            <div class="col-sm-6 col-md-6">
+              <div class="footer-contact-items">
+                <div class="foot-contact-item-1">
+                  <div class="item-1-icon">
+                    <img src="./icons/footer-address.png" alt="" />
+                  </div>
+                  <div class="item-1-text">
+                    <h4>
+                      হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
+                      পাবনা
+                    </h4>
+                  </div>
+                </div>
+                <div class="foot-contact-item-1">
+                  <div class="item-1-icon">
+                    <img src="./icons/footer-phn-2.png" alt="" />
+                  </div>
+                  <div class="item-1-text">
+                    <h4><a href="tel:01788428280">+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</a></h4>
+                    <h4><a href="tel:01313793313">+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</a></h4>
+                  </div>
+                </div>
+                <div class="foot-contact-item-1">
+                  <div class="item-1-icon">
+                    <img src="./icons/footer-mail-3.png" alt="" />
+                  </div>
+                  <div class="item-1-text">
+                    <h4>
+                      <a href="mailto: codenextit@gmail.com">codenextit@gmail.com</a>
+                    </h4>
+                    <h4>
+                      <a href="mailto: info@codenextit.com">info@codenextit.com</a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-items-divider">
+                <img src="./img/vertical-line.png" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="footer-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
+                  width="100%" height="400" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section End -->
+
+  <!-- Copyright Footer Section Start -->
+  <section class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="copyright-title">
+            <p>Copyright 2022 © <b>CODE NEXT IT SOLUTION</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a class="back-top-icon" href="#top" id="bt-top">
+        <img src="./icons/back-top-ico.png" alt="" />
+      </a>
+    </div>
+  </section>
+  <!-- Copyright Footer Section Start -->
+
+  <!-- Custom Js -->
+  <script src="./js/customer-logo-carousel.js"></script>
+  <script src="./js/all.js"></script>
+  <!-- Custom Js -->
+</body>
+
+</html>
