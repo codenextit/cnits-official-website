@@ -162,7 +162,18 @@ a {
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .hero {
+    height: 600px;
+    background-position: center center;
+  }
+}
+
 @media screen and (min-width: 1600px) {
+  .hero {
+    height: 600px;
+  }
+
   .hero-head {
     font-size: 4.7rem;
     padding-top: 200px;
@@ -241,9 +252,15 @@ a {
   transition: all 0.5s ease;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 1600px) {
   .quick-services {
-    margin-top: -120px;
+    margin-top: -110px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .quick-services {
+    margin-top: -80px;
   }
 }
 
