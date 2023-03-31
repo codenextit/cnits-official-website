@@ -161,10 +161,35 @@ a {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .hero-head {
-    font-size: 4.7rem;
-    padding-top: 200px;
+@media screen and (max-width: 2560px) {
+  .hero {
+    height: 100vh;
+    background-position: center center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero {
+    height: 705px;
+    background-position: center center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .hero {
+    height: 600px;
+    background-position: center center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero {
+    height: 320px;
+    background-position: center center;
+    width: 100%;
   }
 }
 
@@ -261,6 +286,11 @@ a {
 @media screen and (max-width: 475px) {
   .quick-service-border-circle {
     left: 89%;
+  }
+
+  .quick-services {
+    margin-top: 30px;
+    margin-bottom: -30px;
   }
 }
 
