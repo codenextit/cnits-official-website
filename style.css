@@ -76,7 +76,7 @@ a {
   text-align: center;
   border: 2px solid #dd0000;
   text-decoration: none;
-  font-family: var(--header-font);
+  font-family: var(--text-font);
   color: #fff;
   background: #dd0000;
   font-weight: 700;

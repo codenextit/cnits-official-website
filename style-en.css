@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
@@ -16,7 +18,7 @@ a {
 }
 
 :root {
-  --header-font: "Sora";
+  --header-font: "Sora", sans-serif;
   --text-font: "Sora", sans-serif;
   --header-color: #dd0000;
   --text-color: #000;
@@ -75,7 +77,7 @@ a {
   text-align: center;
   border: 2px solid #dd0000;
   text-decoration: none;
-  font-family: var(--text-font);
+  font-family: "Hind Siliguri";
   color: #fff;
   background: #dd0000;
   font-weight: 600;
