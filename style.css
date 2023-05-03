@@ -1118,6 +1118,13 @@ h4 {
 /* Review Section */
 
 /* Internship Section */
+
+.internship-heading {
+  color: #dd0000;
+  font-weight: 700;
+  padding-top: 120px;
+}
+
 .intern-img img {
   width: 100%;
 }
