@@ -145,21 +145,29 @@ a {
 .hero-head {
   font-family: var(--header-font);
   color: #000;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: auto;
-  padding-top: 150px;
+  padding-top: 200px;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .hero {
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
   }
+
+  /* .hero-head {
+    font-size: 2.4rem;
+    padding-top: 50%;
+  } */
+}
+
+@media screen and (max-width: 768px) {
   .hero-head {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 }
 
@@ -187,19 +195,19 @@ a {
   }
 }
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   .hero {
     height: 320px;
     background-position: center center;
     width: 100%;
   }
-}
+} */
 
 /* Hero Section End */
 
 /* Quick Services Section */
 .quick-services {
-  margin-top: -250px;
+  margin-top: -100px;
 }
 
 .quick-service-card {
@@ -285,7 +293,7 @@ a {
   }
 }
 
-@media screen and (max-width: 475px) {
+/* @media screen and (max-width: 475px) {
   .quick-service-border-circle {
     left: 89%;
   }
@@ -294,7 +302,7 @@ a {
     margin-top: 30px;
     margin-bottom: -30px;
   }
-}
+} */
 
 @media screen and (max-width: 400px) {
   .quick-service-border-circle {
@@ -385,6 +393,10 @@ a.more-btn {
   position: relative;
 }
 
+.about-image img {
+  width: 100%;
+}
+
 /* @media screen and (max-width: 576px) {
   .shape-3 {
     position: relative;
@@ -407,8 +419,10 @@ a.more-btn {
 
 .shape-3 {
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 0;
+  right: 20px;
+  width: 80%;
 }
 
 .shape-3 {
@@ -1407,12 +1421,26 @@ h4 {
 }
 
 .item-1-text h4 {
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 .item-1-text a {
   text-decoration: none;
   color: #000;
+}
+
+.item-1-text h4:hover {
+  cursor: pointer;
+  color: #dd0000;
+}
+.item-1-text a:hover {
+  color: #dd0000;
+}
+
+.item-1-icon img {
+  width: 70px;
+  margin: 20px 0;
 }
 
 .footer-items-divider {
