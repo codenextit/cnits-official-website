@@ -3217,6 +3217,25 @@ h4 {
   overflow: hidden;
 }
 
+.portfolio-card-list img {
+  width: 100%;
+  transition: 0.5s;
+  display: block;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.portfolio-card-list p {
+  text-align: center;
+  font-family: var(--text-font);
+  font-size: 1em;
+  font-weight: 700;
+  padding: 20px 5px 0 5px;
+  margin: 0;
+}
+
+/* portfolio card list gd */
+
 .portfolio-card-list-gd {
   border-radius: 8px;
   padding: 20px 0 20px 0;
@@ -3229,14 +3248,6 @@ h4 {
   overflow: hidden;
 }
 
-.portfolio-card-list img {
-  width: 100%;
-  transition: 0.5s;
-  display: block;
-  margin: auto;
-  padding: 0 20px;
-}
-
 .portfolio-card-list-gd img {
   width: 100%;
   transition: 0.5s;
@@ -3246,14 +3257,6 @@ h4 {
   cursor: pointer;
 }
 
-.portfolio-card-list p {
-  text-align: center;
-  font-family: var(--text-font);
-  font-size: 1em;
-  font-weight: 700;
-  padding: 20px 5px 0 5px;
-  margin: 0;
-}
 .portfolio-card-list-gd p {
   text-align: center;
   font-family: var(--text-font);
@@ -3261,6 +3264,17 @@ h4 {
   font-weight: 700;
   padding: 20px 5px 0 5px;
   margin: 0;
+}
+
+/* portfolio card list ux */
+
+.portfolio-cards-item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.portfolio-cards-item a:hover {
+  color: var(--text-color);
 }
 
 .portfolio-card-list-btn {
