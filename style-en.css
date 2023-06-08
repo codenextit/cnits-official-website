@@ -131,6 +131,12 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav-item {
+    font-size: 1em;
+  }
+}
+
 /* Main Navbar End */
 
 /* Hero Section Start */
