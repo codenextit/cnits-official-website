@@ -25,7 +25,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -128,6 +128,12 @@ a {
 
 .course-btn:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-item {
+    font-size: 1em;
+  }
 }
 
 /* Main Navbar End */
@@ -3488,3 +3494,381 @@ h4 {
 }
 
 /* Portfolio Card End */
+
+/* .
+.
+.
+. */
+
+/* <<=========== indastrial traning Landing Page ============>> */
+
+/* indastrial traning hero */
+
+#indastrial-hero {
+  width: 100%;
+  padding: 80px 0;
+  margin-top: 70px;
+}
+
+.indastrial-hero-image img {
+  width: 90%;
+}
+
+.indastrial-hero-content {
+  float: right;
+  text-align: right;
+}
+
+.indastrial-hero-content h1 {
+  font-size: 3em;
+  color: #d00000;
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.indastrial-hero-content p {
+  color: #000;
+  font-family: var(--header-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .indastrial-hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .indastrial-hero-content p {
+    padding-bottom: 10px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .indastrial-hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .indastrial-hero-content p {
+    font-size: 1em;
+  }
+
+  .indastrial-hero-content {
+    margin-top: 80px;
+  }
+}
+/* indastrial traning hero */
+
+/* indastrial course */
+
+#indastrial-course {
+  padding: 60px 0;
+}
+
+.indastrial-course-card {
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(150.7deg, #dd0606 17.97%, #ff9696 100.35%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #fff;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.indastrial-course-card:hover {
+  background: none;
+  border: 1px solid var(--header-color);
+}
+
+.indastrial-course-card p {
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-bottom: 0;
+}
+
+.indastrial-course-card h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  margin-bottom: 0;
+  transition: 0.5s;
+}
+
+.indastrial-course-card:hover.indastrial-course-card p {
+  font-size: 1.1em;
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+.indastrial-course-card:hover.indastrial-course-card h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: var(--text-color);
+}
+
+.indastrial-course-desc {
+  margin-top: 30px;
+}
+
+.indastrial-course-desc p {
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.indastrial-course-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.indastrial-course-btn a.more-btn {
+  position: relative;
+  padding: 8px 35px;
+  text-align: center;
+  border: 2px solid #dd0000;
+  text-decoration: none;
+  font-family: var(--header-font);
+  color: #dd0000;
+  font-weight: 700;
+  font-size: 1.1em;
+  z-index: 10;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.indastrial-course-btn a.more-btn:hover {
+  color: #fff;
+}
+
+.indastrial-course-btn a.more-btn span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dd0000;
+  transition: 0.4s;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.indastrial-course-btn a.more-btn span:nth-child(1) {
+  top: -100%;
+  left: -100%;
+}
+
+.indastrial-course-btn a.more-btn:hover span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.indastrial-course-btn a.more-btn span:nth-child(2) {
+  bottom: -100%;
+  left: -100%;
+}
+
+.indastrial-course-btn a.more-btn:hover span:nth-child(2) {
+  bottom: 0;
+  left: 0;
+}
+
+.indastrial-course-btn a.more-btn span:nth-child(3) {
+  top: -100%;
+  right: -100%;
+}
+
+.indastrial-course-btn a.more-btn:hover span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+.indastrial-course-btn a.more-btn span:nth-child(4) {
+  bottom: -100%;
+  right: -100%;
+}
+
+.indastrial-course-btn a.more-btn:hover span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .indastrial-course-btn a.more-btn {
+    padding: 6px 25px;
+    font-size: 1em;
+  }
+}
+
+/* indastrial course */
+
+/* indastrial module */
+
+#module {
+  position: relative;
+  padding: 100px 0;
+  background: url(./img/indastrial-traning/module-bg.svg);
+  width: 100%;
+  height: 700px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -99;
+}
+
+.module-side-img {
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  z-index: -1;
+}
+
+.module-header h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.module-devider {
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 0;
+}
+
+.indastrial-module-desc {
+  margin-top: 50px;
+}
+
+.indastrial-module-desc p {
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 990px) {
+  .module-side-img {
+    display: none;
+  }
+
+  .module-header h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* indastrial module */
+
+/* indastrial overview */
+
+#overview {
+  margin-top: -300px;
+}
+
+.overview-header h4 {
+  font-size: 1.6em;
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.overview-devider {
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.overview-subject-icon {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.overview-subject-icon p {
+  font-family: var(--header-font);
+  font-size: 1.2em;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.indastrial-overview-desc {
+  margin-top: 50px;
+}
+
+.indastrial-overview-desc h4 {
+  font-family: var(--header-font);
+  font-size: 1.6em;
+  color: var(--header-color);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.indastrial-overview-desc p {
+  font-family: var(--header-font);
+  font-size: 1em;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 500;
+}
+
+.overview-technology-header h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.technology-devider {
+  width: 200px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 0;
+}
+
+@media screen and (max-width: 990px) {
+  .overview-technology-header h1 {
+    font-size: 1.8em;
+  }
+
+  .technology-devider {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #overview {
+    margin-top: -240px;
+  }
+}
+
+/* indastrial overview */
