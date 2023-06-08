@@ -1540,7 +1540,7 @@ h4 {
 
 @media screen and (max-width: 575px) {
   .copyright-title p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .back-top-icon {
@@ -3545,6 +3545,12 @@ h4 {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .indastrial-hero-content h1 {
+    font-size: 2.3em;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .indastrial-hero-content h1 {
     font-size: 1.8em;
@@ -3872,3 +3878,207 @@ h4 {
 }
 
 /* indastrial overview */
+
+/* indastrial feature */
+
+#indastrial-feature {
+  position: relative;
+  padding: 80px 0 30px;
+  background: linear-gradient(360deg, #ffdddd 0%, rgba(220, 220, 220, 0) 100%);
+  z-index: -99;
+  margin-top: 50px;
+}
+
+.indastrial-feature-header h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.feature-devider {
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 30px;
+}
+
+.indastrial-feature-card {
+  background: #fff;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  height: 280px;
+  padding: 35px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.indastrial-feature-card img {
+  width: 50px;
+}
+
+.indastrial-feature-card p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.indastrial-feature-shape img {
+  position: absolute;
+  z-index: -1;
+}
+
+.indastrial-feature-shape .feature-top-shape {
+  left: 0;
+  top: -80px;
+  width: 10%;
+}
+
+.indastrial-feature-shape .feature-bottom-shape {
+  right: 0;
+  bottom: 0;
+  width: 10%;
+}
+
+.indastrial-feature-desc p {
+  font-size: 1.1em;
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .indastrial-feature-shape {
+    display: none;
+  }
+
+  .indastrial-feature-header h1 {
+    font-size: 2em;
+  }
+}
+
+/* indastrial feature */
+
+/* indastrial student comment */
+
+#students-comment {
+  padding: 80px 0;
+}
+
+.indastrial-students-comment h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.students-devider {
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 30px;
+}
+
+.students-comment-card {
+  height: 220px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.students-comment-card p {
+  font-size: 1em;
+  font-family: var(--header-font);
+  font-weight: 500;
+  text-align: center;
+}
+
+.students-comment-card img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  border-radius: 50%;
+  bottom: -50px;
+}
+
+.students-comment-info {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.students-comment-info h5 {
+  font-size: 1.3em;
+  font-family: var(--header-font);
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.students-comment-info p {
+  font-size: 1em;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 990px) {
+  .indastrial-students-comment h1 {
+    font-size: 2em;
+    font-family: var(--header-font);
+    color: var(--header-color);
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+/* indastrial student comment */
+
+/* indastrial student comment */
+
+.faq-contacts {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.faq-contacts div {
+  font-size: 1.3em;
+  color: var(--header-color);
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+.faq-contacts img {
+  width: 20px;
+}
+
+.faq-contacts a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.faq-contacts a:hover {
+  color: var(--header-color);
+}
+
+/* indastrial student comment */
