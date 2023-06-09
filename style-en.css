@@ -2470,6 +2470,7 @@ h4 {
   width: 100%;
   display: block;
   margin: auto;
+  border-top-left-radius: 30px;
 }
 
 .teams-text {
