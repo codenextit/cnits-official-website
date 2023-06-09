@@ -3487,3 +3487,608 @@ h4 {
 }
 
 /* Portfolio Card End */
+
+/* .
+.
+.
+. */
+
+/* <<=========== industrial traning Landing Page ============>> */
+
+/* industrial traning hero */
+
+#industrial-hero {
+  width: 100%;
+  padding: 80px 0;
+  margin-top: 70px;
+}
+
+.industrial-hero-image img {
+  width: 90%;
+}
+
+.industrial-hero-content {
+  float: right;
+  text-align: right;
+}
+
+.industrial-hero-content h1 {
+  font-size: 2.4em;
+  color: #d00000;
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.industrial-hero-content p {
+  color: #000;
+  font-family: var(--header-font);
+  font-size: 1.3em;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .industrial-hero-content h1 {
+    font-size: 2em;
+  }
+
+  .industrial-hero-content p {
+    padding-bottom: 10px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .industrial-hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .industrial-hero-content p {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+
+  .industrial-hero-content {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .industrial-hero-content p {
+    font-size: 0.8em;
+  }
+}
+
+/* industrial traning hero */
+
+/* industrial course */
+
+#industrial-course {
+  padding: 60px 0;
+}
+
+.industrial-course-card {
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(150.7deg, #dd0606 17.97%, #ff9696 100.35%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #fff;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.industrial-course-card:hover {
+  background: none;
+  border: 1px solid var(--header-color);
+}
+
+.industrial-course-card p {
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-bottom: 0;
+}
+
+.industrial-course-card h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  margin-bottom: 0;
+  transition: 0.5s;
+}
+
+.industrial-course-card:hover.industrial-course-card p {
+  font-size: 1.1em;
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+.industrial-course-card:hover.industrial-course-card h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: var(--text-color);
+}
+
+.industrial-course-desc {
+  margin-top: 30px;
+}
+
+.industrial-course-desc p {
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.industrial-course-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.industrial-course-btn a.more-btn {
+  position: relative;
+  padding: 8px 35px;
+  text-align: center;
+  border: 2px solid #dd0000;
+  text-decoration: none;
+  font-family: var(--header-font);
+  color: #dd0000;
+  font-weight: 700;
+  font-size: 1.1em;
+  z-index: 10;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.industrial-course-btn a.more-btn:hover {
+  color: #fff;
+}
+
+.industrial-course-btn a.more-btn span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dd0000;
+  transition: 0.4s;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.industrial-course-btn a.more-btn span:nth-child(1) {
+  top: -100%;
+  left: -100%;
+}
+
+.industrial-course-btn a.more-btn:hover span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.industrial-course-btn a.more-btn span:nth-child(2) {
+  bottom: -100%;
+  left: -100%;
+}
+
+.industrial-course-btn a.more-btn:hover span:nth-child(2) {
+  bottom: 0;
+  left: 0;
+}
+
+.industrial-course-btn a.more-btn span:nth-child(3) {
+  top: -100%;
+  right: -100%;
+}
+
+.industrial-course-btn a.more-btn:hover span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+.industrial-course-btn a.more-btn span:nth-child(4) {
+  bottom: -100%;
+  right: -100%;
+}
+
+.industrial-course-btn a.more-btn:hover span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .industrial-course-btn a.more-btn {
+    padding: 6px 25px;
+    font-size: 1em;
+  }
+}
+
+/* industrial course */
+
+/* industrial module */
+
+#module {
+  position: relative;
+  padding: 100px 0;
+  background: url(./img/industrial-traning/module-bg.svg);
+  width: 100%;
+  height: 700px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -99;
+}
+
+.module-side-img {
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  z-index: -1;
+}
+
+.module-header h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.module-devider {
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 0;
+}
+
+.industrial-module-desc {
+  margin-top: 50px;
+}
+
+.industrial-module-desc p {
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 990px) {
+  .module-side-img {
+    display: none;
+  }
+
+  .module-header h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* industrial module */
+
+/* industrial overview */
+
+#overview {
+  margin-top: -300px;
+}
+
+.overview-header h4 {
+  font-size: 1.6em;
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.overview-devider {
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.overview-subject-icon {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.overview-subject-icon p {
+  font-family: var(--header-font);
+  font-size: 1.2em;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.industrial-overview-desc {
+  margin-top: 50px;
+}
+
+.industrial-overview-desc h4 {
+  font-family: var(--header-font);
+  font-size: 1.6em;
+  color: var(--header-color);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.industrial-overview-desc p {
+  font-family: var(--header-font);
+  font-size: 1em;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 500;
+}
+
+.overview-technology-header h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.technology-devider {
+  width: 200px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 0;
+}
+
+@media screen and (max-width: 990px) {
+  .overview-technology-header h1 {
+    font-size: 1.8em;
+  }
+
+  .technology-devider {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #overview {
+    margin-top: -230px;
+  }
+
+  .overview-header h4 {
+    font-size: 1.4em;
+  }
+}
+
+/* industrial overview */
+
+/* industrial feature */
+
+#industrial-feature {
+  position: relative;
+  padding: 80px 0 30px;
+  background: linear-gradient(360deg, #ffdddd 0%, rgba(220, 220, 220, 0) 100%);
+  z-index: -99;
+  margin-top: 50px;
+}
+
+.industrial-feature-header h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.feature-devider {
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 30px;
+}
+
+.industrial-feature-card {
+  background: #fff;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  height: 280px;
+  padding: 35px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.industrial-feature-card img {
+  width: 50px;
+}
+
+.industrial-feature-card p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+.industrial-feature-shape img {
+  position: absolute;
+  z-index: -1;
+}
+
+.industrial-feature-shape .feature-top-shape {
+  left: 0;
+  top: -80px;
+  width: 10%;
+}
+
+.industrial-feature-shape .feature-bottom-shape {
+  right: 0;
+  bottom: 0;
+  width: 10%;
+}
+
+.industrial-feature-desc p {
+  font-size: 1.1em;
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .industrial-feature-shape {
+    display: none;
+  }
+
+  .industrial-feature-header h1 {
+    font-size: 2em;
+  }
+}
+
+/* industrial feature */
+
+/* industrial student comment */
+
+#students-comment {
+  padding: 80px 0;
+}
+
+.industrial-students-comment h1 {
+  font-size: 2.6em;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.students-devider {
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
+  border-radius: 50px;
+  margin: 20px auto 30px;
+}
+
+.students-comment-card {
+  height: 220px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.students-comment-card p {
+  font-size: 1em;
+  font-family: var(--header-font);
+  font-weight: 500;
+  text-align: center;
+}
+
+.students-comment-card img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  border-radius: 50%;
+  bottom: -50px;
+}
+
+.students-comment-info {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.students-comment-info h5 {
+  font-size: 1.3em;
+  font-family: var(--header-font);
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.students-comment-info p {
+  font-size: 1em;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1400px) {
+  .students-comment-card {
+    height: 250px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .industrial-students-comment h1 {
+    font-size: 2em;
+    font-family: var(--header-font);
+    color: var(--header-color);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .students-comment-card {
+    height: 200px;
+  }
+}
+
+/* industrial student comment */
+
+/* industrial student comment */
+
+.faq-contacts {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.faq-contacts div {
+  font-size: 1.3em;
+  color: var(--header-color);
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+.faq-contacts img {
+  width: 20px;
+}
+
+.faq-contacts a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.faq-contacts a:hover {
+  color: var(--header-color);
+}
+
+/* industrial student comment */
