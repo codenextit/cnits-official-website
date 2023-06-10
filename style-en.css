@@ -3505,7 +3505,7 @@ h4 {
 }
 
 .industrial-hero-image img {
-  width: 80%;
+  width: 70%;
 }
 
 .industrial-hero-content {
@@ -3616,15 +3616,16 @@ h4 {
 }
 
 .industrial-course-desc {
-  margin-top: 30px;
+  margin-top: -10px;
+  margin-bottom: 50px;
 }
 
 .industrial-course-desc p {
   text-align: center;
   font-family: var(--header-font);
   color: var(--text-color);
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .industrial-course-btn {
