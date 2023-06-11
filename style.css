@@ -424,6 +424,8 @@ a.more-btn {
   left: 0;
   right: 20px;
   width: 80%;
+  padding-left: 80px;
+  padding-top: 170px;
 }
 
 @media screen and (max-width: 990px) {
@@ -432,18 +434,12 @@ a.more-btn {
     display: none;
   }
 
-  /* .shape-3 {
-    left: 0;
-    padding-left: 80px;
-    
-  } */
-
   .shape-3 {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    padding-left: 35px;
-    padding-top: 0px;
+    padding-left: 0;
+    padding-top: 50px;
   }
 
   a.more-btn {
@@ -452,13 +448,13 @@ a.more-btn {
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .shape-3 {
     left: 0;
     padding-left: 80px;
     padding-top: 170px;
   }
-}
+} */
 
 /* About Info Section */
 
@@ -3553,18 +3549,52 @@ h4 {
 }
 
 @media screen and (max-width: 990px) {
+  .industrial-hero-content {
+    float: none;
+    text-align: center;
+  }
+
   .industrial-hero-content h1 {
-    font-size: 1.8em;
+    font-size: 2.2em;
+  }
+
+  .industrial-hero-image img {
+    width: 60%;
+    display: block;
+    margin: auto;
   }
 
   .industrial-hero-content p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .industrial-hero-content {
     margin-top: 80px;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .industrial-hero-content h1 {
+    font-size: 2em;
+  }
+
+  .industrial-hero-content p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .industrial-hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .industrial-hero-content p {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+}
+
 /* industrial traning hero */
 
 /* industrial course */
@@ -3710,6 +3740,15 @@ h4 {
 }
 
 @media screen and (max-width: 575px) {
+  .industrial-course-card {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .industrial-course-desc p {
+    font-size: 1.1em;
+  }
+
   .industrial-course-btn a.more-btn {
     padding: 6px 25px;
     font-size: 1em;
@@ -3879,6 +3918,12 @@ h4 {
   }
 }
 
+@media screen and (max-width: 380px) {
+  #overview {
+    margin-top: -200px;
+  }
+}
+
 /* industrial overview */
 
 /* industrial feature */
@@ -3969,6 +4014,16 @@ h4 {
 
   .industrial-feature-header h1 {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .industrial-feature-card {
+    padding: 20px 25px;
+  }
+
+  .industrial-feature-card p {
+    font-size: 1em;
   }
 }
 
