@@ -1,419 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeNext IT - About</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeNext IT - About</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./icons/cnit-favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Favicon -->
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./icons/cnit-favicon.png" type="image/x-icon" />
-  <!-- Favicon -->
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CSS Link -->
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- CSS Link -->
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <!-- JavaScript Bundle with Popper -->
+    <!-- Fontawesome Kit -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <!-- Fontawesome Kit -->
 
-  <!-- Fontawesome Kit -->
-  <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.min.css" />
-  <!-- Fontawesome Kit -->
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery CDN -->
 
-  <!-- Jquery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Jquery CDN -->
+    <!-- CDN Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- CDN Js -->
+  </head>
 
-  <!-- CDN Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <!-- CDN Js -->
-</head>
-
-<body>
-  <!-- Main Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
-    <div class="container">
-      <a href="./index.html">
-        <img src="./img/cnits-logo-main.png" alt="cnit-main-logo" class="logo-main" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">হোম</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
-          </li>
-          <li class="nav-item">
+  <body>
+    <!-- Main Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a href="./index.html">
+          <img
+            src="./img/cnits-logo-main.png"
+            alt="cnit-main-logo"
+            class="logo-main"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >হোম</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
+            </li>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="./web-hosting.html">ওয়েব হোস্টিং</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ক্যারিয়ার</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./industrial-traning.html">ইন্ডাস্ট্রিয়াল ট্রেনিং</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./about.html">আমাদের সম্পর্কে</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">যোগাযোগ</a>
-          </li>
-          <!-- <li class="nav-item">
+          </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >ক্যারিয়ার</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./industrial-traning.html"
+                    >ইন্ডাস্ট্রিয়াল ট্রেনিং</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html">আমাদের সম্পর্কে</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">যোগাযোগ</a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#footer-contact">কোর্সসমূহ</a>
             </li> -->
-        </ul>
-        <a class="course-btn" href="./about-en.html">ENGLISH</a>
-      </div>
-    </div>
-  </nav>
-  <!-- Main Navbar End -->
-
-  <!-- About Hero Start -->
-  <section id="about-hero">
-    <div class="cnit-logo-img">
-      <img src="./img/cnits-logo-main.png" alt="" />
-    </div>
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-6">
-          <div class="about-hero-content">
-            <h1 class="about-hero-title">আমাদের সম্পর্কে</h1>
-            <p class="about-hero-text">
-              ওয়েব ডেভেলপমেন্ট, সফটওয়্যার ডেভেলপমেন্ট, অ্যাপস ডেভেলপমেন্ট,
-              UI/UX ডিজাইন, গ্রাফিক্স ডিজাইন ইত্যাদি বিভিন্ন সেক্টরে কাজ করে
-              আমরা গড়ে তুলছি আমাদের নিজস্ব কিছু ডিজিটাল প্রোডাক্ট ও শক্তিশালী
-              পোর্টফলিও...
-            </p>
-            <a href="./contact.html" class="about-hero-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              যোগাযোগ
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="about-hero-image">
-            <img src="./img/about/about-hero.png" />
-          </div>
+          </ul>
+          <a class="course-btn" href="./about-en.html">ENGLISH</a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- About Hero End -->
+    </nav>
+    <!-- Main Navbar End -->
 
-  <!-- Ours About Start -->
-  <section id="our-about">
-    <div class="our-about-shape-top">
-      <img src="./img/about/about-top-circle.png" />
-    </div>
-    <div class="our-about-shape-bottom">
-      <img src="./img/about/about-bottom-circle.png" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="our-about-image">
-            <img src="./img/about/our-about-main.png" />
-          </div>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-6">
-          <div class="our-about-content">
-            <h1>
-              সম্ভাবনার নতুন দুয়ার খুলুন<br />
-              আমাদের সাথে
-            </h1>
-            <p>
-              কোডনেক্সট আইটি, আমাদের এই পথচলার শুরু হয় ২০২১ সালের ১লা মার্চ।
-              যাত্রার শুরু থেকেই আমরা প্রতিজ্ঞাবদ্ধ ছিলাম ডিজিটাল বাংলাদেশ
-              বিনির্মানে বিশেষ ভূমিকা রাখার উদ্দেশ্যে। পাবনা জেলার
-              প্রাণকেন্দ্র এ অবস্থিত প্রতিষ্ঠানটি একদল তরুন-তরুণী ও
-              শিক্ষার্থীদের নিয়ে যুগের সাথে তাল মিলিয়ে এগিয়ে চলছে আইটি
-              ক্যারিয়ার ও ফ্রিল্যান্সিং ক্যারিয়ারের মাধ্যমে দক্ষ জনশক্তি
-              তৈরিতে। আধুনিক প্রযুক্তির সাথে তাল মিলিয়ে নিজেকে আপডেটেড রাখতে
-              আপনার পাশে রয়েছে কোডনেক্সট আইটি।
-              <br />আমরা সর্বদা চেষ্টা করি, আমাদের গ্রাহক, প্রশিক্ষক,
-              ইন্টার্ণ, ট্রেইনি সকলকে যথাযথ মূল্যায়ন ও সহযোগিতা করার।
-              <br /><br />দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট
-              আইটি নিরলস ভাবে কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার
-              উদেশ্যে।
-            </p>
-          </div>
-        </div>
+    <!-- About Hero Start -->
+    <section id="about-hero">
+      <div class="cnit-logo-img">
+        <img src="./img/cnits-logo-main.png" alt="" />
       </div>
-    </div>
-  </section>
-  <!-- Ours About End -->
-
-  <!-- Ours Team Start -->
-  <section id="about-team">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="about-team-header">
-            <h1>আমাদের টিম</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/ismail-hossain-md-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোঃ ইসমাইল হোসেন</h3>
-              <p>প্রতিষ্ঠাতা ও এম.ডি</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/ismailhossainnaiem" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/engr-md-ismail-hossain-a707ab216/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-github"></i>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <div class="about-hero-content">
+              <h1 class="about-hero-title">আমাদের সম্পর্কে</h1>
+              <p class="about-hero-text">
+                ওয়েব ডেভেলপমেন্ট, সফটওয়্যার ডেভেলপমেন্ট, অ্যাপস ডেভেলপমেন্ট,
+                UI/UX ডিজাইন, গ্রাফিক্স ডিজাইন ইত্যাদি বিভিন্ন সেক্টরে কাজ করে
+                আমরা গড়ে তুলছি আমাদের নিজস্ব কিছু ডিজিটাল প্রোডাক্ট ও শক্তিশালী
+                পোর্টফলিও...
+              </p>
+              <a href="./contact.html" class="about-hero-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                যোগাযোগ
               </a>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/imtiaz-ahmed-ceo-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>ইমতিয়াজ আহমেদ</h3>
-              <p>সহ-প্রতিষ্ঠাতা ও ওয়েব ডেভেলপার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/imtiaz.cnits" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/imtiaz.ahmed.80/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/imtiaz-ahmed-5b1b1071/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/imtiazahmed80" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.behance.net/imtiazahmed20" target="_blank">
-                <i class="fa-brands fa-behance"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/anika-tabassum-cao-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>আনিকা তাবাসসুম</h3>
-              <p>চীফ এডমিন অফিসার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/annisamth" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/rahat-web-dev-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোহাম্মদ রাহাত</h3>
-              <p>সিনিয়র ওয়েব ডেভেলপার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/rahat.malitha" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/rahatcnits/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/rahat-cnits-82177a258/
-                " target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/rahatcnits" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
+          <div class="col-lg-5">
+            <div class="about-hero-image">
+              <img src="./img/about/about-hero.png" />
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- About Hero End -->
 
-      <div class="row mt-lg-5">
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/robi-web-design-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোঃ রবিউল ইসলাম</h3>
-              <p>ওয়েব ডেভেলপার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/profile.php?id=100088819157588" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/robi-cnits-828a3725b/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/robiul-islam93" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
+    <!-- Ours About Start -->
+    <section id="our-about">
+      <div class="our-about-shape-top">
+        <img src="./img/about/about-top-circle.png" />
+      </div>
+      <div class="our-about-shape-bottom">
+        <img src="./img/about/about-bottom-circle.png" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="our-about-image">
+              <img src="./img/about/our-about-main.png" />
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/rahul-ui-ux-design-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোঃ মিরাজুল ইসলাম</h3>
-              <p>UI/UX ডিজাইনার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/mi.rahul.520" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-behance"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/sagor-web-dev-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোঃ সাগর হোসাইন</h3>
-              <p>ওয়েব ডেভেলপার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/profile.php?id=100075240488312" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/sagor.cnits/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/sagorcnits" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/monir-g-design-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোঃ মনির হোসাইন</h3>
-              <p>গ্রাফিক্স ডিজাইনার</p>
-            </div>
-            <div class="teams-social">
-              <a href="https://www.facebook.com/profile.php?id=100059680921269&mibextid=ZbWKwL" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/monirul_islam77/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://www.behance.net/monirulislam126" target="_blank">
-                <i class="fa-brands fa-behance"></i>
-              </a>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6">
+            <div class="our-about-content">
+              <h1>
+                সম্ভাবনার নতুন দুয়ার খুলুন<br />
+                আমাদের সাথে
+              </h1>
+              <p>
+                কোডনেক্সট আইটি, আমাদের এই পথচলার শুরু হয় ২০২১ সালের ১লা মার্চ।
+                যাত্রার শুরু থেকেই আমরা প্রতিজ্ঞাবদ্ধ ছিলাম ডিজিটাল বাংলাদেশ
+                বিনির্মানে বিশেষ ভূমিকা রাখার উদ্দেশ্যে। পাবনা জেলার
+                প্রাণকেন্দ্র এ অবস্থিত প্রতিষ্ঠানটি একদল তরুন-তরুণী ও
+                শিক্ষার্থীদের নিয়ে যুগের সাথে তাল মিলিয়ে এগিয়ে চলছে আইটি
+                ক্যারিয়ার ও ফ্রিল্যান্সিং ক্যারিয়ারের মাধ্যমে দক্ষ জনশক্তি
+                তৈরিতে। আধুনিক প্রযুক্তির সাথে তাল মিলিয়ে নিজেকে আপডেটেড রাখতে
+                আপনার পাশে রয়েছে কোডনেক্সট আইটি।
+                <br />আমরা সর্বদা চেষ্টা করি, আমাদের গ্রাহক, প্রশিক্ষক,
+                ইন্টার্ণ, ট্রেইনি সকলকে যথাযথ মূল্যায়ন ও সহযোগিতা করার।
+                <br /><br />দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট
+                আইটি নিরলস ভাবে কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার
+                উদেশ্যে।
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mt-lg-5">
-        <div class="col-lg-3">
-          <div class="teams-card">
-            <div class="teams-image">
-              <img src="./img/teams/rabbi-g-design-profile.png" />
-            </div>
-            <div class="teams-text">
-              <h3>মোঃ ফারহান রাব্বি</h3>
-              <p>গ্রাফিক্স ডিজাইনার</p>
-            </div>
-            <div class="teams-social">
-              <a href="" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="" target="_blank">
-                <i class="fa-brands fa-behance"></i>
-              </a>
+    </section>
+    <!-- Ours About End -->
+
+    <!-- Ours Team Start -->
+    <section id="about-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="about-team-header">
+              <h1>আমাদের টিম</h1>
             </div>
           </div>
         </div>
 
-        <!-- <div class="col-lg-3">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/ismail-hossain-md-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোঃ ইসমাইল হোসেন</h3>
+                <p>প্রতিষ্ঠাতা ও এম.ডি</p>
+              </div>
+              <div class="teams-social">
+                <a
+                  href="https://www.facebook.com/ismailhossainnaiem"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/engr-md-ismail-hossain-a707ab216/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/imtiaz-ahmed-ceo-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>ইমতিয়াজ আহমেদ</h3>
+                <p>সহ-প্রতিষ্ঠাতা ও ওয়েব ডেভেলপার</p>
+              </div>
+              <div class="teams-social">
+                <a href="https://www.facebook.com/imtiaz.cnits" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/imtiaz.ahmed.80/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/imtiaz-ahmed-5b1b1071/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/imtiazahmed80" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.behance.net/imtiazahmed20" target="_blank">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/anika-tabassum-cao-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>আনিকা তাবাসসুম</h3>
+                <p>চীফ এডমিন অফিসার</p>
+              </div>
+              <div class="teams-social">
+                <a href="https://www.facebook.com/annisamth" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/rahat-web-dev-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোহাম্মদ রাহাত</h3>
+                <p>সিনিয়র ওয়েব ডেভেলপার</p>
+              </div>
+              <div class="teams-social">
+                <a
+                  href="https://www.facebook.com/rahat.malitha"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/rahatcnits/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rahat-cnits-82177a258/
+                "
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/rahatcnits" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-lg-5">
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/robi-web-design-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোঃ রবিউল ইসলাম</h3>
+                <p>ওয়েব ডেভেলপার</p>
+              </div>
+              <div class="teams-social">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100088819157588"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/robi-cnits-828a3725b/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/robiul-islam93" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/rahul-ui-ux-design-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোঃ মিরাজুল ইসলাম</h3>
+                <p>UI/UX ডিজাইনার</p>
+              </div>
+              <div class="teams-social">
+                <a href="https://www.facebook.com/mi.rahul.520" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/sagor-web-dev-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোঃ সাগর হোসাইন</h3>
+                <p>ওয়েব ডেভেলপার</p>
+              </div>
+              <div class="teams-social">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100075240488312"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/sagor.cnits/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sagorcnits" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/monir-g-design-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোঃ মনির হোসাইন</h3>
+                <p>গ্রাফিক্স ডিজাইনার</p>
+              </div>
+              <div class="teams-social">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100059680921269&mibextid=ZbWKwL"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/monirul_islam77/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://www.behance.net/monirulislam126"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-lg-5">
+          <div class="col-lg-3">
+            <div class="teams-card">
+              <div class="teams-image">
+                <img src="./img/teams/rabbi-g-design-profile.png" />
+              </div>
+              <div class="teams-text">
+                <h3>মোঃ ফারহান রাব্বি</h3>
+                <p>গ্রাফিক্স ডিজাইনার</p>
+              </div>
+              <div class="teams-social">
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-3">
             <div class="teams-card">
               <div class="teams-image">
                 <img src="./img/teams/rahul-ui-ux-design-profile.png" />
@@ -439,7 +510,7 @@
             </div>
           </div> -->
 
-        <!-- <div class="col-lg-3">
+          <!-- <div class="col-lg-3">
             <div class="teams-card">
               <div class="teams-image">
                 <img src="./img/teams/sagor-web-dev-profile.png" />
@@ -465,7 +536,7 @@
             </div>
           </div> -->
 
-        <!-- <div class="col-lg-3">
+          <!-- <div class="col-lg-3">
             <div class="teams-card">
               <div class="teams-image">
                 <img src="./img/teams/monir-g-design-profile.png" />
@@ -490,122 +561,133 @@
               </div>
             </div>
           </div> -->
-      </div>
-    </div>
-  </section>
-  <!-- Ours Team End -->
-
-  <!-- About News Latter Start -->
-  <section id="news-latter">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-lg-8">
-          <div class="news-latter-header">
-            <h1>
-              আপনার প্রজেক্ট, আইডিয়া আমাদের সাথে শেয়ার করুন অথবা স্কিলড হতে...
-            </h1>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="news-latter-btn">
-            <a href="./contact.html">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              যোগাযোগ করুন
-            </a>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- About News Latter End -->
+    </section>
+    <!-- Ours Team End -->
 
-  <!-- Footer Section Start -->
-  <section class="footer" id="footer-contact" style="background-image: url(./img/footer-section-bg.png)">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row align-items-center pt-5">
-            <div class="col-lg-6">
-              <div class="footer-contact-items">
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-address.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
-                      পাবনা
-                    </h4>
-                  </div>
-                </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-phn-2.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4><a href="tel:01788428280">+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</a></h4>
-                    <h4><a href="tel:01313793313">+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</a></h4>
-                  </div>
-                </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-mail-3.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      <a href="mailto: codenextit@gmail.com">codenextit@gmail.com</a>
-                    </h4>
-                    <h4>
-                      <a href="mailto: info@codenextit.com">info@codenextit.com</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-items-divider">
-                <img src="./img/vertical-line.png" alt="" />
-              </div>
+    <!-- About News Latter Start -->
+    <section id="news-latter">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-8">
+            <div class="news-latter-header">
+              <h1>
+                আপনার প্রজেক্ট, আইডিয়া আমাদের সাথে শেয়ার করুন অথবা স্কিলড হতে...
+              </h1>
             </div>
-            <div class="col-lg-6">
-              <div class="footer-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
-                  width="100%" height="400" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="news-latter-btn">
+              <a href="./contact.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                যোগাযোগ করুন
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Footer Section End -->
+    </section>
+    <!-- About News Latter End -->
 
-  <!-- Copyright Footer Section Start -->
-  <section class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="copyright-title">
-            <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+    <!-- Footer Section Start -->
+    <section
+      class="footer"
+      id="footer-contact"
+      style="background-image: url(./img/footer-section-bg.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center pt-5">
+              <div class="col-lg-6">
+                <div class="footer-contact-items">
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-address.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
+                        পাবনা
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-phn-2.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4><a href="tel:01788428280">+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</a></h4>
+                      <h4><a href="tel:01313793313">+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</a></h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-mail-3.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        <a href="mailto: codenextit@gmail.com"
+                          >codenextit@gmail.com</a
+                        >
+                      </h4>
+                      <h4>
+                        <a href="mailto: info@codenextit.com"
+                          >info@codenextit.com</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-items-divider">
+                  <img src="./img/vertical-line.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
+                    width="100%"
+                    height="400"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="back-to-top">
-      <a class="back-top-icon" href="#top" id="bt-top">
-        <img src="./icons/back-top-ico.png" alt="" />
-      </a>
-    </div>
-  </section>
-  <!-- Copyright Footer Section Start -->
+    </section>
+    <!-- Footer Section End -->
 
-  <!-- Custom Js -->
-  <script src="./js/customer-logo-carousel.js"></script>
-  <script src="./js/all.js"></script>
-  <!-- Custom Js -->
-</body>
+    <!-- Copyright Footer Section Start -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="copyright-title">
+              <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-to-top">
+        <a class="back-top-icon" href="#top" id="bt-top">
+          <img src="./icons/back-top-ico.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- Copyright Footer Section Start -->
 
+    <!-- Custom Js -->
+    <script src="./js/customer-logo-carousel.js"></script>
+    <script src="./js/all.js"></script>
+    <!-- Custom Js -->
+  </body>
 </html>
