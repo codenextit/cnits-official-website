@@ -192,6 +192,22 @@ a {
     background-position: center center;
     width: 100%;
   }
+
+  .hero-head {
+    padding-top: 250px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .hero {
+    height: 705px;
+    background-position: center center;
+    width: 100%;
+  }
+
+  .hero-head {
+    padding-top: 250px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -199,6 +215,10 @@ a {
     height: 600px;
     background-position: center center;
     width: 100%;
+  }
+
+  .hero-head {
+    padding-top: 200px;
   }
 }
 
@@ -3515,7 +3535,7 @@ h4 {
 }
 
 .industrial-hero-content h1 {
-  font-size: 2.4em;
+  font-size: 3.5em;
   color: #d00000;
   font-family: var(--header-font);
   font-weight: 700;
@@ -3524,8 +3544,8 @@ h4 {
 .industrial-hero-content p {
   color: #000;
   font-family: var(--header-font);
-  font-size: 1.3em;
-  font-weight: 700;
+  font-size: 1.1em;
+  font-weight: 500;
   padding-top: 10px;
 }
 
