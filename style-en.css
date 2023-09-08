@@ -164,11 +164,12 @@ a {
     background-repeat: no-repeat;
     position: center;
   }
+}
 
-  /* .hero-head {
-    font-size: 2.4rem;
-    padding-top: 50%;
-  } */
+@media screen and (max-width: 465px) {
+  .hero {
+    margin-top: -50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -458,7 +459,7 @@ a.more-btn {
   }
 
   a.more-btn {
-    padding: 8px 30px;
+    padding: 8px 25px;
     font-size: 1em;
   }
 }
