@@ -4053,6 +4053,48 @@ h4 {
 
 /* industrial feature */
 
+/* support start */
+
+#support {
+  padding: 100px 0 50px;
+}
+
+.support_image img {
+  width: 80%;
+}
+
+.support_content p {
+  text-align: right;
+  color: var(--header-color);
+  font-size: 2em;
+  font-family: var(--header-font);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.support_btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.support_btn .more-btn.active {
+  background-color: var(--header-color);
+  color: #fff;
+}
+
+.support_btn .more-btn.active:hover {
+  background-color: #fff;
+  color: var(--header-color);
+}
+
+.support_btn .more-btn:last-child:hover {
+  background-color: var(--header-color);
+  color: #fff;
+}
+
+/* support end */
+
 /* industrial student comment */
 
 #students-comment {
@@ -4171,6 +4213,10 @@ h4 {
 
 .faq-contacts a:hover {
   color: var(--header-color);
+}
+
+.faq_accordion_content p {
+  margin-bottom: 0;
 }
 
 /* industrial faq */
