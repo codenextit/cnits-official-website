@@ -2847,6 +2847,11 @@ h4 {
   font-size: 1.1em;
 }
 
+.main-contact-form #number::-webkit-inner-spin-button,
+.main-contact-form #number::-webkit-outer-spin-button {
+  display: none;
+}
+
 .main-contact-form input:focus,
 .main-contact-form textarea:focus {
   border: 1px solid #dd0000 !important;
