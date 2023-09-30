@@ -2409,7 +2409,8 @@ h4 {
 }
 
 .our-about-image img {
-  width: 100%;
+  margin-top: 30px;
+  width: 80%;
 }
 
 .our-about-content h1 {
