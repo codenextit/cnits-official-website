@@ -1023,11 +1023,11 @@ h4 {
 
 .gd_category h2 {
   font-family: var(--header-fontt);
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 600;
   color: var(--text-color);
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
   display: inline-block;
   position: relative;
 }
