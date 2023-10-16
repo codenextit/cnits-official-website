@@ -1021,6 +1021,45 @@ h4 {
   transition: 0.3s all linear;
 }
 
+.gd_category {
+  text-align: center;
+}
+
+.gd_category h2 {
+  font-family: var(--header-fontt);
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 80px;
+  display: inline-block;
+  position: relative;
+}
+
+.gd_category h2::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(180deg, #d00 0%, rgba(221, 0, 0, 0.7) 100%);
+  border-radius: 50%;
+  right: -35px;
+  top: 27%;
+  transform: translateX(-27%);
+}
+
+.gd_category h2::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(180deg, #d00 0%, rgba(221, 0, 0, 0.7) 100%);
+  border-radius: 50%;
+  left: -28px;
+  top: 27%;
+  transform: translateX(-27%);
+}
+
 .more-btn {
   position: relative;
   padding: 10px 35px;
