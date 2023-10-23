@@ -1,356 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeNext IT - Open New Door of Possibilities</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeNext IT - Open New Door of Possibilities</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./icons/cnit-favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Favicon -->
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./icons/cnit-favicon.png" type="image/x-icon" />
-  <!-- Favicon -->
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CSS Link -->
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- CSS Link -->
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <!-- JavaScript Bundle with Popper -->
+    <!-- Fontawesome Kit -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <!-- Fontawesome Kit -->
 
-  <!-- Fontawesome Kit -->
-  <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.min.css" />
-  <!-- Fontawesome Kit -->
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery CDN -->
 
-  <!-- Jquery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Jquery CDN -->
+    <!-- CDN Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- CDN Js -->
+  </head>
 
-  <!-- CDN Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <!-- CDN Js -->
-</head>
+  <body>
+    <!--Fb Chat Plugin-->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
-<body>
-  <!--Fb Chat Plugin-->
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "327323588671794");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
-  <script>
-    var chatbox = document.getElementById("fb-customer-chat");
-    chatbox.setAttribute("page_id", "327323588671794");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v17.0",
+        });
+      };
 
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: "v17.0",
-      });
-    };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!--Fb Chat Plugin-->
 
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
-  </script>
-  <!--Fb Chat Plugin-->
-
-  <!-- Main Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
-    <div class="container">
-      <a href="./index-bn.html">
-        <img src="./img/cnits-logo-main.png" alt="cnit-main-logo" class="logo-main" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index-bn.html">হোম</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
-          </li>
-          <!-- <li class="nav-item">
+    <!-- Main Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+      <div class="container">
+        <a href="./index-bn.html">
+          <img
+            src="./img/cnits-logo-main.png"
+            alt="cnit-main-logo"
+            class="logo-main"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index-bn.html"
+                >হোম</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
+            </li>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="./web-hosting.html">ওয়েব হোস্টিং</a>
           </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ক্যারিয়ার</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./industrial-traning.html">ইন্ডাস্ট্রিয়াল ট্রেনিং</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">আমাদের সম্পর্কে</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">যোগাযোগ</a>
-          </li>
-          <!-- <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >ক্যারিয়ার</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./industrial-traning.html"
+                    >ইন্ডাস্ট্রিয়াল ট্রেনিং</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">আমাদের সম্পর্কে</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">যোগাযোগ</a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#internship-course">কোর্সসমূহ</a>
             </li> -->
-        </ul>
-        <a class="course-btn" href="./index.html">ENGLISH</a>
-      </div>
-    </div>
-  </nav>
-  <!-- Main Navbar End -->
-
-  <!-- Hero Section Start -->
-  <section class="hero" style="background-image: url(./img/Banner-bg-image.png)">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="hero-head">
-            সম্ভাবনার নতুন দুয়ার খুলুন <br />
-            <span style="color: #dd0000">আমাদের সাথে</span>
-          </h1>
+          </ul>
+          <a class="course-btn" href="./index.html">ENGLISH</a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Hero Section End -->
+    </nav>
+    <!-- Main Navbar End -->
 
-  <!-- Quick Services Section Start -->
-  <section class="quick-services mb-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="row align-items-center">
-            <div class="col-lg col-md text-center mb-4">
-              <div class="quick-service-card">
-                <img src="./img/gd-icon.png" alt="" class="mb-3" />
-                <h5>গ্রাফিক্স ডিজাইন</h5>
-                <div class="quick-service-border-circle">
-                  <div class="quick-service-border-circle-1"></div>
+    <!-- Hero Section Start -->
+    <section
+      class="hero"
+      style="background-image: url(./img/Banner-bg-image.png)"
+    >
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="hero-head">
+              সম্ভাবনার নতুন দুয়ার খুলুন <br />
+              <span style="color: #dd0000">আমাদের সাথে</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Quick Services Section Start -->
+    <section class="quick-services mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row align-items-center">
+              <div class="col-lg col-md text-center mb-4">
+                <div class="quick-service-card">
+                  <img src="./img/gd-icon.png" alt="" class="mb-3" />
+                  <h5>গ্রাফিক্স ডিজাইন</h5>
+                  <div class="quick-service-border-circle">
+                    <div class="quick-service-border-circle-1"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg text-center mb-4">
-              <div class="quick-service-card">
-                <img src="./img/software-icon.png" alt="" class="mb-3" />
-                <h5>সফটওয়্যার</h5>
-                <div class="quick-service-border-circle">
-                  <div class="quick-service-border-circle-1"></div>
+              <div class="col-lg text-center mb-4">
+                <div class="quick-service-card">
+                  <img src="./img/software-icon.png" alt="" class="mb-3" />
+                  <h5>সফটওয়্যার</h5>
+                  <div class="quick-service-border-circle">
+                    <div class="quick-service-border-circle-1"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg text-center mb-4">
-              <div class="quick-service-card">
-                <img src="./img/website-icon.png" alt="" class="mb-3" />
-                <h5>ওয়েবসাইট</h5>
-                <div class="quick-service-border-circle">
-                  <div class="quick-service-border-circle-1"></div>
+              <div class="col-lg text-center mb-4">
+                <div class="quick-service-card">
+                  <img src="./img/website-icon.png" alt="" class="mb-3" />
+                  <h5>ওয়েবসাইট</h5>
+                  <div class="quick-service-border-circle">
+                    <div class="quick-service-border-circle-1"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg text-center mb-4">
-              <div class="quick-service-card">
-                <img src="./img/ui-ux-icon.png" alt="" class="mb-3" />
-                <h5>UI/UX ডিজাইন</h5>
-                <div class="quick-service-border-circle">
-                  <div class="quick-service-border-circle-1"></div>
+              <div class="col-lg text-center mb-4">
+                <div class="quick-service-card">
+                  <img src="./img/ui-ux-icon.png" alt="" class="mb-3" />
+                  <h5>UI/UX ডিজাইন</h5>
+                  <div class="quick-service-border-circle">
+                    <div class="quick-service-border-circle-1"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg text-center mb-4">
-              <div class="quick-service-card">
-                <img src="./img/Course-icon.png" alt="" class="mb-3" />
-                <h5>কোর্স/ট্রেনিং</h5>
-                <div class="quick-service-border-circle">
-                  <div class="quick-service-border-circle-1"></div>
+              <div class="col-lg text-center mb-4">
+                <div class="quick-service-card">
+                  <img src="./img/Course-icon.png" alt="" class="mb-3" />
+                  <h5>কোর্স/ট্রেনিং</h5>
+                  <div class="quick-service-border-circle">
+                    <div class="quick-service-border-circle-1"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Quick Services Section End -->
+    </section>
+    <!-- Quick Services Section End -->
 
-  <!-- About Info Section Start -->
-  <section class="about m-auto mt-5 mb-5" id="about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="about-info pt-5 mb-5">
-                <h2 class="pb-3">আমাদের সম্পর্কে কিছু কথা...</h2>
-                <p class="pb-4">
-                  জন্ম লগ্ন থেকেই আমাদের মূল ভিশন ও মিশন হলো আইটিতে বিশেষ
-                  অবদান রাখা <br />
-                  ও আইটি ক্যারিয়ার গঠনে সহায়তা করে দক্ষ জনশক্তি তৈরিতে অবদান
-                  রাখা। <br /><br />
-                  দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট আইটি
-                  নিরলস ভাবে<br />
-                  কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার উদেশ্যে।<br />
-                  <br />
-                  এছাড়াও ফ্রিল্যান্সিং ও আইটি সেক্টরে ক্যারিয়ার গঠনে আমরা আছি
-                  আপনার সাথে...
-                </p>
-                <div class="read-more-btn">
-                  <a href="./about.html" class="more-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    আরো জানুন
-                  </a>
-                  <a href="./contact.html" class="more-btn ms-3">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    যোগাযোগ
-                  </a>
+    <!-- About Info Section Start -->
+    <section class="about m-auto mt-5 mb-5" id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="about-info pt-5 mb-5">
+                  <h2 class="pb-3">আমাদের সম্পর্কে কিছু কথা...</h2>
+                  <p class="pb-4">
+                    জন্ম লগ্ন থেকেই আমাদের মূল ভিশন ও মিশন হলো আইটিতে বিশেষ
+                    অবদান রাখা <br />
+                    ও আইটি ক্যারিয়ার গঠনে সহায়তা করে দক্ষ জনশক্তি তৈরিতে অবদান
+                    রাখা। <br /><br />
+                    দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট আইটি
+                    নিরলস ভাবে<br />
+                    কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার উদেশ্যে।<br />
+                    <br />
+                    এছাড়াও ফ্রিল্যান্সিং ও আইটি সেক্টরে ক্যারিয়ার গঠনে আমরা আছি
+                    আপনার সাথে...
+                  </p>
+                  <div class="read-more-btn">
+                    <a href="./about.html" class="more-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      আরো জানুন
+                    </a>
+                    <a href="./contact.html" class="more-btn ms-3">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      যোগাযোগ
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 about-image">
-              <img src="./img/Ellipse 1.png" alt="" class="shape-1" />
+              <div class="col-lg-6 about-image">
+                <!-- <img src="./img/Ellipse 1.png" alt="" class="shape-1" />
               <img src="./img/Ellipse 2.png" alt="" class="shape-2" />
-              <img src="./img/cnit-bannner.png" alt="" class="shape-3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Info Section End -->
+              <img src="./img/cnit-bannner.png" alt="" class="shape-3" /> -->
 
-  <!-- Services Section Start -->
-  <section class="service-section" style="background-image: url(./img/service-bg.png)">
-    <div class="container pt-5 pb-5">
-      <div class="row">
-        <div class="col-sm-12 service-head m-auto text-center pt-5">
-          <h2 class="service-heading text-center">আমাদের সার্ভিসসমূহ</h2>
-          <img src="./icons/divider.png" alt="" />
-          <p class="mt-3">
-            দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট আইটি নিরলস
-            ভাবে<br />
-            কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার উদেশ্যে
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./img/website-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4">ওয়েবসাইট<br />ডেভেলপমেন্ট</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
-              </div>
-            </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./img/software-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4">সফটওয়্যার<br />ডেভেলপমেন্ট</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
-              </div>
-            </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./img/software-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4">অ্যাপস<br />ডেভেলপমেন্ট</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
-              </div>
-            </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./img/gd-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4">গ্রাফিক্স<br />ডিজাইন</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
-              </div>
-            </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
+                <img src="./img/about_us_img.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- About Info Section End -->
 
-      <div class="row pt-md-5">
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./icons/ui-ux-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4">UI/UX<br />ডিজাইন</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
-              </div>
-            </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
-              </div>
-            </div>
+    <!-- Services Section Start -->
+    <section
+      class="service-section"
+      style="background-image: url(./img/service-bg.png)"
+    >
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-sm-12 service-head m-auto text-center pt-5">
+            <h2 class="service-heading text-center">আমাদের সার্ভিসসমূহ</h2>
+            <img src="./icons/divider.png" alt="" />
+            <p class="mt-3">
+              দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট আইটি নিরলস
+              ভাবে<br />
+              কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার উদেশ্যে
+            </p>
           </div>
         </div>
-        <div class="col-lg-3">
-          <a class="service-card-link" href="#">
+        <div class="row">
+          <div class="col-lg-3">
             <div class="service-card">
-              <img src="./icons/cloud-computing.png" alt="" class="pb-4 ps-4" />
-              <h4 class="ps-4">
-                ওয়েব হোস্টিং<br />
-                ও সার্ভার
-              </h4>
+              <img src="./img/website-icon.png" alt="" class="pb-4 ps-4" />
+              <h4 class="ps-4">ওয়েবসাইট<br />ডেভেলপমেন্ট</h4>
               <div class="service-border-circle-top">
                 <div class="service-border-circle-top-1">
                   <div class="service-border-circle-top-2"></div>
@@ -362,566 +315,825 @@
                 </div>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./icons/Course-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4" style="padding-bottom: 32px">কোর্স/ ট্রেনিং</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="service-card">
+              <img src="./img/software-icon.png" alt="" class="pb-4 ps-4" />
+              <h4 class="ps-4">সফটওয়্যার<br />ডেভেলপমেন্ট</h4>
+              <div class="service-border-circle-top">
+                <div class="service-border-circle-top-1">
+                  <div class="service-border-circle-top-2"></div>
+                </div>
+              </div>
+              <div class="service-border-circle">
+                <div class="service-border-circle-1">
+                  <div class="service-border-circle-2"></div>
+                </div>
               </div>
             </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="service-card">
+              <img src="./img/software-icon.png" alt="" class="pb-4 ps-4" />
+              <h4 class="ps-4">অ্যাপস<br />ডেভেলপমেন্ট</h4>
+              <div class="service-border-circle-top">
+                <div class="service-border-circle-top-1">
+                  <div class="service-border-circle-top-2"></div>
+                </div>
+              </div>
+              <div class="service-border-circle">
+                <div class="service-border-circle-1">
+                  <div class="service-border-circle-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="service-card">
+              <img src="./img/gd-icon.png" alt="" class="pb-4 ps-4" />
+              <h4 class="ps-4">গ্রাফিক্স<br />ডিজাইন</h4>
+              <div class="service-border-circle-top">
+                <div class="service-border-circle-top-1">
+                  <div class="service-border-circle-top-2"></div>
+                </div>
+              </div>
+              <div class="service-border-circle">
+                <div class="service-border-circle-1">
+                  <div class="service-border-circle-2"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="service-card">
-            <img src="./icons/social-manage-icon.png" alt="" class="pb-4 ps-4" />
-            <h4 class="ps-4">সোস্যাল মিডিয়া<br />ম্যানেজমেন্ট</h4>
-            <div class="service-border-circle-top">
-              <div class="service-border-circle-top-1">
-                <div class="service-border-circle-top-2"></div>
+
+        <div class="row pt-md-5">
+          <div class="col-lg-3">
+            <div class="service-card">
+              <img src="./icons/ui-ux-icon.png" alt="" class="pb-4 ps-4" />
+              <h4 class="ps-4">UI/UX<br />ডিজাইন</h4>
+              <div class="service-border-circle-top">
+                <div class="service-border-circle-top-1">
+                  <div class="service-border-circle-top-2"></div>
+                </div>
+              </div>
+              <div class="service-border-circle">
+                <div class="service-border-circle-1">
+                  <div class="service-border-circle-2"></div>
+                </div>
               </div>
             </div>
-            <div class="service-border-circle">
-              <div class="service-border-circle-1">
-                <div class="service-border-circle-2"></div>
+          </div>
+          <div class="col-lg-3">
+            <a class="service-card-link" href="#">
+              <div class="service-card">
+                <img
+                  src="./icons/cloud-computing.png"
+                  alt=""
+                  class="pb-4 ps-4"
+                />
+                <h4 class="ps-4">
+                  ওয়েব হোস্টিং<br />
+                  ও সার্ভার
+                </h4>
+                <div class="service-border-circle-top">
+                  <div class="service-border-circle-top-1">
+                    <div class="service-border-circle-top-2"></div>
+                  </div>
+                </div>
+                <div class="service-border-circle">
+                  <div class="service-border-circle-1">
+                    <div class="service-border-circle-2"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-card">
+              <img src="./icons/Course-icon.png" alt="" class="pb-4 ps-4" />
+              <h4 class="ps-4" style="padding-bottom: 32px">কোর্স/ ট্রেনিং</h4>
+              <div class="service-border-circle-top">
+                <div class="service-border-circle-top-1">
+                  <div class="service-border-circle-top-2"></div>
+                </div>
+              </div>
+              <div class="service-border-circle">
+                <div class="service-border-circle-1">
+                  <div class="service-border-circle-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="service-card">
+              <img
+                src="./icons/social-manage-icon.png"
+                alt=""
+                class="pb-4 ps-4"
+              />
+              <h4 class="ps-4">সোস্যাল মিডিয়া<br />ম্যানেজমেন্ট</h4>
+              <div class="service-border-circle-top">
+                <div class="service-border-circle-top-1">
+                  <div class="service-border-circle-top-2"></div>
+                </div>
+              </div>
+              <div class="service-border-circle">
+                <div class="service-border-circle-1">
+                  <div class="service-border-circle-2"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="all-service-btn m-auto text-center mb-5">
+        <!-- <div class="all-service-btn m-auto text-center mb-5">
                 <button class="more-btn" type="button">
                     <a href="#">বিস্তারিত পড়ুন...</a>
                 </button>
             </div> -->
-    </div>
-  </section>
-  <!-- Services Section End -->
+      </div>
+    </section>
+    <!-- Services Section End -->
 
-  <!-- Web Technologies Section Start -->
-  <section>
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="web-tech-head pt-5">
-            <h2 class="service-heading text-center">
-              যে টেকনোলজি গুলো ব্যবহার<br />
-              করে আমরা ডেভেলপমেন্ট ও ডিজাইন করি
-            </h2>
+    <!-- Web Technologies Section Start -->
+    <section>
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="web-tech-head pt-5">
+              <h2 class="service-heading text-center">
+                যে টেকনোলজি গুলো ব্যবহার<br />
+                করে আমরা ডেভেলপমেন্ট ও ডিজাইন করি
+              </h2>
+            </div>
+            <div class="animated-technolodgy">
+              <div class="cnit-technoldgy-logo">
+                <img src="./img/cnit-technolodgy-logo.png" />
+              </div>
+              <div class="vscode-icon technolodgy-icon">
+                <img src="./img/vs-code.png" />
+              </div>
+              <div class="wordpress-icon technolodgy-icon">
+                <img src="./img/wordpress.png" />
+              </div>
+              <div class="xd-icon technolodgy-icon">
+                <img src="./img/xd.png" />
+              </div>
+              <div class="ai-icon technolodgy-icon">
+                <img src="./img/illustrator.png" />
+              </div>
+              <div class="ps-icon technolodgy-icon">
+                <img src="./img/photoshop.png" />
+              </div>
+              <div class="figma-icon technolodgy-icon">
+                <img src="./img/figma.png" />
+              </div>
+              <div class="node-icon technolodgy-icon">
+                <img src="./img/node-js.png" />
+              </div>
+              <div class="js-icon technolodgy-icon">
+                <img src="./img/js.png" />
+              </div>
+              <div class="bs-icon technolodgy-icon">
+                <img src="./img/bootstrap.png" />
+              </div>
+              <div class="css-icon technolodgy-icon">
+                <img src="./img/css.png" />
+              </div>
+              <div class="react-icon technolodgy-icon">
+                <img src="./img/react.png" />
+              </div>
+              <div class="html-icon technolodgy-icon">
+                <img src="./img/html.png" />
+              </div>
+              <div class="laravel-icon technolodgy-icon">
+                <img src="./img/laravel.png" alt="" />
+              </div>
+            </div>
+            <img
+              src="./img/coding-sign.png"
+              alt=""
+              class="float-end coding-sign-float"
+            />
           </div>
-          <div class="animated-technolodgy">
-            <div class="cnit-technoldgy-logo">
-              <img src="./img/cnit-technolodgy-logo.png" />
-            </div>
-            <div class="vscode-icon technolodgy-icon">
-              <img src="./img/vs-code.png" />
-            </div>
-            <div class="wordpress-icon technolodgy-icon">
-              <img src="./img/wordpress.png" />
-            </div>
-            <div class="xd-icon technolodgy-icon">
-              <img src="./img/xd.png" />
-            </div>
-            <div class="ai-icon technolodgy-icon">
-              <img src="./img/illustrator.png" />
-            </div>
-            <div class="ps-icon technolodgy-icon">
-              <img src="./img/photoshop.png" />
-            </div>
-            <div class="figma-icon technolodgy-icon">
-              <img src="./img/figma.png" />
-            </div>
-            <div class="node-icon technolodgy-icon">
-              <img src="./img/node-js.png" />
-            </div>
-            <div class="js-icon technolodgy-icon">
-              <img src="./img/js.png" />
-            </div>
-            <div class="bs-icon technolodgy-icon">
-              <img src="./img/bootstrap.png" />
-            </div>
-            <div class="css-icon technolodgy-icon">
-              <img src="./img/css.png" />
-            </div>
-            <div class="react-icon technolodgy-icon">
-              <img src="./img/react.png" />
-            </div>
-            <div class="html-icon technolodgy-icon">
-              <img src="./img/html.png" />
-            </div>
-            <div class="laravel-icon technolodgy-icon">
-              <img src="./img/laravel.png" alt="" />
-            </div>
-          </div>
-          <img src="./img/coding-sign.png" alt="" class="float-end coding-sign-float" />
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Web Technologies Section End -->
+    </section>
+    <!-- Web Technologies Section End -->
 
-  <!-- Our Portfolio Section Start -->
-  <section class="portfolio-section" id="our-works">
+    <!-- Our Portfolio Section Start -->
+    <section class="portfolio-section" id="our-works">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="portfolio-heading">
+              <h2 class="service-heading d-block">আমাদের কাজসমূহ</h2>
+            </div>
+            <img src="./icons/divider.png" alt="" />
+            <p class="mt-3">
+              দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট আইটি নিরলস
+              ভাবে<br />
+              কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার উদেশ্যে
+            </p>
+          </div>
+          <div class="container-fluid">
+            <div class="row text-center pt-5">
+              <div class="col-sm-12" id="tabs-id">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      role="presentation"
+                      href="#website"
+                      >ওয়েবসাইট</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      role="presentation"
+                      href="#about"
+                      >ডিজাইন</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#menu2"
+                      >UI/UX</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active container bg-white pb-5 pt-5"
+                style="border-radius: 0 0 5px 5px"
+                id="website"
+              >
+                <div class="about-header-text">
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/hexazn_web.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>The Ultrasound</p>
+                        <div class="portfolio-card-list-btn">
+                          <a class="portfolio-btns" href="#">Live Preview</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/sos_marketplace_web.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>Pabna Online</p>
+                        <div class="portfolio-card-list-btn">
+                          <a class="portfolio-btns" href="#" target="_blank"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/banolota_restaurent_web.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>Grow Pins</p>
+                        <div class="portfolio-card-list-btn">
+                          <a class="portfolio-btns" href="#" target="_blank"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/anocloud_web.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>The Ultrasound</p>
+                        <div class="portfolio-card-list-btn">
+                          <a class="portfolio-btns" href="#">Live Preview</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/habibi_coin_web.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>Pabna Online</p>
+                        <div class="portfolio-card-list-btn">
+                          <a class="portfolio-btns" href="#" target="_blank"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/delivery_my_motor_dashboard.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>Grow Pins</p>
+                        <div class="portfolio-card-list-btn">
+                          <a class="portfolio-btns" href="#" target="_blank"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/portfolio-web-dev-card-01.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>The Ultrasound</p>
+                        <div class="portfolio-card-list-btn">
+                          <a
+                            class="portfolio-btns"
+                            href="https://theultrasoundsource.com/"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/portfolio-web-dev-card-02.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>Pabna Online</p>
+                        <div class="portfolio-card-list-btn">
+                          <a
+                            class="portfolio-btns"
+                            href="https://pabnaonline.net/"
+                            target="_blank"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list">
+                        <img
+                          src="./img/portfolio/portfolio-web-dev-card-03.png"
+                          alt=""
+                          class="portfolio-card-img"
+                        />
+                        <p>Grow Pins</p>
+                        <div class="portfolio-card-list-btn">
+                          <a
+                            class="portfolio-btns"
+                            href="https://growpins.com/"
+                            target="_blank"
+                            >Live Preview</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Design Portfolio Tab -->
+              <div class="tab-pane fade about-content pt-5" id="about">
+                <div
+                  class="about-header bg-white mb-5"
+                  style="border-radius: 5px"
+                >
+                  <!-- <div class="about-header-text">
+                    <h1 class="text-center pt-5 fw-bolder">শীঘ্রই আসছে...</h1>
+                  </div>
+                  <div class="coming-soon-banner">
+                    <img src="./img/desktop-wallpaper.jpg" alt="" />
+                  </div> -->
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-ultrasound-source.png"
+                          alt="The Ultrasound (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>The Ultrasound</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-pabna-online.png"
+                          alt="Pabna Online (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Pabna Online Logo</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-puzzle-bazar.png"
+                          alt="Puzzle Bazar BD (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Puzzle Bazar BD Logo</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-edunext.png"
+                          alt="Edunext (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Edunext Logo</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-husrus.png"
+                          alt="Husrus (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Husrus Logo</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-furnihub.png"
+                          alt="Furnihub (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Furnihub Logo</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-burger.png"
+                          alt="Burger (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Burger Logo</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-mango-it.png"
+                          alt="Mango IT (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>Mango IT Logo</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="portfolio-card-list-gd preview-prtfolio">
+                        <img
+                          src="./img/portfolio/gd/gd-bp.png"
+                          alt="BP (Logo)"
+                          class="portfolio-card-img"
+                        />
+                        <p>BP Logo</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick View -->
+              <div class="modals">
+                <span class="closes"><i class="fa-solid fa-xmark"></i></span>
+                <div class="modalContents">
+                  <img src="" class="modalImgs" />
+                  <span class="modalTxts">Test</span>
+                </div>
+              </div>
+
+              <!-- UI/UX Design Portfolio Tab -->
+              <div class="tab-pane fade about-content pt-5" id="menu2">
+                <div
+                  class="about-header bg-white mb-5"
+                  style="border-radius: 5px"
+                >
+                  <!-- <div class="about-header-text">
+                    <h1 class="text-center pt-5 fw-bolder">শীঘ্রই আসছে...</h1>
+                  </div>
+                  <div class="coming-soon-banner">
+                    <img src="./img/desktop-wallpaper.jpg" alt="" />
+                  </div> -->
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/banolota_restaurent_web.png"
+                            alt="Banolota Restaurant UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>Barista Restaurant UI</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/anocloud_web.png"
+                            alt="Anocloud UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>MediNext UI</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/octa_dashboard_ui.png"
+                            alt="Octa Dashboard UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>Barista Restaurant UI</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/rent_us_ui.png"
+                            alt="Rent US UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>MediNext UI</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/motive_ui.png"
+                            alt="Motive Portfolio UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>Barista Restaurant UI</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/host_house_ui.png"
+                            alt="Host House UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>Barista Restaurant UI</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row portfolio-cards-item">
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/squareonix_web.png"
+                            alt="Squareonix UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>MediNext UI</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/food_hunter.png"
+                            alt="Food Hunter UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>Barista Restaurant UI</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <a target="_blank" href="#">
+                        <div class="portfolio-card-list-gd">
+                          <img
+                            src="./img/portfolio/ux/ux-1.png"
+                            alt="Octa Dashboard UI"
+                            class="portfolio-card-img"
+                          />
+                          <p>Barista Restaurant UI</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-btn m-auto text-center">
+        <a href="./portfolio.html" class="more-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          বিস্তারিত দেখুন...
+        </a>
+      </div>
+    </section>
+    <!-- Our Portfolio Section End -->
+
+    <!-- Working Process Section Start -->
+    <section class="work-process">
+      <div class="container pt-5">
+        <div class="row align-items-center pt-5">
+          <div class="col-sm-4 col-md-4">
+            <div class="work-process-head">
+              <h2 class="service-heading">আমাদের কাজের প্রক্রিয়াসমূহ</h2>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="work-process-divider">
+              <img src="./icons/divider.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-3">
+            <div class="work-process-card text-center">
+              <img src="./icons/concept-icon.png" alt="" class="pb-3" />
+              <h5>কনসেপ্ট ডেভেলপমেন্ট</h5>
+              <p>একটি সুন্দর কনসেপ্ট মনোমুগ্ধকর ডিজাইনের পূর্বশর্ত<br /></p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work-process-card text-center">
+              <img src="./icons/planning-icon.png" alt="" class="pb-3" />
+              <h5>প্ল্যানিং ও প্রসেসিং</h5>
+              <p>
+                কনসেপ্টের পরে, আমরা সম্ভাব্য সর্বোত্তম উপায়ে কাজটি সম্পন্ন করার
+                জন্য প্ল্যান করি
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work-process-card text-center">
+              <img src="./icons/research-icon.png" alt="" class="pb-3" />
+              <h5>রিসার্চ ও আইডিয়া জেনারেট</h5>
+              <p>
+                রিসার্চ প্রসেসিং এর মাধ্যমে আমরা সর্বোত্তম পন্থা বের করি কাজ
+                করার<br />
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work-process-card text-center">
+              <img src="./icons/result-icon.png" alt="" class="pb-3" />
+              <h5>এক্সিকিউট ও রেজাল্ট</h5>
+              <p>
+                ডেভেলপ করার পর সকল প্রজেক্ট এক্সিকিউট করে বেস্ট রেজাল্ট আনয়ন করা
+                হয়
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Working Process Section End -->
+
+    <!-- Review Section Start -->
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="portfolio-heading">
-            <h2 class="service-heading d-block">আমাদের কাজসমূহ</h2>
-          </div>
-          <img src="./icons/divider.png" alt="" />
-          <p class="mt-3">
-            দক্ষতা ও সৃজনশীলতার সমন্বয়ে বিগত দুই বছর কোডনেক্সট আইটি নিরলস
-            ভাবে<br />
-            কাজ করে যাচ্ছে আইটি সেক্টরে বিশেষ ভূমিকা রাখার উদেশ্যে
-          </p>
-        </div>
-        <div class="container-fluid">
-          <div class="row text-center pt-5">
-            <div class="col-sm-12" id="tabs-id">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="tab" role="presentation" href="#website">ওয়েবসাইট</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" role="presentation" href="#about">ডিজাইন</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#menu2">UI/UX</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active container bg-white pb-5 pt-5" style="border-radius: 0 0 5px 5px"
-              id="website">
-              <div class="about-header-text">
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/hexazn_web.png" alt="" class="portfolio-card-img" />
-                      <p>The Ultrasound</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="#">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/sos_marketplace_web.png" alt="" class="portfolio-card-img" />
-                      <p>Pabna Online</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="#" target="_blank">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/banolota_restaurent_web.png" alt="" class="portfolio-card-img" />
-                      <p>Grow Pins</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="#" target="_blank">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/anocloud_web.png" alt="" class="portfolio-card-img" />
-                      <p>The Ultrasound</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="#">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/habibi_coin_web.png" alt="" class="portfolio-card-img" />
-                      <p>Pabna Online</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="#" target="_blank">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/delivery_my_motor_dashboard.png" alt="" class="portfolio-card-img" />
-                      <p>Grow Pins</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="#" target="_blank">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/portfolio-web-dev-card-01.png" alt="" class="portfolio-card-img" />
-                      <p>The Ultrasound</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="https://theultrasoundsource.com/">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/portfolio-web-dev-card-02.png" alt="" class="portfolio-card-img" />
-                      <p>Pabna Online</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="https://pabnaonline.net/" target="_blank">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list">
-                      <img src="./img/portfolio/portfolio-web-dev-card-03.png" alt="" class="portfolio-card-img" />
-                      <p>Grow Pins</p>
-                      <div class="portfolio-card-list-btn">
-                        <a class="portfolio-btns" href="https://growpins.com/" target="_blank">Live Preview</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Design Portfolio Tab -->
-            <div class="tab-pane fade about-content pt-5" id="about">
-              <div class="about-header bg-white mb-5" style="border-radius: 5px">
-                <!-- <div class="about-header-text">
-                    <h1 class="text-center pt-5 fw-bolder">শীঘ্রই আসছে...</h1>
-                  </div>
-                  <div class="coming-soon-banner">
-                    <img src="./img/desktop-wallpaper.jpg" alt="" />
-                  </div> -->
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-ultrasound-source.png" alt="The Ultrasound (Logo)"
-                        class="portfolio-card-img" />
-                      <p>The Ultrasound</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-pabna-online.png" alt="Pabna Online (Logo)"
-                        class="portfolio-card-img" />
-                      <p>Pabna Online Logo</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-puzzle-bazar.png" alt="Puzzle Bazar BD (Logo)"
-                        class="portfolio-card-img" />
-                      <p>Puzzle Bazar BD Logo</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-edunext.png" alt="Edunext (Logo)" class="portfolio-card-img" />
-                      <p>Edunext Logo</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-husrus.png" alt="Husrus (Logo)" class="portfolio-card-img" />
-                      <p>Husrus Logo</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-furnihub.png" alt="Furnihub (Logo)" class="portfolio-card-img" />
-                      <p>Furnihub Logo</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-burger.png" alt="Burger (Logo)" class="portfolio-card-img" />
-                      <p>Burger Logo</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-mango-it.png" alt="Mango IT (Logo)" class="portfolio-card-img" />
-                      <p>Mango IT Logo</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="portfolio-card-list-gd preview-prtfolio">
-                      <img src="./img/portfolio/gd/gd-bp.png" alt="BP (Logo)" class="portfolio-card-img" />
-                      <p>BP Logo</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick View -->
-            <div class="modals">
-              <span class="closes"><i class="fa-solid fa-xmark"></i></span>
-              <div class="modalContents">
-                <img src="" class="modalImgs" />
-                <span class="modalTxts">Test</span>
-              </div>
-            </div>
-
-            <!-- UI/UX Design Portfolio Tab -->
-            <div class="tab-pane fade about-content pt-5" id="menu2">
-              <div class="about-header bg-white mb-5" style="border-radius: 5px">
-                <!-- <div class="about-header-text">
-                    <h1 class="text-center pt-5 fw-bolder">শীঘ্রই আসছে...</h1>
-                  </div>
-                  <div class="coming-soon-banner">
-                    <img src="./img/desktop-wallpaper.jpg" alt="" />
-                  </div> -->
-
-                <div class="row portfolio-cards-item">
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/banolota_restaurent_web.png" alt="Banolota Restaurant UI"
-                          class="portfolio-card-img" />
-                        <p>Barista Restaurant UI</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/anocloud_web.png" alt="Anocloud UI" class="portfolio-card-img" />
-                        <p>MediNext UI</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/octa_dashboard_ui.png" alt="Octa Dashboard UI"
-                          class="portfolio-card-img" />
-                        <p>Barista Restaurant UI</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/rent_us_ui.png" alt="Rent US UI" class="portfolio-card-img" />
-                        <p>MediNext UI</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/motive_ui.png" alt="Motive Portfolio UI"
-                          class="portfolio-card-img" />
-                        <p>Barista Restaurant UI</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/host_house_ui.png" alt="Host House UI"
-                          class="portfolio-card-img" />
-                        <p>Barista Restaurant UI</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="row portfolio-cards-item">
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/squareonix_web.png" alt="Squareonix UI"
-                          class="portfolio-card-img" />
-                        <p>MediNext UI</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/food_hunter.png" alt="Food Hunter UI" class="portfolio-card-img" />
-                        <p>Barista Restaurant UI</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <a target="_blank" href="#">
-                      <div class="portfolio-card-list-gd">
-                        <img src="./img/portfolio/ux/ux-1.png" alt="Octa Dashboard UI" class="portfolio-card-img" />
-                        <p>Barista Restaurant UI</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-btn m-auto text-center">
-      <a href="./portfolio.html" class="more-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        বিস্তারিত দেখুন...
-      </a>
-    </div>
-  </section>
-  <!-- Our Portfolio Section End -->
-
-  <!-- Working Process Section Start -->
-  <section class="work-process">
-    <div class="container pt-5">
-      <div class="row align-items-center pt-5">
-        <div class="col-sm-4 col-md-4">
-          <div class="work-process-head">
-            <h2 class="service-heading">আমাদের কাজের প্রক্রিয়াসমূহ</h2>
-          </div>
-        </div>
-        <div class="col-sm-3 col-md-3">
-          <div class="work-process-divider">
+          <div class="review-heading text-center">
+            <h2 class="service-heading">ক্লায়েন্টস রিভিউ</h2>
             <img src="./icons/divider.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="row pt-5">
-        <div class="col-lg-3">
-          <div class="work-process-card text-center">
-            <img src="./icons/concept-icon.png" alt="" class="pb-3" />
-            <h5>কনসেপ্ট ডেভেলপমেন্ট</h5>
-            <p>একটি সুন্দর কনসেপ্ট মনোমুগ্ধকর ডিজাইনের পূর্বশর্ত<br /></p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="work-process-card text-center">
-            <img src="./icons/planning-icon.png" alt="" class="pb-3" />
-            <h5>প্ল্যানিং ও প্রসেসিং</h5>
-            <p>
-              কনসেপ্টের পরে, আমরা সম্ভাব্য সর্বোত্তম উপায়ে কাজটি সম্পন্ন করার
-              জন্য প্ল্যান করি
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="work-process-card text-center">
-            <img src="./icons/research-icon.png" alt="" class="pb-3" />
-            <h5>রিসার্চ ও আইডিয়া জেনারেট</h5>
-            <p>
-              রিসার্চ প্রসেসিং এর মাধ্যমে আমরা সর্বোত্তম পন্থা বের করি কাজ
-              করার<br />
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="work-process-card text-center">
-            <img src="./icons/result-icon.png" alt="" class="pb-3" />
-            <h5>এক্সিকিউট ও রেজাল্ট</h5>
-            <p>
-              ডেভেলপ করার পর সকল প্রজেক্ট এক্সিকিউট করে বেস্ট রেজাল্ট আনয়ন করা
-              হয়
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Working Process Section End -->
-
-  <!-- Review Section Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="review-heading text-center">
-          <h2 class="service-heading">ক্লায়েন্টস রিভিউ</h2>
-          <img src="./icons/divider.png" alt="" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="client-review" style="background-image: url(./img/frame-1.png)">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-10 col-md-10 m-auto">
-          <div class="review-cards slider m-auto align-items-center pt-5">
-            <div class="slide mt-5">
-              <div class="row">
-                <div class="col-sm-5 col-md-5">
-                  <img src="./img/client-avatar-1.png" class="clients-avatar" alt="" style="width: 70%; margin: auto" />
-                </div>
-                <div class="col-sm-5 col-md-5 review-text">
-                  <p>
-                    Imtiaz made more than a website, he made a friend.
-                    Excellent work, communication, really just an excellent
-                    person. You'll be lucky to have met him
-                  </p>
-                  <h5>James Warren</h5>
-                  <small>Owner, The Ultrasound Source</small>
+    <section
+      class="client-review"
+      style="background-image: url(./img/frame-1.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-10 m-auto">
+            <div class="review-cards slider m-auto align-items-center pt-5">
+              <div class="slide mt-5">
+                <div class="row">
+                  <div class="col-sm-5 col-md-5">
+                    <img
+                      src="./img/client-avatar-1.png"
+                      class="clients-avatar"
+                      alt=""
+                      style="width: 70%; margin: auto"
+                    />
+                  </div>
+                  <div class="col-sm-5 col-md-5 review-text">
+                    <p>
+                      Imtiaz made more than a website, he made a friend.
+                      Excellent work, communication, really just an excellent
+                      person. You'll be lucky to have met him
+                    </p>
+                    <h5>James Warren</h5>
+                    <small>Owner, The Ultrasound Source</small>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="slide mt-5">
-              <div class="row">
-                <div class="col-sm-5 col-md-5">
-                  <img src="./img/client-avatar-2.png" class="clients-avatar" alt="" style="width: 70%; margin: auto" />
-                </div>
-                <div class="col-sm-5 col-md-5 review-text">
-                  <p>
-                    Great work done by this freelancer !! Highly Recommended
-                    <br />
-                    <br />
-                  </p>
-                  <h5>Dowell Research</h5>
-                  <small>DoWell Research Pte Ltd, Singapore</small>
+              <div class="slide mt-5">
+                <div class="row">
+                  <div class="col-sm-5 col-md-5">
+                    <img
+                      src="./img/client-avatar-2.png"
+                      class="clients-avatar"
+                      alt=""
+                      style="width: 70%; margin: auto"
+                    />
+                  </div>
+                  <div class="col-sm-5 col-md-5 review-text">
+                    <p>
+                      Great work done by this freelancer !! Highly Recommended
+                      <br />
+                      <br />
+                    </p>
+                    <h5>Dowell Research</h5>
+                    <small>DoWell Research Pte Ltd, Singapore</small>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- <div class="slide mt-5">
+              <!-- <div class="slide mt-5">
               <div class="row">
                 <div class="col-sm-5 col-md-5">
                   <img src="./img/client's -avatar.png" class="clients-avatar" alt=""
@@ -938,224 +1150,242 @@
                 </div>
               </div>
             </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Review Section End -->
-
-  <!-- Internship Section Start -->
-  <section class="internship" id="internship-course">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="text-center pb-4">
-            <h2 class="internship-heading">ইন্টার্ণশীপ</h2>
-            <img src="./icons/divider.png" alt="" />
-          </div>
-
-          <div class="row m-auto justify-content-center">
-            <div class="col-sm-4 intern-img">
-              <img src="./img/web-dev-intern.png" alt="" />
-            </div>
-            <div class="col-sm-4 intern-img">
-              <img src="./img/wordpress-intern.png" alt="" />
-              <img class="id-card" src="./img/id-card-demo.png" alt="" />
-            </div>
-          </div>
-          <div class="row m-auto justify-content-center">
-            <div class="col-sm-4 intern-img">
-              <img src="./img/uiux-design-intern.png" alt="" />
-            </div>
-            <div class="col-sm-4 intern-img">
-              <img src="./img/gd-design-intern.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="divider-slash m-auto text-center pt-5">
-      <img class="divider-slash-img" src="./img/divider-slash.png" alt="" style="width: 100%" />
-    </div>
-  </section>
-  <!-- Internship Section End -->
+    </section>
+    <!-- Review Section End -->
 
-  <!-- Client's Section Start -->
-  <section class="clients">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 m-auto">
-          <div class="review-heading text-center pb-4">
-            <h2 class="service-heading">ক্লায়েন্টস সমূহ</h2>
-            <img src="./icons/divider.png" alt="" />
-          </div>
+    <!-- Internship Section Start -->
+    <section class="internship" id="internship-course">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center pb-4">
+              <h2 class="internship-heading">ইন্টার্ণশীপ</h2>
+              <img src="./icons/divider.png" alt="" />
+            </div>
 
-          <div class="customer-logos slider m-auto align-items-center text-center pt-5">
-            <div class="slide">
-              <a href="https://theultrasoundsource.com/" target="_blank">
-                <img src="./img/tuss-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://uxlivinglab.com/en/" target="_blank">
-                <img src="./img/dowell-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://cis-bd.org/" target="_blank">
-                <img src="./img/cis-bd-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <!-- <a href="#" target="_blank"> -->
-              <img src="./img/bcs-logo.png" />
-              <!-- </a> -->
-            </div>
-            <div class="slide">
-              <a href="https://www.delivermymotor.com/" target="_blank">
-                <img src="./img/dmm-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://puzzlebazaarbd.com/" target="_blank">
-                <img src="./img/puzzle-bazaar-logo-01.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://apad-bd.org/" target="_blank">
-                <img src="./img/apad-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://tomattos.com/" target="_blank">
-                <img src="./img/tomattos-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="http://skyviewonlineltd.com/" target="_blank">
-                <img src="./img/skyview-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://zeeroow.com/" target="_blank">
-                <img src="./img/zeeroow-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://growpins.com/" target="_blank">
-                <img src="./img/grow-pins-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://pabnaonline.net/" target="_blank">
-                <img src="./img/pbo-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <a href="https://qcloud.global/" target="_blank">
-                <img src="./img/qcloud-logo.png" />
-              </a>
-            </div>
-            <div class="slide">
-              <img src="./img/power-station-bd-logo.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Client's Section End -->
-
-  <!-- Footer Section Start -->
-  <section class="footer" id="footer-contact" style="background-image: url(./img/footer-section-bg.png)">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row align-items-center pt-5">
-            <div class="col-lg-6">
-              <div class="footer-contact-items">
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-address.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
-                      পাবনা
-                    </h4>
-                  </div>
-                </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-phn-2.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      <a href="tel:01788428280"><b>+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</b></a>
-                    </h4>
-                    <h4>
-                      <a href="tel:01313793313"><b>+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</b></a>
-                    </h4>
-                  </div>
-                </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-mail-3.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      <a href="mailto: codenextit@gmail.com">codenextit@gmail.com</a>
-                    </h4>
-                    <h4>
-                      <a href="mailto: info@codenextit.com">info@codenextit.com</a>
-                    </h4>
-                  </div>
-                </div>
+            <div class="row m-auto justify-content-center">
+              <div class="col-sm-4 intern-img">
+                <img src="./img/web-dev-intern.png" alt="" />
               </div>
-              <div class="footer-items-divider">
-                <img src="./img/vertical-line.png" alt="" />
+              <div class="col-sm-4 intern-img">
+                <img src="./img/wordpress-intern.png" alt="" />
+                <img class="id-card" src="./img/id-card-demo.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="footer-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
-                  width="100%" height="400" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row m-auto justify-content-center">
+              <div class="col-sm-4 intern-img">
+                <img src="./img/uiux-design-intern.png" alt="" />
+              </div>
+              <div class="col-sm-4 intern-img">
+                <img src="./img/gd-design-intern.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Footer Section End -->
+      <div class="divider-slash m-auto text-center pt-5">
+        <img
+          class="divider-slash-img"
+          src="./img/divider-slash.png"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
+    </section>
+    <!-- Internship Section End -->
 
-  <!-- Copyright Footer Section Start -->
-  <section class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="copyright-title">
-            <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+    <!-- Client's Section Start -->
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 m-auto">
+            <div class="review-heading text-center pb-4">
+              <h2 class="service-heading">ক্লায়েন্টস সমূহ</h2>
+              <img src="./icons/divider.png" alt="" />
+            </div>
+
+            <div
+              class="customer-logos slider m-auto align-items-center text-center pt-5"
+            >
+              <div class="slide">
+                <a href="https://theultrasoundsource.com/" target="_blank">
+                  <img src="./img/tuss-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://uxlivinglab.com/en/" target="_blank">
+                  <img src="./img/dowell-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://cis-bd.org/" target="_blank">
+                  <img src="./img/cis-bd-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <!-- <a href="#" target="_blank"> -->
+                <img src="./img/bcs-logo.png" />
+                <!-- </a> -->
+              </div>
+              <div class="slide">
+                <a href="https://www.delivermymotor.com/" target="_blank">
+                  <img src="./img/dmm-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://puzzlebazaarbd.com/" target="_blank">
+                  <img src="./img/puzzle-bazaar-logo-01.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://apad-bd.org/" target="_blank">
+                  <img src="./img/apad-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://tomattos.com/" target="_blank">
+                  <img src="./img/tomattos-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="http://skyviewonlineltd.com/" target="_blank">
+                  <img src="./img/skyview-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://zeeroow.com/" target="_blank">
+                  <img src="./img/zeeroow-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://growpins.com/" target="_blank">
+                  <img src="./img/grow-pins-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://pabnaonline.net/" target="_blank">
+                  <img src="./img/pbo-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://qcloud.global/" target="_blank">
+                  <img src="./img/qcloud-logo.png" />
+                </a>
+              </div>
+              <div class="slide">
+                <img src="./img/power-station-bd-logo.png" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="back-to-top">
-      <a class="back-top-icon" href="#top" id="bt-top">
-        <img src="./icons/back-top-ico.png" alt="" />
-      </a>
-    </div>
-  </section>
-  <!-- Copyright Footer Section Start -->
+    </section>
+    <!-- Client's Section End -->
 
-  <!-- Custom Js -->
-  <script src="./js/customer-logo-carousel.js"></script>
-  <script src="./js/all.js"></script>
-  <script src="./js/quick-view.js"></script>
-  <!-- Custom Js -->
-</body>
+    <!-- Footer Section Start -->
+    <section
+      class="footer"
+      id="footer-contact"
+      style="background-image: url(./img/footer-section-bg.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center pt-5">
+              <div class="col-lg-6">
+                <div class="footer-contact-items">
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-address.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
+                        পাবনা
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-phn-2.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        <a href="tel:01788428280"><b>+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</b></a>
+                      </h4>
+                      <h4>
+                        <a href="tel:01313793313"><b>+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</b></a>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-mail-3.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        <a href="mailto: codenextit@gmail.com"
+                          >codenextit@gmail.com</a
+                        >
+                      </h4>
+                      <h4>
+                        <a href="mailto: info@codenextit.com"
+                          >info@codenextit.com</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-items-divider">
+                  <img src="./img/vertical-line.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
+                    width="100%"
+                    height="400"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section End -->
 
+    <!-- Copyright Footer Section Start -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="copyright-title">
+              <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-to-top">
+        <a class="back-top-icon" href="#top" id="bt-top">
+          <img src="./icons/back-top-ico.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- Copyright Footer Section Start -->
+
+    <!-- Custom Js -->
+    <script src="./js/customer-logo-carousel.js"></script>
+    <script src="./js/all.js"></script>
+    <script src="./js/quick-view.js"></script>
+    <!-- Custom Js -->
+  </body>
 </html>
