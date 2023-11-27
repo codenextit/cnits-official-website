@@ -87,71 +87,48 @@
     </script>
     <!--Fb Chat Plugin-->
 
-    <!-- Main Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <!-- Nav Bar Start -->
+    <header id="navbar">
       <div class="container">
-        <a href="./index.html">
-          <img
-            src="./img/cnits-logo-main.png"
-            alt="cnit-main-logo"
-            class="logo-main"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
-              >
+        <nav class="nav-bar">
+          <span class="nav-open"
+            ><i class="fa-solid fa-bars-staggered"></i
+          ></span>
+          <a href="./index.html" class="logo"
+            ><img src="./img/cnits-logo-main.png" alt=""
+          /></a>
+          <ul class="menu-item">
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            <li>
+              <a href="./index.html" class="active">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio-en.html">Portfolio</a>
+            <li>
+              <a href="./menu.html">Portfolio</a>
             </li>
-            <!-- <li class="nav-item">
-            <a class="nav-link" href="./web-hosting-en.html">Web Hosting</a>
-          </li> -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Career</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./industrial-traning-en.html"
-                    >Industrial Traning</a
-                  >
-                </li>
+            <li id="dropdown">
+              <a href="">Career <i class="fa-solid fa-chevron-down"></i> </a>
+              <ul class="dropdown_items">
+                <li><a href="#">Industrial Training</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">UI/UX Design</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about-en.html">About Us</a>
+            <li>
+              <a href="./about.html">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact-en.html">Contact Us</a>
+            <li>
+              <a href="./contact.html">Contact Us</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#internship-course">কোর্সসমূহ</a>
-            </li> -->
+
+            <a class="course-btn translate_btn" href="./index.html">বাংলা</a>
           </ul>
-          <a class="course-btn" href="./index-bn.html">বাংলা</a>
-        </div>
+
+          <a class="course-btn" href="./index.html">বাংলা</a>
+        </nav>
       </div>
-    </nav>
-    <!-- Main Navbar End -->
+    </header>
+    <!-- Nav Bar End -->
 
     <!-- Hero Section Start -->
     <section

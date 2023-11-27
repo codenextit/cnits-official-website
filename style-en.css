@@ -41,34 +41,109 @@ a {
   background: #dd0000;
 }
 
-/* Main Navbar Start */
-.navbar {
-  background-color: #fdfdfd;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.102) !important;
+/* Navbar Start */
+#navbar {
+  background: #f8f9fa;
+  z-index: 999999 !important;
 }
 
-.logo-main {
-  height: 67px;
-  width: 166px;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 999999 !important;
 }
 
-.nav-item {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-left: 10px;
+.logo img {
+  width: 170px;
 }
 
-.navbar-nav .nav-item .nav-link {
-  transition: 0.5s;
-  font-family: var(--header-font) !important;
+.menu-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  z-index: 999999 !important;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: #dd0000;
+.menu-item li {
+  margin: 0 15px;
+  font-family: var(--text-font);
 }
 
-.navbar-nav .nav-item .nav-link.active {
-  color: #dd0000;
+.menu-item li a {
+  display: flex;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 400;
+  padding: 5px 3px;
+  position: relative;
+  display: block;
+  transition: 0.4s;
+}
+
+.menu-item li a.active,
+.menu-item li a.active i,
+.menu-item li a:hover,
+.menu-item li a:hover i {
+  color: var(--header-color);
+}
+
+.menu-item li a i {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.55);
+  transition: 0.3s;
+}
+
+.menu-item #dropdown {
+  position: relative;
+}
+
+.menu-item #dropdown:hover .dropdown_items {
+  display: block;
+}
+
+#dropdown .dropdown_items {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  /* width: 250px; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  background: #f8f9fa;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+  padding: 10px 0px;
+  border-radius: 5px;
+  z-index: 9999999 !important;
+}
+
+#dropdown .dropdown_items li {
+  padding: 0;
+}
+
+#dropdown .dropdown_items li:hover {
+  background: #f1f1f1;
+}
+
+#dropdown .dropdown_items li a {
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+.close-btn {
+  display: none;
+}
+
+.nav-open {
+  display: none;
+  font-size: 1.4rem;
+  color: var(--global-color);
+  cursor: pointer;
 }
 
 .course-btn {
@@ -77,10 +152,10 @@ a {
   text-align: center;
   border: 2px solid #dd0000;
   text-decoration: none;
-  font-family: "Hind Siliguri";
+  font-family: var(--text-font);
   color: #fff;
   background: #dd0000;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.1em;
   z-index: 10;
   transition: 0.5s;
@@ -131,13 +206,73 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
-  .nav-item {
-    font-size: 1em;
-  }
+.translate_btn {
+  display: none;
 }
 
-/* Main Navbar End */
+@media screen and (max-width: 990px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .menu-item {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 40px;
+    transition: 0.5s;
+  }
+
+  .menu-item li {
+    padding: 15px 0;
+    margin: 0;
+  }
+
+  #dropdown .dropdown_items {
+    top: 50px;
+    left: 0;
+  }
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .close-btn i {
+    color: var(--global-color);
+    font-size: 1.3rem;
+    transition: 0.4s;
+  }
+
+  .close-btn i:hover {
+    color: var(--header-color);
+  }
+
+  .nav-open {
+    display: block;
+  }
+
+  .course-btn {
+    display: none;
+  }
+
+  .translate_btn {
+    display: block;
+    margin-top: 20px;
+  }
+}
+/* Navbar End */
 
 /* Hero Section Start */
 .hero {
@@ -163,12 +298,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     position: center;
-  }
-}
-
-@media screen and (max-width: 465px) {
-  .hero {
-    margin-top: -50px;
   }
 }
 
