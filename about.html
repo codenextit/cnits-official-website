@@ -73,50 +73,81 @@
   </script>
   <!--Fb Chat Plugin-->
 
-  <!-- Main Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+   <!-- Nav Bar Start -->
+   <header id="navbar">
     <div class="container">
-      <a href="./index-bn.html">
-        <img src="./img/cnits-logo-main.png" alt="cnit-main-logo" class="logo-main" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index-bn.html">হোম</a>
+      <nav class="nav-bar">
+        <span class="nav-open"
+          ><i class="fa-solid fa-bars-staggered"></i
+        ></span>
+        <a href="./index-bn.html" class="logo"
+          ><img src="./img/cnits-logo-main.png" alt=""
+        /></a>
+        <ul class="menu-item">
+          <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+          <li>
+            <a href="./index-bn.html" class="active">হোম</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
+          <li>
+            <a href="./portfolio.html">আমাদের কাজসমূহ</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="./web-hosting.html">ওয়েব হোস্টিং</a>
-          </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ক্যারিয়ার</a>
-            <ul class="dropdown-menu">
+          <li id="dropdown_menu">
+            <ul class="main-menu">
               <li>
-                <a class="dropdown-item" href="./industrial-traning.html">ইন্ডাস্ট্রিয়াল ট্রেনিং</a>
+                <a
+                  >ক্যারিয়ার
+                  <span class="drop-icon"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
+                  <label title="Toggle Drop-down" class="drop-icon" for="sm1"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></label>
+                </a>
+                <input type="checkbox" id="sm1" />
+                <ul class="sub-menu">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">UI/UX Design</a></li>
+                  <li><a href="#">ইন্ডাস্ট্রিয়াল ট্রেনিং</a></li>
+                  <!-- <li>
+                  <a href="#"
+                    >Item 2.2
+                    <span class="drop-icon"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                    <label
+                      title="Toggle Drop-down"
+                      class="drop-icon"
+                      for="sm2"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></label>
+                  </a>
+                  <input type="checkbox" id="sm2" />
+                  <ul class="sub-menu">
+                    <li><a href="#">Item 2.2.1</a></li>
+                    <li><a href="#">Item 2.2.2</a></li>
+                    <li><a href="#">Item 2.2.3</a></li>
+                  </ul>
+                </li> -->
+                </ul>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./about.html">আমাদের সম্পর্কে</a>
+          <li>
+            <a href="./about.html">আমাদের সম্পর্কে</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">যোগাযোগ</a>
+          <li>
+            <a href="./contact.html">যোগাযোগ</a>
           </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="#footer-contact">কোর্সসমূহ</a>
-            </li> -->
+
+          <a class="course-btn translate_btn" href="./index.html">ENGLISH</a>
         </ul>
-        <a class="course-btn" href="./about-en.html">ENGLISH</a>
-      </div>
+
+        <a class="course-btn" href="./index.html">ENGLISH</a>
+      </nav>
     </div>
-  </nav>
-  <!-- Main Navbar End -->
+  </header>
+  <!-- Nav Bar End -->
 
   <!-- About Hero Start -->
   <section id="about-hero">
@@ -505,10 +536,42 @@
   </section>
   <!-- Copyright Footer Section Start -->
 
+  <!-- cursor -->
+  <div class="circle"></div>
+  <div class="circle-follow"></div>
+  <!-- cursor -->
+
   <!-- Custom Js -->
   <script src="./js/customer-logo-carousel.js"></script>
   <script src="./js/all.js"></script>
   <!-- Custom Js -->
+
+  <!-- GSAP CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script>
+    // cursor
+    var $circle = $(".circle"),
+      $follow = $(".circle-follow");
+
+    function moveCircle(e) {
+      TweenLite.to($circle, 0.3, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+      TweenLite.to($follow, 0.7, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+    }
+
+    $(window).on("mousemove", moveCircle);
+  </script>
 </body>
 
 </html>

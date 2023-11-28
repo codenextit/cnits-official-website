@@ -1,283 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Training - Open New Door of Possibilities</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Industrial Training - Open New Door of Possibilities</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./icons/cnit-favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Favicon -->
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./icons/cnit-favicon.png" type="image/x-icon" />
-  <!-- Favicon -->
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CSS Link -->
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- CSS Link -->
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <!-- JavaScript Bundle with Popper -->
+    <!-- Fontawesome Kit -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <!-- Fontawesome Kit -->
 
-  <!-- Fontawesome Kit -->
-  <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.min.css" />
-  <!-- Fontawesome Kit -->
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery CDN -->
 
-  <!-- Jquery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Jquery CDN -->
+    <!-- CDN Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- CDN Js -->
+  </head>
 
-  <!-- CDN Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <!-- CDN Js -->
-</head>
+  <body>
+    <!--Fb Chat Plugin-->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
-<body>
-  <!--Fb Chat Plugin-->
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "327323588671794");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
-  <script>
-    var chatbox = document.getElementById("fb-customer-chat");
-    chatbox.setAttribute("page_id", "327323588671794");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v17.0",
+        });
+      };
 
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: "v17.0",
-      });
-    };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!--Fb Chat Plugin-->
 
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
-  </script>
-  <!--Fb Chat Plugin-->
+    <!-- Nav Bar Start -->
+    <header id="navbar">
+      <div class="container">
+        <nav class="nav-bar">
+          <span class="nav-open"
+            ><i class="fa-solid fa-bars-staggered"></i
+          ></span>
+          <a href="./index-bn.html" class="logo"
+            ><img src="./img/cnits-logo-main.png" alt=""
+          /></a>
+          <ul class="menu-item">
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            <li>
+              <a href="./index-bn.html" class="active">হোম</a>
+            </li>
+            <li>
+              <a href="./portfolio.html">আমাদের কাজসমূহ</a>
+            </li>
+            <li id="dropdown_menu">
+              <ul class="main-menu">
+                <li>
+                  <a
+                    >ক্যারিয়ার
+                    <span class="drop-icon"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm1"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></label>
+                  </a>
+                  <input type="checkbox" id="sm1" />
+                  <ul class="sub-menu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">ইন্ডাস্ট্রিয়াল ট্রেনিং</a></li>
+                    <!-- <li>
+                  <a href="#"
+                    >Item 2.2
+                    <span class="drop-icon"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                    <label
+                      title="Toggle Drop-down"
+                      class="drop-icon"
+                      for="sm2"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></label>
+                  </a>
+                  <input type="checkbox" id="sm2" />
+                  <ul class="sub-menu">
+                    <li><a href="#">Item 2.2.1</a></li>
+                    <li><a href="#">Item 2.2.2</a></li>
+                    <li><a href="#">Item 2.2.3</a></li>
+                  </ul>
+                </li> -->
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./about.html">আমাদের সম্পর্কে</a>
+            </li>
+            <li>
+              <a href="./contact.html">যোগাযোগ</a>
+            </li>
 
-  <!-- Main Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
-    <div class="container">
-      <a href="./index-bn.html">
-        <img src="./img/cnits-logo-main.png" alt="cnit-main-logo" class="logo-main" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index-bn.html">হোম</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">আমাদের কাজসমূহ</a>
-          </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="./web-hosting.html">ওয়েব হোস্টিং</a>
-            </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">ক্যারিয়ার</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./industrial-traning.html">ইন্ডাস্ট্রিয়াল ট্রেনিং</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">আমাদের সম্পর্কে</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">যোগাযোগ</a>
-          </li>
-          <!-- <li class="nav-item">
-                <a class="nav-link" href="#footer-contact">কোর্সসমূহ</a>
-              </li> -->
-        </ul>
-        <a class="course-btn" href="./industrial-traning-en.html">ENGLISH</a>
+            <a class="course-btn translate_btn" href="./index.html">ENGLISH</a>
+          </ul>
+
+          <a class="course-btn" href="./index.html">ENGLISH</a>
+        </nav>
       </div>
-    </div>
-  </nav>
-  <!-- Main Navbar End -->
+    </header>
+    <!-- Nav Bar End -->
 
-  <!-- industrial Hero Start -->
-  <section id="industrial-hero">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-lg-5">
-          <div class="industrial-hero-image">
-            <img src="./img/industrial-traning/industrial-hero-illustration.svg" />
+    <!-- industrial Hero Start -->
+    <section id="industrial-hero">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5">
+            <div class="industrial-hero-image">
+              <img
+                src="./img/industrial-traning/industrial-hero-illustration.svg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="industrial-hero-content">
-            <p>ডিপ্লোমা ইন ইন্জিনিয়ারিং - ইন্ডাষ্ট্রীয়াল এ্যাটাচম্যান্ট অন</p>
-            <h1>
-              ওয়েবসাইট ডিজাইন ও <br />
-              ডেভেলপমেন্ট
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- industrial Hero End -->
-
-  <!-- industrial course start -->
-  <section id="industrial-course">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <div class="industrial-course-desc">
-            <p>
-              আমাদের এই কোর্স টি সাজানো হয়েছে ডিপ্লোমা-ইন-কম্পিউটার
-              ইঞ্জিনিয়ারিং এর ৮ম পর্বের ইন্ডাস্ট্রিয়াল ট্রেনিং এর জন্য।
-              বাংলাদেশে প্রতিবছর ৪৯ টি সরকারি ও অসংখ্য বেসরকারি পলিটেকনিক
-              ইন্সটিটিউট থেকে ছাত্র-ছাত্রীরা তাদের তাত্ত্বিক জ্ঞান নেওয়া শেষ
-              করে বিভিন্ন কোম্পানি, ইন্ডাস্ট্রী ও আইটি প্রতিষ্ঠানে ব্যবহারিক
-              দক্ষতা অর্জনে অগ্রসর হয়। তাদেরই ডেভেলপমেন্ট, ডিজাইন ও
-              নেটওয়ার্কিং ইত্যাদি বিষয়ের উপর দক্ষ করে তুলতে ও দক্ষ জনশক্তি
-              তৈরি তে অবদান রাখতে আমাদের এই আয়োজন।
-            </p>
-
-            <div class="industrial-course-btn">
-              <a href="./about.html" class="more-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                যোগাযোগ করুন
-              </a>
-              <a href="./contact.html" class="more-btn ms-3">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                রেজিস্ট্রেশন করুন
-              </a>
+          <div class="col-lg-7">
+            <div class="industrial-hero-content">
+              <p>ডিপ্লোমা ইন ইন্জিনিয়ারিং - ইন্ডাষ্ট্রীয়াল এ্যাটাচম্যান্ট অন</p>
+              <h1>
+                ওয়েবসাইট ডিজাইন ও <br />
+                ডেভেলপমেন্ট
+              </h1>
             </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <div class="industrial-course-card">
-            <p>কোর্সের মেয়াদ</p>
-            <h4>৩ মাস</h4>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="industrial-course-card">
-            <p>ক্লাস সংখ্যা</p>
-            <h4>৩৬ টি</h4>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="industrial-course-card">
-            <p>প্রোজেক্ট</p>
-            <h4>৩ টি</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- industrial course end -->
+    </section>
+    <!-- industrial Hero End -->
 
-  <!-- industrial module -->
-  <section id="module">
-    <div class="module-side-img">
-      <img src="./img/industrial-traning/module-side-image.svg" alt="" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="module-header">
-            <h1>ওভারভিউ ও মডিউল</h1>
-            <div class="module-devider"></div>
-          </div>
-        </div>
-      </div>
+    <!-- industrial course start -->
+    <section id="industrial-course">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="industrial-course-desc">
+              <p>
+                আমাদের এই কোর্স টি সাজানো হয়েছে ডিপ্লোমা-ইন-কম্পিউটার
+                ইঞ্জিনিয়ারিং এর ৮ম পর্বের ইন্ডাস্ট্রিয়াল ট্রেনিং এর জন্য।
+                বাংলাদেশে প্রতিবছর ৪৯ টি সরকারি ও অসংখ্য বেসরকারি পলিটেকনিক
+                ইন্সটিটিউট থেকে ছাত্র-ছাত্রীরা তাদের তাত্ত্বিক জ্ঞান নেওয়া শেষ
+                করে বিভিন্ন কোম্পানি, ইন্ডাস্ট্রী ও আইটি প্রতিষ্ঠানে ব্যবহারিক
+                দক্ষতা অর্জনে অগ্রসর হয়। তাদেরই ডেভেলপমেন্ট, ডিজাইন ও
+                নেটওয়ার্কিং ইত্যাদি বিষয়ের উপর দক্ষ করে তুলতে ও দক্ষ জনশক্তি
+                তৈরি তে অবদান রাখতে আমাদের এই আয়োজন।
+              </p>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="industrial-module-desc">
-            <p>
-              বিশ্বব্যাপী প্রতি মুহূর্তে তৈরি হচ্ছে হাজার হাজার ওয়েবসাইট। শখের
-              কাজ কিংবা পরিপূর্ণ ব্যবসা সব ধরণের কাজের পরিচয় বহন করে ওয়েবসাইট।
-              এজন্যই ডিজিটাল প্ল্যাটফর্মে ক্যারিয়ার হিসেবে ওয়েব ডিজাইনারের বেশ
-              চাহিদা রয়েছে। তাই আপনি যদি ওয়েব ডিজাইনার হিসেবে ক্যারিয়ার গড়তে
-              চান, তাহলে আপনার জন্যই আমাদের Web Design Course.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- industrial module -->
-
-  <!-- industrial overview -->
-  <section id="overview">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="overview-header">
-            <h4>যে যে বিষয় শেখানো হবে :</h4>
-            <div class="overview-devider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/html-icon.svg" alt="" />
-                <p>HTML 5</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/css-icon.svg" alt="" />
-                <p>CSS 3</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/bootsrap-icon.svg" alt="" />
-                <p>Bootstrap</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/wordpress-icon.svg" alt="" />
-                <p>Wordpress</p>
+              <div class="industrial-course-btn">
+                <a href="./about.html" class="more-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  যোগাযোগ করুন
+                </a>
+                <a href="./contact.html" class="more-btn ms-3">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  রেজিস্ট্রেশন করুন
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="industrial-course-card">
+              <p>কোর্সের মেয়াদ</p>
+              <h4>৩ মাস</h4>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="industrial-course-card">
+              <p>ক্লাস সংখ্যা</p>
+              <h4>৩৬ টি</h4>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="industrial-course-card">
+              <p>প্রোজেক্ট</p>
+              <h4>৩ টি</h4>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- industrial course end -->
 
-      <!-- <div class="row justify-content-center">
+    <!-- industrial module -->
+    <section id="module">
+      <div class="module-side-img">
+        <img src="./img/industrial-traning/module-side-image.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="module-header">
+              <h1>ওভারভিউ ও মডিউল</h1>
+              <div class="module-devider"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="industrial-module-desc">
+              <p>
+                বিশ্বব্যাপী প্রতি মুহূর্তে তৈরি হচ্ছে হাজার হাজার ওয়েবসাইট। শখের
+                কাজ কিংবা পরিপূর্ণ ব্যবসা সব ধরণের কাজের পরিচয় বহন করে ওয়েবসাইট।
+                এজন্যই ডিজিটাল প্ল্যাটফর্মে ক্যারিয়ার হিসেবে ওয়েব ডিজাইনারের বেশ
+                চাহিদা রয়েছে। তাই আপনি যদি ওয়েব ডিজাইনার হিসেবে ক্যারিয়ার গড়তে
+                চান, তাহলে আপনার জন্যই আমাদের Web Design Course.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- industrial module -->
+
+    <!-- industrial overview -->
+    <section id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="overview-header">
+              <h4>যে যে বিষয় শেখানো হবে :</h4>
+              <div class="overview-devider"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img src="./img/industrial-traning/html-icon.svg" alt="" />
+                  <p>HTML 5</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img src="./img/industrial-traning/css-icon.svg" alt="" />
+                  <p>CSS 3</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img
+                    src="./img/industrial-traning/bootsrap-icon.svg"
+                    alt=""
+                  />
+                  <p>Bootstrap</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img
+                    src="./img/industrial-traning/wordpress-icon.svg"
+                    alt=""
+                  />
+                  <p>Wordpress</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="industrial-overview-desc">
             <h4>দৈনিক অ্যাসাইনমেন্ট</h4>
@@ -325,414 +375,505 @@
         </div>
       </div> -->
 
-      <div class="row justify-content-center">
-        <div class="col-sm-12">
-          <div class="overview-technology-header">
-            <h1>যেসকল টেকনোলজী ব্যবহার করে শেখানো হবে</h1>
-            <div class="technology-devider"></div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/vs-code-icon.svg" alt="" />
-                <p>VS Code</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/chrome-icon.svg" alt="" />
-                <p>Chrome</p>
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+            <div class="overview-technology-header">
+              <h1>যেসকল টেকনোলজী ব্যবহার করে শেখানো হবে</h1>
+              <div class="technology-devider"></div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/xampp-icon.svg" alt="" />
-                <p>Xampp</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="overview-subject-icon">
-                <img src="./img/industrial-traning/figma-icon.svg" alt="" />
-                <p>Figma</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- industrial overview -->
-
-  <!-- industrial feature -->
-  <section id="industrial-feature">
-    <div class="industrial-feature-shape">
-      <img src="./img/industrial-traning/feature-top-shape.svg" alt="" class="feature-top-shape" />
-      <img src="./img/industrial-traning/feature-bottom-shape.svg" alt="" class="feature-bottom-shape" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="industrial-feature-header">
-            <h1>আমাদের বৈশিষ্ঠ্যসমূহ</h1>
-            <div class="feature-devider"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="industrial-feature-card">
-            <img src="./img/industrial-traning/feature-icon-1.svg" alt="" />
-            <p>প্রতিদিনের ক্লাস শেষে অ্যাসাইনমেন্ট প্রদান ও গ্রহণ ।</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="industrial-feature-card">
-            <img src="./img/industrial-traning/feature-icon-2.svg" alt="" />
-            <p>কারিকুলাম কভার শেষে প্রজেক্ট বা টেমপ্লেট নিয়ে কাজ ।</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="industrial-feature-card">
-            <img src="./img/industrial-traning/feature-icon-3.svg" alt="" />
-            <p>দক্ষ ইন্সট্রাক্টরদের দ্বারা সার্বক্ষণীক দেখাশোনা ।</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="industrial-feature-card">
-            <img src="./img/industrial-traning/feature-icon-4.svg" alt="" />
-            <p>ট্রেনিং শেষে জব বা মার্কেটপ্লেসে কাজ করার উপযুক্ত ।</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="industrial-feature-card">
-            <img src="./img/industrial-traning/feature-icon-5.svg" alt="" />
-            <p>
-              অফিসিয়াল ডেকোরিয়াম সম্পর্কে ধারণা প্রদান, যাতে জবে ঢুকতে সহজ হয়
-              ।
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="industrial-feature-card">
-            <img src="./img/industrial-traning/feature-icon-5.svg" alt="" />
-            <p>
-              অফিসিয়াল ডেকোরিয়াম সম্পর্কে ধারণা প্রদান, যাতে জবে ঢুকতে সহজ হয়
-              ।
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- industrial feature -->
-
-  <!-- support start -->
-  <section id="support">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6">
-          <div class="support_image">
-            <img src="./img/industrial-traning/support.png" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="support_content">
-            <p>
-              কোর্স চলাকালীন ও পরবর্তীতে কমিউনিটি <br />
-              থেকে লাইফ টাইম হেল্প ।
-            </p>
-
-            <div class="support_btn">
-              <a href="https://www.facebook.com/groups/cnitscommunity/" class="more-btn active" target="_blank">
-                কমিউনিটিতে ভিজিট করুন
-              </a>
-              <a href="https://www.facebook.com/groups/pabnafreelancercomm/" class="more-btn ms-3" target="_blank">
-                PFC কমিউনিটি
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- support end -->
-
-  <!-- industrial student comment -->
-  <section id="students-comment">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="industrial-students-comment">
-            <h1>শিক্ষার্থীদের মন্তব্য</h1>
-            <div class="students-devider"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="students-comment-card">
-            <p>
-              ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
-              আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
-              উপযোগী পরিবেশ প্রদান করে। ”
-            </p>
-            <img src="./img/industrial-traning/students-avatar.png" alt="" />
-          </div>
-          <div class="students-comment-info">
-            <h5>মো: সিয়াম হোসাইন</h5>
-            <p>পাবনা পলিটেকনিক ইনস্টিটিউট, পাবনা</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="students-comment-card">
-            <p>
-              ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
-              আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
-              উপযোগী পরিবেশ প্রদান করে। ”
-            </p>
-            <img src="./img/industrial-traning/students-avatar.png" alt="" />
-          </div>
-          <div class="students-comment-info">
-            <h5>মো: নুর ইসলাম</h5>
-            <p>ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি, ঢাকা</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="students-comment-card">
-            <p>
-              ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
-              আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
-              উপযোগী পরিবেশ প্রদান করে। ”
-            </p>
-            <img src="./img/industrial-traning/students-avatar.png" alt="" />
-          </div>
-          <div class="students-comment-info">
-            <h5>মোঃ সোহান প্রামানিক</h5>
-            <p>পাবনা পলিটেকনিক ইনস্টিটিউট, পাবনা</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="students-comment-card">
-            <p>
-              ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
-              আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
-              উপযোগী পরিবেশ প্রদান করে। ”
-            </p>
-            <img src="./img/industrial-traning/students-avatar.png" alt="" />
-          </div>
-          <div class="students-comment-info">
-            <h5>মো: রাসেল বিশ্বাস</h5>
-            <p>পাবনা পলিটেকনিক ইনস্টিটিউট, পাবনা</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- industrial student comment -->
-
-  <!-- industrial faq -->
-  <section id="industrial-faq">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="industrial-students-comment">
-            <h1>আপনার জিজ্ঞাসা?</h1>
-            <div class="students-devider"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="faq-ask">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne">
-                    ইন্টার্ণশীপ/ ট্রেনিং/ কোর্স করার পর কোথায় কাজ করব বা জব
-                    অপরচুনিটি কি কি?
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                  aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="accordion-body faq_accordion_content">
-                    আমাদের ইন্টার্ণশীপ/ ট্রেনিং/ কোর্স সফলভাবে শেষ করার পর
-                    আপনি অনলাইন মার্কেটপ্লেস গুলোতে ফ্রিল্যান্সিং ওয়ার্ক, ঘরে
-                    বসে দেশ-বিদেশের কোম্পানিতে রিমোট জব, লোকাল ক্লায়েন্টের
-                    সাথে কাজ অথবা, কোডনেক্সট আইটি টীমের সাথে কাজ করতে পারবেন।
-                    কাজ বা জব এর অপরচুনিটি সমূহঃ-
-                    <p><b>⇒ অনলাইন মার্কেটপ্লেস থেকে -</b></p>
-                    <p>১। আপওয়ার্ক (<a href="#">www.upwork.com</a>)</p>
-                    <p>২। ফাইভার (<a href="#">www.fiverr.com</a>)</p>
-                    <p>
-                      ৩। ফ্রিল্যান্সার.কম (<a href="#">www.freelancer.com</a>)
-                    </p>
-                    <p>৪। Turing (<a href="#">www.turing.com</a>)</p>
-                    <p>
-                      ৫। বিভিন্ন দেশ ও বিদেশী রিমোট জব (<a href="#">Workplace, WeWorkRemotely, Indeed, LinkedIn</a>,
-                      etc.)
-                    </p>
-
-                    <p><b>⇒ কোডনেক্সট আইটির অফারস (শর্ত সাপেক্ষে)-</b></p>
-                    <p>১। প্রজেক্ট বেসড ওয়ার্ক পেমেন্ট</p>
-                    <p>২। এমপ্লয়ি হায়ারিং</p>
-                  </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img src="./img/industrial-traning/vs-code-icon.svg" alt="" />
+                  <p>VS Code</p>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo">
-                    ডিপ্লোমা ইন কম্পিউটার ইঞ্জিনিয়ারিং এর ইন্ডাস্ট্রিয়াল
-                    ট্রেনিং সফলভাবে শেষ করার পর আমি কি কোডনেক্সট আইটি তে জব
-                    করার সুযোগ পাবো?
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
-                    হ্যা অবশ্যই, আপনি যদি সফল ভাবে ডিপ্লোমা ইন কম্পিউটার
-                    ইঞ্জিনিয়ারিং এর ইন্ডাস্ট্রিয়াল ট্রেনিং শেষ করে সংশ্লিষ্ট
-                    বিষয়ে ভালো দক্ষতা অর্জন করতে পারেন, এবং আমাদের দেওয়া
-                    প্রজেক্টগুলো আমাদের প্রত্যাশা অনুযায়ী করতে পারেন, আপনিও
-                    আমাদের টিমের সাথে কাজ করার বা এমপ্লয়ি হওয়ার সুযোগ পাবেন।
-                  </div>
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img src="./img/industrial-traning/chrome-icon.svg" alt="" />
+                  <p>Chrome</p>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree">
-                    ট্রেনিং বা ইন্ডাস্ট্রিয়াল অ্যাটাচমেন্ট শেষ করে আমি কি অন্য
-                    কোন প্রতিষ্ঠানে জব করার মত অভিজ্ঞতা বা আফিসিয়াল নিয়ম-কানুন
-                    সম্পর্কে জানতে পারবো?
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                  aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
-                    আমাদের কোর্স/ ট্রেনিং এর বৈশিষ্ট্যই হল, মূল কাজ শেখানোর
-                    পাশাপাশি আপনাকে জব ইন্টারভিউ এর জন্য রেডি ও অফিস
-                    এনভায়রনমেন্টে কাজ করার মন মানসিকতা তৈরী করা। পাশাপাশি
-                    মার্কেটপ্লেসে বা রিমোট জব করার সুবিধার্থে রয়েছে বিশেষ
-                    ইংলিশ লার্নিং ক্লাসের ব্যবস্থা। তাই, আপনি চাইলে আমাদের
-                    কোর্স/ ট্রেনিং শেষ করেই জব বা অন্যান্য কাজে ভালো হেল্প
-                    পাবেন। আর সাথে তো কোর্স/ ট্রেনিং শেষে লাইফটাইম কমিউনিটি
-                    হেল্প তো থাকছেই।
-                  </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img src="./img/industrial-traning/xampp-icon.svg" alt="" />
+                  <p>Xampp</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="overview-subject-icon">
+                  <img src="./img/industrial-traning/figma-icon.svg" alt="" />
+                  <p>Figma</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- industrial overview -->
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="faq-contacts">
-            <div>
-              কোর্স ফি ও বিস্তরিত জানতে যোগাযোগ করুন:
-              <img src="./img/industrial-traning/feature-divider.svg" alt="" />
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:01788428280">০১৭৮৮-৪২৮২৮০</a>
+    <!-- industrial feature -->
+    <section id="industrial-feature">
+      <div class="industrial-feature-shape">
+        <img
+          src="./img/industrial-traning/feature-top-shape.svg"
+          alt=""
+          class="feature-top-shape"
+        />
+        <img
+          src="./img/industrial-traning/feature-bottom-shape.svg"
+          alt=""
+          class="feature-bottom-shape"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="industrial-feature-header">
+              <h1>আমাদের বৈশিষ্ঠ্যসমূহ</h1>
+              <div class="feature-devider"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="industrial-feature-card">
+              <img src="./img/industrial-traning/feature-icon-1.svg" alt="" />
+              <p>প্রতিদিনের ক্লাস শেষে অ্যাসাইনমেন্ট প্রদান ও গ্রহণ ।</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="industrial-feature-card">
+              <img src="./img/industrial-traning/feature-icon-2.svg" alt="" />
+              <p>কারিকুলাম কভার শেষে প্রজেক্ট বা টেমপ্লেট নিয়ে কাজ ।</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="industrial-feature-card">
+              <img src="./img/industrial-traning/feature-icon-3.svg" alt="" />
+              <p>দক্ষ ইন্সট্রাক্টরদের দ্বারা সার্বক্ষণীক দেখাশোনা ।</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="industrial-feature-card">
+              <img src="./img/industrial-traning/feature-icon-4.svg" alt="" />
+              <p>ট্রেনিং শেষে জব বা মার্কেটপ্লেসে কাজ করার উপযুক্ত ।</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="industrial-feature-card">
+              <img src="./img/industrial-traning/feature-icon-5.svg" alt="" />
+              <p>
+                অফিসিয়াল ডেকোরিয়াম সম্পর্কে ধারণা প্রদান, যাতে জবে ঢুকতে সহজ হয়
+                ।
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="industrial-feature-card">
+              <img src="./img/industrial-traning/feature-icon-5.svg" alt="" />
+              <p>
+                অফিসিয়াল ডেকোরিয়াম সম্পর্কে ধারণা প্রদান, যাতে জবে ঢুকতে সহজ হয়
+                ।
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- industrial faq -->
+    </section>
+    <!-- industrial feature -->
 
-  <!-- Footer Section Start -->
-  <section class="footer" id="footer-contact" style="background-image: url(./img/footer-section-bg.png)">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row align-items-center pt-5">
-            <div class="col-lg-6">
-              <div class="footer-contact-items">
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-address.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
-                      পাবনা
-                    </h4>
-                  </div>
-                </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-phn-2.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4><a href="tel:01788428280">+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</a></h4>
-                    <h4><a href="tel:01313793313">+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</a></h4>
-                  </div>
-                </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-mail-3.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      <a href="mailto: codenextit@gmail.com">codenextit@gmail.com</a>
-                    </h4>
-                    <h4>
-                      <a href="mailto: info@codenextit.com">info@codenextit.com</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-items-divider">
-                <img src="./img/vertical-line.png" alt="" />
-              </div>
+    <!-- support start -->
+    <section id="support">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <div class="support_image">
+              <img src="./img/industrial-traning/support.png" alt="" />
             </div>
-            <div class="col-lg-6">
-              <div class="footer-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
-                  width="100%" height="400" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-6">
+            <div class="support_content">
+              <p>
+                কোর্স চলাকালীন ও পরবর্তীতে কমিউনিটি <br />
+                থেকে লাইফ টাইম হেল্প ।
+              </p>
+
+              <div class="support_btn">
+                <a
+                  href="https://www.facebook.com/groups/cnitscommunity/"
+                  class="more-btn active"
+                  target="_blank"
+                >
+                  কমিউনিটিতে ভিজিট করুন
+                </a>
+                <a
+                  href="https://www.facebook.com/groups/pabnafreelancercomm/"
+                  class="more-btn ms-3"
+                  target="_blank"
+                >
+                  PFC কমিউনিটি
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Footer Section End -->
+    </section>
+    <!-- support end -->
 
-  <!-- Copyright Footer Section Start -->
-  <section class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="copyright-title">
-            <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+    <!-- industrial student comment -->
+    <section id="students-comment">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="industrial-students-comment">
+              <h1>শিক্ষার্থীদের মন্তব্য</h1>
+              <div class="students-devider"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="students-comment-card">
+              <p>
+                ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
+                আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
+                উপযোগী পরিবেশ প্রদান করে। ”
+              </p>
+              <img src="./img/industrial-traning/students-avatar.png" alt="" />
+            </div>
+            <div class="students-comment-info">
+              <h5>মো: সিয়াম হোসাইন</h5>
+              <p>পাবনা পলিটেকনিক ইনস্টিটিউট, পাবনা</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="students-comment-card">
+              <p>
+                ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
+                আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
+                উপযোগী পরিবেশ প্রদান করে। ”
+              </p>
+              <img src="./img/industrial-traning/students-avatar.png" alt="" />
+            </div>
+            <div class="students-comment-info">
+              <h5>মো: নুর ইসলাম</h5>
+              <p>ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি, ঢাকা</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="students-comment-card">
+              <p>
+                ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
+                আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
+                উপযোগী পরিবেশ প্রদান করে। ”
+              </p>
+              <img src="./img/industrial-traning/students-avatar.png" alt="" />
+            </div>
+            <div class="students-comment-info">
+              <h5>মোঃ সোহান প্রামানিক</h5>
+              <p>পাবনা পলিটেকনিক ইনস্টিটিউট, পাবনা</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="students-comment-card">
+              <p>
+                ” শিক্ষার জন্য শীর্ষস্থানীয় প্রতিষ্ঠানগুলির মধ্যে একটি। তারা
+                আমাদেরকে অত্যন্ত তথ্যপূর্ণ পদ্ধতিতে শেখায় এবং সেই সঙ্গে শেখার
+                উপযোগী পরিবেশ প্রদান করে। ”
+              </p>
+              <img src="./img/industrial-traning/students-avatar.png" alt="" />
+            </div>
+            <div class="students-comment-info">
+              <h5>মো: রাসেল বিশ্বাস</h5>
+              <p>পাবনা পলিটেকনিক ইনস্টিটিউট, পাবনা</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="back-to-top">
-      <a class="back-top-icon" href="#top" id="bt-top">
-        <img src="./icons/back-top-ico.png" alt="" />
-      </a>
-    </div>
-  </section>
-  <!-- Copyright Footer Section Start -->
-</body>
+    </section>
+    <!-- industrial student comment -->
 
+    <!-- industrial faq -->
+    <section id="industrial-faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="industrial-students-comment">
+              <h1>আপনার জিজ্ঞাসা?</h1>
+              <div class="students-devider"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="faq-ask">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      ইন্টার্ণশীপ/ ট্রেনিং/ কোর্স করার পর কোথায় কাজ করব বা জব
+                      অপরচুনিটি কি কি?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body faq_accordion_content">
+                      আমাদের ইন্টার্ণশীপ/ ট্রেনিং/ কোর্স সফলভাবে শেষ করার পর
+                      আপনি অনলাইন মার্কেটপ্লেস গুলোতে ফ্রিল্যান্সিং ওয়ার্ক, ঘরে
+                      বসে দেশ-বিদেশের কোম্পানিতে রিমোট জব, লোকাল ক্লায়েন্টের
+                      সাথে কাজ অথবা, কোডনেক্সট আইটি টীমের সাথে কাজ করতে পারবেন।
+                      কাজ বা জব এর অপরচুনিটি সমূহঃ-
+                      <p><b>⇒ অনলাইন মার্কেটপ্লেস থেকে -</b></p>
+                      <p>১। আপওয়ার্ক (<a href="#">www.upwork.com</a>)</p>
+                      <p>২। ফাইভার (<a href="#">www.fiverr.com</a>)</p>
+                      <p>
+                        ৩। ফ্রিল্যান্সার.কম (<a href="#">www.freelancer.com</a>)
+                      </p>
+                      <p>৪। Turing (<a href="#">www.turing.com</a>)</p>
+                      <p>
+                        ৫। বিভিন্ন দেশ ও বিদেশী রিমোট জব (<a href="#"
+                          >Workplace, WeWorkRemotely, Indeed, LinkedIn</a
+                        >, etc.)
+                      </p>
+
+                      <p><b>⇒ কোডনেক্সট আইটির অফারস (শর্ত সাপেক্ষে)-</b></p>
+                      <p>১। প্রজেক্ট বেসড ওয়ার্ক পেমেন্ট</p>
+                      <p>২। এমপ্লয়ি হায়ারিং</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      ডিপ্লোমা ইন কম্পিউটার ইঞ্জিনিয়ারিং এর ইন্ডাস্ট্রিয়াল
+                      ট্রেনিং সফলভাবে শেষ করার পর আমি কি কোডনেক্সট আইটি তে জব
+                      করার সুযোগ পাবো?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      হ্যা অবশ্যই, আপনি যদি সফল ভাবে ডিপ্লোমা ইন কম্পিউটার
+                      ইঞ্জিনিয়ারিং এর ইন্ডাস্ট্রিয়াল ট্রেনিং শেষ করে সংশ্লিষ্ট
+                      বিষয়ে ভালো দক্ষতা অর্জন করতে পারেন, এবং আমাদের দেওয়া
+                      প্রজেক্টগুলো আমাদের প্রত্যাশা অনুযায়ী করতে পারেন, আপনিও
+                      আমাদের টিমের সাথে কাজ করার বা এমপ্লয়ি হওয়ার সুযোগ পাবেন।
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      ট্রেনিং বা ইন্ডাস্ট্রিয়াল অ্যাটাচমেন্ট শেষ করে আমি কি অন্য
+                      কোন প্রতিষ্ঠানে জব করার মত অভিজ্ঞতা বা আফিসিয়াল নিয়ম-কানুন
+                      সম্পর্কে জানতে পারবো?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree"
+                  >
+                    <div class="accordion-body">
+                      আমাদের কোর্স/ ট্রেনিং এর বৈশিষ্ট্যই হল, মূল কাজ শেখানোর
+                      পাশাপাশি আপনাকে জব ইন্টারভিউ এর জন্য রেডি ও অফিস
+                      এনভায়রনমেন্টে কাজ করার মন মানসিকতা তৈরী করা। পাশাপাশি
+                      মার্কেটপ্লেসে বা রিমোট জব করার সুবিধার্থে রয়েছে বিশেষ
+                      ইংলিশ লার্নিং ক্লাসের ব্যবস্থা। তাই, আপনি চাইলে আমাদের
+                      কোর্স/ ট্রেনিং শেষ করেই জব বা অন্যান্য কাজে ভালো হেল্প
+                      পাবেন। আর সাথে তো কোর্স/ ট্রেনিং শেষে লাইফটাইম কমিউনিটি
+                      হেল্প তো থাকছেই।
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="faq-contacts">
+              <div>
+                কোর্স ফি ও বিস্তরিত জানতে যোগাযোগ করুন:
+                <img
+                  src="./img/industrial-traning/feature-divider.svg"
+                  alt=""
+                />
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:01788428280">০১৭৮৮-৪২৮২৮০</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- industrial faq -->
+
+    <!-- Footer Section Start -->
+    <section
+      class="footer"
+      id="footer-contact"
+      style="background-image: url(./img/footer-section-bg.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center pt-5">
+              <div class="col-lg-6">
+                <div class="footer-contact-items">
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-address.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        হাজী আকবর আলী সুপার মার্কেট (৫ম তলা), আব্দুল হামিদ রোড,
+                        পাবনা
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-phn-2.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4><a href="tel:01788428280">+৮৮০ ০১৭৮৮ ৪২৮ ২৮০</a></h4>
+                      <h4><a href="tel:01313793313">+৮৮০ ০১৩০০ ৭৯৩ ৩১৩</a></h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-mail-3.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        <a href="mailto: codenextit@gmail.com"
+                          >codenextit@gmail.com</a
+                        >
+                      </h4>
+                      <h4>
+                        <a href="mailto: info@codenextit.com"
+                          >info@codenextit.com</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-items-divider">
+                  <img src="./img/vertical-line.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
+                    width="100%"
+                    height="400"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Copyright Footer Section Start -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="copyright-title">
+              <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-to-top">
+        <a class="back-top-icon" href="#top" id="bt-top">
+          <img src="./icons/back-top-ico.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- Copyright Footer Section Start -->
+
+    <!-- cursor -->
+    <div class="circle"></div>
+    <div class="circle-follow"></div>
+    <!-- cursor -->
+
+    <!-- Custom Js -->
+    <script src="./js/all.js"></script>
+    <!-- Custom Js -->
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      // cursor
+      var $circle = $(".circle"),
+        $follow = $(".circle-follow");
+
+      function moveCircle(e) {
+        TweenLite.to($circle, 0.3, {
+          x: e.clientX,
+          y: e.clientY,
+        });
+        TweenLite.to($follow, 0.7, {
+          x: e.clientX,
+          y: e.clientY,
+        });
+      }
+
+      $(window).on("mousemove", moveCircle);
+    </script>
+  </body>
 </html>
