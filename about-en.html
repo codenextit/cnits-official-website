@@ -499,10 +499,42 @@
   </section>
   <!-- Copyright Footer Section Start -->
 
+  <!-- cursor -->
+  <div class="circle"></div>
+  <div class="circle-follow"></div>
+  <!-- cursor -->
+
   <!-- Custom Js -->
   <script src="./js/customer-logo-carousel.js"></script>
   <script src="./js/all.js"></script>
   <!-- Custom Js -->
+
+  <!-- GSAP CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script>
+    // cursor
+    var $circle = $(".circle"),
+      $follow = $(".circle-follow");
+
+    function moveCircle(e) {
+      TweenLite.to($circle, 0.3, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+      TweenLite.to($follow, 0.7, {
+        x: e.clientX,
+        y: e.clientY,
+      });
+    }
+
+    $(window).on("mousemove", moveCircle);
+  </script>
 </body>
 
 </html>

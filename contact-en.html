@@ -1,376 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Open New Door of Possibilities</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Open New Door of Possibilities</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./icons/cnit-favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Favicon -->
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./icons/cnit-favicon.png" type="image/x-icon" />
-  <!-- Favicon -->
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style-en.css" />
+    <!-- CSS Link -->
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="./style-en.css" />
-  <!-- CSS Link -->
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
 
-  <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Link -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <!-- JavaScript Bundle with Popper -->
+    <!-- Fontawesome Kit -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <!-- Fontawesome Kit -->
 
-  <!-- Fontawesome Kit -->
-  <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.min.css" />
-  <!-- Fontawesome Kit -->
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery CDN -->
 
-  <!-- Jquery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- Jquery CDN -->
+    <!-- CDN Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- CDN Js -->
+  </head>
 
-  <!-- CDN Js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <!-- CDN Js -->
-</head>
+  <body>
+    <!--Fb Chat Plugin-->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
-<body>
-  <!--Fb Chat Plugin-->
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "327323588671794");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
-  <script>
-    var chatbox = document.getElementById("fb-customer-chat");
-    chatbox.setAttribute("page_id", "327323588671794");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v17.0",
+        });
+      };
 
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: "v17.0",
-      });
-    };
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!--Fb Chat Plugin-->
 
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
-  </script>
-  <!--Fb Chat Plugin-->
-
-  <!-- Main Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
-    <div class="container">
-      <a href="./index.html">
-        <img src="./img/cnits-logo-main.png" alt="cnit-main-logo" class="logo-main" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio-en.html">Portfolio</a>
-          </li>
-          <!-- <li class="nav-item">
+    <!-- Main Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a href="./index.html">
+          <img
+            src="./img/cnits-logo-main.png"
+            alt="cnit-main-logo"
+            class="logo-main"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio-en.html">Portfolio</a>
+            </li>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="./web-hosting-en.html">Web hosting</a>
           </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Career</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="./industrial-traning-en.html">Industrial Traning</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about-en.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact-en.html">Contact Us</a>
-          </li>
-        </ul>
-        <a class="course-btn" href="./contact.html">বাংলা</a>
-      </div>
-    </div>
-  </nav>
-  <!-- Main Navbar End -->
-
-  <!-- Contact Hero Start -->
-  <section id="contact-hero">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-5">
-          <div class="contact-hero-image">
-            <img src="./img/contact/20943953 [Converted] 1.png" />
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="contact-hero-content">
-            <h1 class="float-lg-end">Contact</h1>
-            <p class="float-lg-end">
-              Share your Project, Idea With Us or Get Skilled...
-            </p>
-            <a href="tel:01788428280" class="contact-hero-btn float-lg-end">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Call
-            </a>
-          </div>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Career</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./industrial-traning-en.html"
+                    >Industrial Traning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-en.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-en.html">Contact Us</a>
+            </li>
+          </ul>
+          <a class="course-btn" href="./contact.html">বাংলা</a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Contact Hero End -->
+    </nav>
+    <!-- Main Navbar End -->
 
-  <!-- Contact Form Start -->
-  <section id="contact-form">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-form-header">
-            <h1>Inbox your Queries</h1>
+    <!-- Contact Hero Start -->
+    <section id="contact-hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5">
+            <div class="contact-hero-image">
+              <img src="./img/contact/20943953 [Converted] 1.png" />
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="main-contact-form">
-            <form method="post" name="submit-to-google-sheet">
-              <input type="text" name="name" id="name" placeholder="Your Name" class="form-control"
-                aria-autocomplete="list" required />
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="email" name="email" id="email" placeholder="E-Mail" class="form-control"
-                    aria-autocomplete="list" required />
-                </div>
-                <div class="col-md-6">
-                  <input type="number" name="number" id="number" placeholder="Mobile" class="form-control"
-                    aria-autocomplete="list" required />
-                </div>
-              </div>
-              <textarea name="message" id="message" cols="30" placeholder="Details..." class="form-control"></textarea>
-              <div class="contact-form-btn text-center">
-                <button type="submit" class="cnt-frm-btn" id="contact-form-btn">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  Submit
-                </button>
-              </div>
-
-              <div class="success-failed-message">
-                <div class="success" id="success">
-                  Thank you for contacting with us, We will get back to you
-                  soon, keep in touch.
-                </div>
-                <div class="danger" id="danger">
-                  Please Enter Your Correct Information?
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact Form End -->
-
-  <!-- Quick Info Start -->
-  <section id="quick-info">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="quick-info-course text-center">
-            <h1>Website development</h1>
-            <p>
-              Web Development, Software Development, App development, UI/UX
-              Design, Graphics Design etc. working in different sectors We are
-              building some of our own digital products and strong
-              portfolio...
-            </p>
-            <div class="quick-info-btn d-flex">
-              <a href="#footer-contact" class="m-auto">
+          <div class="col-lg-5">
+            <div class="contact-hero-content">
+              <h1 class="float-lg-end">Contact</h1>
+              <p class="float-lg-end">
+                Share your Project, Idea With Us or Get Skilled...
+              </p>
+              <a href="tel:01788428280" class="contact-hero-btn float-lg-end">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Start
+                Call
               </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Contact Hero End -->
 
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="quick-info-course text-center">
-            <h1>Web Hosting</h1>
-            <p>
-              Web Development, Software Development, App development, UI/UX
-              Design, Graphics Design etc. working in different sectors We are
-              building some of our own digital products and strong
-              portfolio...
-            </p>
-            <div class="quick-info-btn d-flex">
-              <a href="./web-hosting.html" class="m-auto">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Start
-              </a>
+    <!-- Contact Form Start -->
+    <section id="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-form-header">
+              <h1>Inbox your Queries</h1>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="quick-info-course text-center">
-            <h1>Course / Training</h1>
-            <p>
-              Web Development, Software Development, App development, UI/UX
-              Design, Graphics Design etc. working in different sectors We are
-              building some of our own digital products and strong
-              portfolio...
-            </p>
-            <div class="quick-info-btn d-flex">
-              <a href="#" class="m-auto">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Start
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Quick Info end -->
-
-  <!-- Footer Section Start -->
-  <section class="footer" id="footer-contact" style="background-image: url(./img/footer-section-bg.png)">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row align-items-center pt-5">
-            <div class="col-lg-6">
-              <div class="footer-contact-items">
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-address.png" alt="" />
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="main-contact-form">
+              <form method="post" name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                  class="form-control"
+                  aria-autocomplete="list"
+                  required
+                />
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="E-Mail"
+                      class="form-control"
+                      aria-autocomplete="list"
+                      required
+                    />
                   </div>
-                  <div class="item-1-text">
-                    <h4>
-                      Hazi Akbar Ali Super Market (4th Floor), Abdul Hamid
-                      Road, Pabna
-                    </h4>
+                  <div class="col-md-6">
+                    <input
+                      type="number"
+                      name="number"
+                      id="number"
+                      placeholder="Mobile"
+                      class="form-control"
+                      aria-autocomplete="list"
+                      required
+                    />
                   </div>
                 </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-phn-2.png" alt="" />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  placeholder="Details..."
+                  class="form-control"
+                ></textarea>
+                <div class="contact-form-btn text-center">
+                  <button
+                    type="submit"
+                    class="cnt-frm-btn"
+                    id="contact-form-btn"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                  </button>
+                </div>
+
+                <div class="success-failed-message">
+                  <div class="success" id="success">
+                    Thank you for contacting with us, We will get back to you
+                    soon, keep in touch.
                   </div>
-                  <div class="item-1-text">
-                    <h4><a href="tel:01788428280">+880 01788 428 280</a></h4>
-                    <h4><a href="tel:01313793313">+880 01300 793 313</a></h4>
+                  <div class="danger" id="danger">
+                    Please Enter Your Correct Information?
                   </div>
                 </div>
-                <div class="foot-contact-item-1">
-                  <div class="item-1-icon">
-                    <img src="./icons/footer-mail-3.png" alt="" />
-                  </div>
-                  <div class="item-1-text">
-                    <h4>
-                      <a href="mailto: codenextit@gmail.com">codenextit@gmail.com</a>
-                    </h4>
-                    <h4>
-                      <a href="mailto: info@codenextit.com">info@codenextit.com</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-items-divider">
-                <img src="./img/vertical-line.png" alt="" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form End -->
+
+    <!-- Quick Info Start -->
+    <section id="quick-info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="quick-info-course text-center">
+              <h1>Website development</h1>
+              <p>
+                Web Development, Software Development, App development, UI/UX
+                Design, Graphics Design etc. working in different sectors We are
+                building some of our own digital products and strong
+                portfolio...
+              </p>
+              <div class="quick-info-btn d-flex">
+                <a href="#footer-contact" class="m-auto">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Start
+                </a>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="footer-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
-                  width="100%" height="400" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="quick-info-course text-center">
+              <h1>Web Hosting</h1>
+              <p>
+                Web Development, Software Development, App development, UI/UX
+                Design, Graphics Design etc. working in different sectors We are
+                building some of our own digital products and strong
+                portfolio...
+              </p>
+              <div class="quick-info-btn d-flex">
+                <a href="./web-hosting.html" class="m-auto">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Start
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="quick-info-course text-center">
+              <h1>Course / Training</h1>
+              <p>
+                Web Development, Software Development, App development, UI/UX
+                Design, Graphics Design etc. working in different sectors We are
+                building some of our own digital products and strong
+                portfolio...
+              </p>
+              <div class="quick-info-btn d-flex">
+                <a href="#" class="m-auto">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Start
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Footer Section End -->
+    </section>
+    <!-- Quick Info end -->
 
-  <!-- Copyright Footer Section Start -->
-  <section class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="copyright-title">
-            <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+    <!-- Footer Section Start -->
+    <section
+      class="footer"
+      id="footer-contact"
+      style="background-image: url(./img/footer-section-bg.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center pt-5">
+              <div class="col-lg-6">
+                <div class="footer-contact-items">
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-address.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        Hazi Akbar Ali Super Market (4th Floor), Abdul Hamid
+                        Road, Pabna
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-phn-2.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4><a href="tel:01788428280">+880 01788 428 280</a></h4>
+                      <h4><a href="tel:01313793313">+880 01300 793 313</a></h4>
+                    </div>
+                  </div>
+                  <div class="foot-contact-item-1">
+                    <div class="item-1-icon">
+                      <img src="./icons/footer-mail-3.png" alt="" />
+                    </div>
+                    <div class="item-1-text">
+                      <h4>
+                        <a href="mailto: codenextit@gmail.com"
+                          >codenextit@gmail.com</a
+                        >
+                      </h4>
+                      <h4>
+                        <a href="mailto: info@codenextit.com"
+                          >info@codenextit.com</a
+                        >
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-items-divider">
+                  <img src="./img/vertical-line.png" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.5857040294874!2d89.23739731236037!3d24.006875784846272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b5b4a35c9e7%3A0xcb692fab6b815d87!2sCodeNext%20IT%20Solution!5e0!3m2!1sen!2sbd!4v1662076883379!5m2!1sen!2sbd"
+                    width="100%"
+                    height="400"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="back-to-top">
-      <a class="back-top-icon" href="#top" id="bt-top">
-        <img src="./icons/back-top-ico.png" alt="" />
-      </a>
-    </div>
-  </section>
-  <!-- Copyright Footer Section Start -->
+    </section>
+    <!-- Footer Section End -->
 
-  <!-- Custom Js -->
-  <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbz0m7y9Ei1ptYHvcFKPUHMPSKbUZJ48PODsEjoKA6tOnHXnaiddbOpSs-PgLFfU9m9lFQ/exec";
-    const form = document.forms["submit-to-google-sheet"];
+    <!-- Copyright Footer Section Start -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="copyright-title">
+              <p>Copyright 2023 © <b>CODE NEXT IT SOLUTION</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-to-top">
+        <a class="back-top-icon" href="#top" id="bt-top">
+          <img src="./icons/back-top-ico.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- Copyright Footer Section Start -->
 
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => console.log("Success!", response))
-        .catch((error) => console.error("Error!", error.message));
-    });
-  </script>
+    <!-- cursor -->
+    <div class="circle"></div>
+    <div class="circle-follow"></div>
+    <!-- cursor -->
 
-  <script src="./js/customer-logo-carousel.js"></script>
-  <script src="./js/all.js"></script>
-  <!-- Custom Js -->
-</body>
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <script>
+      // cursor
+      var $circle = $(".circle"),
+        $follow = $(".circle-follow");
+
+      function moveCircle(e) {
+        TweenLite.to($circle, 0.3, {
+          x: e.clientX,
+          y: e.clientY,
+        });
+        TweenLite.to($follow, 0.7, {
+          x: e.clientX,
+          y: e.clientY,
+        });
+      }
+
+      $(window).on("mousemove", moveCircle);
+    </script>
+
+    <!-- Custom Js -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz0m7y9Ei1ptYHvcFKPUHMPSKbUZJ48PODsEjoKA6tOnHXnaiddbOpSs-PgLFfU9m9lFQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script src="./js/customer-logo-carousel.js"></script>
+    <script src="./js/all.js"></script>
+    <!-- Custom Js -->
+  </body>
 </html>
