@@ -2041,7 +2041,7 @@ h4 {
 
 .packages {
   position: relative;
-  background: url(./img/hosting/packages-bg.png);
+  background: url(../img/hosting/packages-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2378,7 +2378,7 @@ h4 {
 .migration {
   position: relative;
   padding: 100px 0;
-  background: url(./img/hosting/migaration.png);
+  background: url(../img/hosting/migaration.png);
   width: 100%;
   height: 700px;
   background-position: bottom center;
@@ -2943,7 +2943,7 @@ h4 {
 #news-latter {
   width: 100%;
   height: 400px;
-  background: url(./img/about/about-shape-bg.png);
+  background: url(../img/about/about-shape-bg.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4134,7 +4134,7 @@ h4 {
 #module {
   position: relative;
   padding: 100px 0;
-  background: url(./img/industrial-traning/module-bg.svg);
+  background: url(../img/industrial-traning/module-bg.svg);
   width: 100%;
   height: 700px;
   background-position: bottom center;
