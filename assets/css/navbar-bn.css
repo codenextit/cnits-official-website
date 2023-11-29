@@ -62,6 +62,7 @@
   }
   
   .menu-item li a {
+    font-family: var(--header-font) !important;
     display: flex;
     font-size: 1.2em;
     text-decoration: none;
