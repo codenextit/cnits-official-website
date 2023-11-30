@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design | Course Page</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/cnit-favicon.png" type="image/x-icon" />
+    <!-- Favicon -->
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/web-design-course-en.css" />
+    <!-- CSS Link -->
+
+    <!-- Navbar CSS Link -->
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <!-- Navbar CSS Link -->
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Link -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+
+    <!-- font-awesome Kit -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <!-- font-awesome Kit -->
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery CDN -->
+
+    <!-- CDN Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- CDN Js -->
+</head>
+
+<body>
+
+    <!--Fb Chat Plugin-->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "327323588671794");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v17.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--Fb Chat Plugin-->
+
+    <!-- Nav Bar Start -->
+    <header id="navbar">
+        <div class="container">
+            <nav class="nav-bar">
+                <span class="nav-open"><i class="fa-solid fa-bars-staggered"></i></span>
+                <a href="./index.html" class="logo"><img src="./assets/img/cnits-logo-main.png" alt="" /></a>
+                <ul class="menu-item">
+                    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio-en.html">Portfolio</a>
+                    </li>
+                    <li id="dropdown_menu">
+                        <ul class="main-menu">
+                            <li>
+                                <a>Career
+                                    <span class="drop-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm1"><i
+                                            class="fa-solid fa-chevron-down"></i></label>
+                                </a>
+                                <input type="checkbox" id="sm1" />
+                                <ul class="sub-menu">
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">UI/UX Design</a></li>
+                                    <li><a href="#">Industrial Training</a></li>
+                                    <!-- <li>
+                          <a href="#"
+                            >Item 2.2
+                            <span class="drop-icon"
+                              ><i class="fa-solid fa-chevron-down"></i
+                            ></span>
+                            <label
+                              title="Toggle Drop-down"
+                              class="drop-icon"
+                              for="sm2"
+                              ><i class="fa-solid fa-chevron-down"></i
+                            ></label>
+                          </a>
+                          <input type="checkbox" id="sm2" />
+                          <ul class="sub-menu">
+                            <li><a href="#">Item 2.2.1</a></li>
+                            <li><a href="#">Item 2.2.2</a></li>
+                            <li><a href="#">Item 2.2.3</a></li>
+                          </ul>
+                        </li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./about-en.html" class="active">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./contact-en.html">Contact Us</a>
+                    </li>
+
+                    <a class="course-btn translate_btn" href="./index-bn.html">বাংলা</a>
+                </ul>
+
+                <a class="course-btn" href="./index-bn.html">বাংলা</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Nav Bar End -->
+
+    <body>
+
+    </body>
+
+</html>
