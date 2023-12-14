@@ -38,9 +38,15 @@ a {
 }
 
 .web-hero-info {
-    margin: 50px 0;
+    margin: 50px 0 20px 0;
     padding-right: 60px;
     line-height: 200%;
+}
+
+.web-course-fee {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
 }
 
 .web-hero-content a {
@@ -50,8 +56,6 @@ a {
     border-radius: 50px;
     background: linear-gradient(151deg, #DD0606 17.97%, #FF9696 100.35%);
 }
-
-.web-hero-content a:hover {}
 
 .web-hero-content a i {
     margin-left: 15px;
@@ -64,6 +68,25 @@ a {
 .web-hero-img {
     float: right;
     text-align: right;
+}
+
+.info-cards {
+    padding-top: 90px;
+}
+
+.course-infos {
+    border-radius: 10px;
+    background: linear-gradient(91deg, #FFDCDC 0%, #FFF 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    height: 150px;
+}
+
+.class-date {
+    margin-left: 50px;
+}
+
+.class-time {
+    margin-right: 50px;
 }
 
 /* Hero Section End */
