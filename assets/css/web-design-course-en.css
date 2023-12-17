@@ -78,7 +78,7 @@ a {
     border-radius: 10px;
     background: linear-gradient(91deg, #FFDCDC 0%, #FFF 100%);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
-    height: 150px;
+    padding: 30px 0 20px 0;
 }
 
 .class-date {
