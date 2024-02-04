@@ -9,11 +9,6 @@
   font-family: "Sora", "Hind Siliguri";
 }
 
-body {
-  color: #000 !important;
-  cursor: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -23,6 +18,12 @@ a {
   --text-font: "Sora", sans-serif;
   --header-color: #dd0000;
   --text-color: #000;
+}
+
+body {
+  color: #000 !important;
+  cursor: none;
+  font-family: var(--header-font) !important;
 }
 
 ::-webkit-scrollbar {
@@ -1419,8 +1420,9 @@ h4 {
   background-repeat: no-repeat;
 }
 
-.footer-contact-items {
+.footer-contact-items h4 {
   padding-right: 30px;
+  font-family: var(--header-font) !important;
 }
 
 .foot-contact-item-1 {
@@ -1434,8 +1436,10 @@ h4 {
 }
 
 .item-1-text a {
+  font-family: var(--header-font) !important;
   text-decoration: none;
   color: #000;
+  font-weight: 700;
 }
 
 .item-1-text h4:hover {
@@ -4176,7 +4180,7 @@ h4 {
   font-size: 1.3em;
   color: var(--header-color);
   font-weight: 700;
-  font-family: var(--header-font);
+  font-family: var(--header-font) !important;
 }
 
 .faq-contacts img {
@@ -4184,6 +4188,7 @@ h4 {
 }
 
 .faq-contacts a {
+  font-family: var(--header-font);
   text-decoration: none;
   color: var(--text-color);
 }
@@ -4192,8 +4197,18 @@ h4 {
   color: var(--header-color);
 }
 
+.accordion-body,
+.faq_accordion_content {
+  font-family: var(--header-font) !important;
+}
+
 .faq_accordion_content p {
+  font-family: var(--header-font) !important;
   margin-bottom: 0;
+}
+
+.faq_accordion_content p b {
+  font-family: var(--header-font) !important;
 }
 
 /* industrial student comment */

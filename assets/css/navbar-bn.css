@@ -81,6 +81,10 @@ a {
   color: var(--header-color);
 }
 
+.main-menu a {
+  font-family: var(--header-font);
+}
+
 .main-menu a.active {
   color: var(--header-color) !important;
 }
