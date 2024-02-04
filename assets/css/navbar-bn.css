@@ -82,7 +82,11 @@ a {
 }
 
 .main-menu a {
-  font-family: var(--header-font);
+  font-family: var(--header-font) !important;
+}
+
+.main-menu a span {
+  font-family: var(--header-font) !important;
 }
 
 .main-menu a.active {
