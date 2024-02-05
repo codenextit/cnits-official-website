@@ -643,71 +643,6 @@ h4 {
   }
 }
 
-@media screen and (max-width: 990px) {
-  .cnit-technoldgy-logo {
-    width: 110px;
-    height: 110px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .laravel-icon {
-    top: 15% !important;
-    left: 47%;
-  }
-  .wordpress-icon {
-    top: 18% !important;
-    left: 27% !important;
-  }
-  .html-icon {
-    top: 22% !important;
-    right: 20% !important;
-  }
-  .css-icon {
-    bottom: 55%;
-    right: 4% !important;
-  }
-  .react-icon {
-    top: 28% !important;
-    right: 8% !important;
-  }
-  .ai-icon {
-    bottom: 55%;
-    left: 8% !important;
-  }
-  .xd-icon {
-    top: 28% !important;
-    left: 10% !important;
-  }
-  .ps-icon {
-    bottom: 38% !important;
-    left: 10% !important;
-  }
-  .vscode-icon {
-    bottom: 40% !important;
-    right: 8% !important;
-  }
-  .js-icon {
-    bottom: 30% !important;
-    right: 15% !important;
-  }
-  .bs-icon {
-    bottom: 27% !important;
-    right: 26% !important;
-  }
-  .figma-icon {
-    bottom: 28% !important;
-    left: 20% !important;
-  }
-  .node-icon {
-    bottom: 23% !important;
-    left: 40%;
-  }
-  .technolodgy-icon img {
-    width: 40px !important;
-  }
-}
-
 .technolodgy-icon {
   width: 70px;
   position: absolute;
@@ -909,6 +844,82 @@ h4 {
 
 .coding-sign-float {
   transform: translate(0, -100px);
+}
+
+@media screen and (max-width: 990px) {
+  .cnit-technoldgy-logo {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .laravel-icon {
+    top: 15% !important;
+    left: 47%;
+  }
+  .wordpress-icon {
+    top: 18% !important;
+    left: 27% !important;
+  }
+  .html-icon {
+    top: 22% !important;
+    right: 20% !important;
+  }
+  .css-icon {
+    bottom: 50%;
+    right: 4% !important;
+  }
+  .expressjs-icon {
+    bottom: 62%;
+    right: 4%;
+  }
+  .react-icon {
+    top: 28% !important;
+    right: 8% !important;
+  }
+  .ai-icon {
+    bottom: 50%;
+    left: 8% !important;
+  }
+  .mongodb-icon {
+    bottom: 62%;
+    left: 8%;
+  }
+  .mongodb-icon img {
+    width: 20px !important;
+  }
+  .xd-icon {
+    top: 28% !important;
+    left: 10% !important;
+  }
+  .ps-icon {
+    bottom: 38% !important;
+    left: 10% !important;
+  }
+  .vscode-icon {
+    bottom: 40% !important;
+    right: 8% !important;
+  }
+  .js-icon {
+    bottom: 30% !important;
+    right: 15% !important;
+  }
+  .bs-icon {
+    bottom: 27% !important;
+    right: 26% !important;
+  }
+  .figma-icon {
+    bottom: 28% !important;
+    left: 20% !important;
+  }
+  .node-icon {
+    bottom: 23% !important;
+    left: 40%;
+  }
+  .technolodgy-icon img {
+    width: 40px;
+  }
 }
 
 @media screen and (max-width: 576px) {
