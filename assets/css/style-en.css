@@ -74,6 +74,18 @@ a {
   overflow: hidden;
   transform: scale(1);
 }
+
+@media screen and (max-width: 768px) {
+  .circle,
+  .circle-follow {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
 /* cursor end*/
 
 /* Hero Section Start */
