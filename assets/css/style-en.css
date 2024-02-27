@@ -76,6 +76,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+
   .circle,
   .circle-follow {
     display: none;
@@ -178,7 +179,7 @@ a {
 
 /* Quick Services Section */
 .quick-services {
-  margin-top: -100px;
+  margin-top: -90px !important;
 }
 
 .quick-service-card {
@@ -403,6 +404,7 @@ a.more-btn {
 }
 
 @media screen and (max-width: 990px) {
+
   .shape-1,
   .shape-2 {
     display: none;
@@ -675,6 +677,7 @@ h4 {
   from {
     transform: translateY(-10px);
   }
+
   to {
     transform: translateY(10px);
   }
@@ -793,6 +796,7 @@ h4 {
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
   }
+
   100% {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
@@ -816,6 +820,7 @@ h4 {
   0% {
     transform: translate(-10px, 10px);
   }
+
   100% {
     transform: translate(10px, -10px);
   }
@@ -849,6 +854,7 @@ h4 {
   0% {
     transform: rotate(-20deg) translateY(-10px);
   }
+
   100% {
     transform: rotate(25deg) translateY(10px);
   }
@@ -870,65 +876,81 @@ h4 {
     top: 15% !important;
     left: 47%;
   }
+
   .wordpress-icon {
     top: 18% !important;
     left: 27% !important;
   }
+
   .html-icon {
     top: 22% !important;
     right: 20% !important;
   }
+
   .css-icon {
     bottom: 50%;
     right: 4% !important;
   }
+
   .expressjs-icon {
     bottom: 62%;
     right: 4%;
   }
+
   .react-icon {
     top: 28% !important;
     right: 8% !important;
   }
+
   .ai-icon {
     bottom: 50%;
     left: 8% !important;
   }
+
   .mongodb-icon {
     bottom: 62%;
     left: 8%;
   }
+
   .mongodb-icon img {
     width: 20px !important;
   }
+
   .xd-icon {
     top: 28% !important;
     left: 10% !important;
   }
+
   .ps-icon {
     bottom: 38% !important;
     left: 10% !important;
   }
+
   .vscode-icon {
     bottom: 40% !important;
     right: 8% !important;
   }
+
   .js-icon {
     bottom: 30% !important;
     right: 15% !important;
   }
+
   .bs-icon {
     bottom: 27% !important;
     right: 26% !important;
   }
+
   .figma-icon {
     bottom: 28% !important;
     left: 20% !important;
   }
+
   .node-icon {
     bottom: 23% !important;
     left: 40%;
   }
+
   .technolodgy-icon img {
     width: 40px;
   }
@@ -1000,11 +1022,9 @@ h4 {
   height: 4px;
   width: 100%;
   top: calc(100% - 2px);
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   left: 0;
   transition: 0.3s all linear;
@@ -1489,6 +1509,7 @@ h4 {
   cursor: pointer;
   color: #dd0000;
 }
+
 .item-1-text a:hover {
   color: #dd0000;
 }
@@ -1898,6 +1919,7 @@ h4 {
   padding-bottom: 20px;
   color: #fff;
 }
+
 .package-phycology .package-price {
   font-size: 2.2em;
   color: #fff;
@@ -2469,6 +2491,7 @@ h4 {
 }
 
 @media screen and (max-width: 990px) {
+
   .our-about-shape-top,
   .our-about-shape-bottom {
     display: none;
@@ -3480,6 +3503,7 @@ h4 {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
@@ -3835,11 +3859,9 @@ h4 {
 .module-devider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   margin: 20px auto 0;
 }
@@ -3884,11 +3906,9 @@ h4 {
 .overview-devider {
   width: 100px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   margin-top: 20px;
 }
@@ -3939,11 +3959,9 @@ h4 {
 .technology-devider {
   width: 200px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   margin: 20px auto 0;
 }
@@ -3997,11 +4015,9 @@ h4 {
 .feature-devider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   margin: 20px auto 30px;
 }
@@ -4146,11 +4162,9 @@ h4 {
 .students-devider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   margin: 20px auto 30px;
 }
