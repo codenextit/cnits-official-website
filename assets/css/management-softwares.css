@@ -105,7 +105,21 @@ a {
     color: var(--header-color);
 }
 
+#hero .hero_img img{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
 @media screen and (max-width: 576px) {
+  #hero {
+    padding: 60px 0;
+}
+
+#hero .hero_img {
+  margin-top: 40px;
+}
+
   #hero .hero-content h1{
     font-size: 2.2em;
 }
@@ -695,6 +709,27 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.hostorient img {
+  width: 75% !important;
+  height: 75% !important;
+}
+
+.extentit img {
+  width: 85% !important;
+  height: 85% !important;
+}
+
+.cloud9 img {
+  width: 85% !important;
+  height: 85% !important;
+}
+
+.pabnaonline img {
+  width: 85% !important;
+  height: 85% !important;
+}
+
 
 .client_logo img {
   width: 100%;

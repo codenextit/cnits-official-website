@@ -1567,20 +1567,18 @@ h4 {
 /* Copyright Footer Section */
 .copyright {
   background-color: #dd0000;
-  height: 80px;
+  padding: 24px 0;
   bottom: 0;
   margin-bottom: -50px;
   align-items: center;
 }
 
-.copyright-title {
-  padding-top: 30px;
-}
-
 .copyright-title p {
   color: #fff;
   font-size: 1.1rem;
+  margin-bottom: 0;
 }
+
 
 .back-top-icon {
   position: fixed;
