@@ -76,6 +76,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+
   .circle,
   .circle-follow {
     display: none;
@@ -162,7 +163,7 @@ a {
   font-size: 1em;
   font-weight: 400;
   color: var(--text-color);
-  max-width: 820px;
+  max-width: 620px;
   margin: 20px auto 0;
   text-align: center;
 }
@@ -1178,6 +1179,7 @@ a {
     -ms-transform: scale(1);
     -o-transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -1266,11 +1268,9 @@ a {
 .divider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
   margin: 20px auto 0;
 }
@@ -1387,11 +1387,9 @@ a {
 .social_divider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(
-    90.02deg,
-    #d00000 0.53%,
-    rgba(255, 28, 28, 0.51) 112.2%
-  );
+  background: linear-gradient(90.02deg,
+      #d00000 0.53%,
+      rgba(255, 28, 28, 0.51) 112.2%);
   border-radius: 50px;
 }
 
