@@ -76,7 +76,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-
   .circle,
   .circle-follow {
     display: none;
@@ -404,7 +403,6 @@ a.more-btn {
 }
 
 @media screen and (max-width: 990px) {
-
   .shape-1,
   .shape-2 {
     display: none;
@@ -1022,9 +1020,11 @@ h4 {
   height: 4px;
   width: 100%;
   top: calc(100% - 2px);
-  background: linear-gradient(90.02deg,
-      #d00000 0.53%,
-      rgba(255, 28, 28, 0.51) 112.2%);
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
   border-radius: 50px;
   left: 0;
   transition: 0.3s all linear;
@@ -2488,7 +2488,6 @@ h4 {
 }
 
 @media screen and (max-width: 990px) {
-
   .our-about-shape-top,
   .our-about-shape-bottom {
     display: none;
@@ -2905,7 +2904,6 @@ h4 {
   box-shadow: none !important;
 }
 
-
 .main-contact-form textarea {
   margin: 8px 0;
   height: 100px;
@@ -3277,23 +3275,18 @@ h4 {
 }
 
 .portfolio-card-list {
-  border-radius: 8px;
-  padding: 20px 0 20px 0;
-  /* background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow: 5px 5px 20px #dbdbdb, -5px -5px 20px #ffffff; */
-  background: #ffffff;
-  box-shadow: inset 5px 5px 26px #e6e6e6, inset -5px -5px 26px #ffffff;
   position: relative;
-  margin: 30px 10px 10px 10px;
   overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .portfolio-card-list img {
   width: 100%;
-  transition: 0.5s;
-  display: block;
-  margin: auto;
-  padding: 0 20px;
+  aspect-ratio: 16/11;
 }
 
 .portfolio-card-list p {
@@ -3354,21 +3347,17 @@ h4 {
   height: 0;
   bottom: 0;
   left: 0;
-  background: rgba(165, 163, 163, 0.7);
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.4s;
   overflow: hidden;
 }
 
 .portfolio-card-list:hover .portfolio-card-list-btn {
   height: 100%;
-}
-
-.portfolio-card-list:hover.portfolio-card-list .portfolio-card-img {
-  transform: scale(1.1);
 }
 
 .portfolio-card-list-gd:hover.portfolio-card-list-gd .portfolio-card-img {
@@ -3381,18 +3370,17 @@ h4 {
   font-family: var(--text-font);
   font-size: 1.1em;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 0 10px 0 0;
   border-radius: 30px;
-  background: #d00000;
+  background: linear-gradient(120deg, #ff0000, #9e002f);
   cursor: pointer;
   display: inline-block;
-  transition: 0.5s;
+  transition: background 0.4s !important;
 }
 
 .portfolio-card-list-btn .portfolio-btns:hover {
-  /* background: rgb(255, 42, 42); */
-  background-color: #000;
+  background: linear-gradient(120deg, #9e002f, #ff0000);
   color: #fff;
 }
 
@@ -3519,10 +3507,6 @@ h4 {
 }
 
 @media screen and (max-width: 990px) {
-  .portfolio-card-list {
-    padding: 35px;
-  }
-
   .portfolio-cards-item {
     margin-top: 0 !important;
   }
@@ -3538,10 +3522,6 @@ h4 {
     padding: 6px 35px !important;
     font-size: 1em !important;
     margin-top: 10px !important;
-  }
-
-  .portfolio-card-list {
-    padding: 25px;
   }
 }
 
@@ -3852,9 +3832,11 @@ h4 {
 .module-devider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(90.02deg,
-      #d00000 0.53%,
-      rgba(255, 28, 28, 0.51) 112.2%);
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
   border-radius: 50px;
   margin: 20px auto 0;
 }
@@ -3899,9 +3881,11 @@ h4 {
 .overview-devider {
   width: 100px;
   height: 5px;
-  background: linear-gradient(90.02deg,
-      #d00000 0.53%,
-      rgba(255, 28, 28, 0.51) 112.2%);
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
   border-radius: 50px;
   margin-top: 20px;
 }
@@ -3952,9 +3936,11 @@ h4 {
 .technology-devider {
   width: 200px;
   height: 5px;
-  background: linear-gradient(90.02deg,
-      #d00000 0.53%,
-      rgba(255, 28, 28, 0.51) 112.2%);
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
   border-radius: 50px;
   margin: 20px auto 0;
 }
@@ -4008,9 +3994,11 @@ h4 {
 .feature-devider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(90.02deg,
-      #d00000 0.53%,
-      rgba(255, 28, 28, 0.51) 112.2%);
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
   border-radius: 50px;
   margin: 20px auto 30px;
 }
@@ -4155,9 +4143,11 @@ h4 {
 .students-devider {
   width: 120px;
   height: 5px;
-  background: linear-gradient(90.02deg,
-      #d00000 0.53%,
-      rgba(255, 28, 28, 0.51) 112.2%);
+  background: linear-gradient(
+    90.02deg,
+    #d00000 0.53%,
+    rgba(255, 28, 28, 0.51) 112.2%
+  );
   border-radius: 50px;
   margin: 20px auto 30px;
 }
