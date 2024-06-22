@@ -77,75 +77,145 @@
   </script>
   <!--Fb Chat Plugin-->
 
-  <!-- Nav Bar Start -->
-  <header id="navbar">
+  <!-- Navbar Start -->
+  <nav class="main-nav wow-menubar">
     <div class="container">
-      <nav class="nav-bar">
-        <span class="nav-open"><i class="fa-solid fa-bars-staggered"></i></span>
-        <a href="./index.html" class="logo"><img src="./assets/img/cnits-logo-main.png" alt="cnit-logo" /></a>
-        <ul class="menu-item">
-          <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
-          <li>
-            <a href="./index-bn.html">হোম</a>
-          </li>
-          <li>
-            <a href="./portfolio.html">আমাদের কাজসমূহ</a>
-          </li>
-          <li id="dropdown_menu">
-            <ul class="main-menu">
-              <li>
-                <a>ক্যারিয়ার
-                  <span class="drop-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                  <label title="Toggle Drop-down" class="drop-icon" for="sm1"><i
-                      class="fa-solid fa-chevron-down"></i></label>
-                </a>
-                <input type="checkbox" id="sm1" />
-                <ul class="sub-menu">
-                  <li><a href="#">ওয়েব ডিজাইন</a></li>
-                  <li><a href="#">ওয়েব ডেভেলপমেন্ট</a></li>
-                  <li><a href="#">UI/UX ডিজাইন</a></li>
-                  <li>
-                    <a href="./industrial-traning.html">ইন্ডাস্ট্রিয়াল ট্রেনিং</a>
-                  </li>
-                  <!-- <li>
-                <a href="#"
-                  >Item 2.2
-                  <span class="drop-icon"
-                    ><i class="fa-solid fa-chevron-down"></i
-                  ></span>
-                  <label
-                    title="Toggle Drop-down"
-                    class="drop-icon"
-                    for="sm2"
-                    ><i class="fa-solid fa-chevron-down"></i
-                  ></label>
-                </a>
-                <input type="checkbox" id="sm2" />
-                <ul class="sub-menu">
-                  <li><a href="#">Item 2.2.1</a></li>
-                  <li><a href="#">Item 2.2.2</a></li>
-                  <li><a href="#">Item 2.2.3</a></li>
-                </ul>
-              </li> -->
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="./about.html" class="active">আমাদের সম্পর্কে</a>
-          </li>
-          <li>
-            <a href="./contact.html">যোগাযোগ</a>
-          </li>
+      <div class="main-nav-sub">
+        <div class="nav-logo-wrap local-scroll">
+          <a href="index.html" class="logo">
+            <img src="./assets/img/cnits-logo-main.png" alt="Your Company Logo" />
+          </a>
+        </div>
 
-          <a class="course-btn translate_btn" href="./about-en.html">ENGLISH</a>
-        </ul>
+        <!-- Mobile Menu Button -->
+        <div class="mobile-nav" role="button" tabindex="0">
+          <i class="mobile-nav-icon"></i>
+        </div>
 
-        <a class="course-btn" href="./about-en.html">ENGLISH</a>
-      </nav>
+        <!-- Main Menu -->
+        <div class="inner-nav desktop-nav">
+          <ul class="clearlist local-scroll main_nav">
+
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- Item With Sub -->
+            <li>
+              <a href="#" class="mn-has-sub">Services <i class="fa-solid fa-chevron-down"></i></a>
+
+              <!-- Sub Megamenu -->
+              <ul class="mn-sub mn-has-multi">
+                <!-- Sub Column -->
+                <li class="mn-sub-multi">
+                  <ul>
+                    <li>
+                      <a href="./management-software.html" class="multi_menu_item">
+                        <div class="multi_menu_item_img">
+                          <img src="./assets/icons/navbar/services_icon_1.svg" alt="">
+                        </div>
+                        <div class="multi_menu_item_title">
+                          <h4>Management Softwares</h4>
+                          <p>We develop quality & Simple UI
+                            based websites</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./web-development.html" class="multi_menu_item">
+                        <div class="multi_menu_item_img">
+                          <img src="./assets/icons/navbar/services_icon_3.svg" alt="">
+                        </div>
+                        <div class="multi_menu_item_title">
+                          <h4>Web Development</h4>
+                          <p>We develop quality & Simple UI
+                            based websites</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Sub Column -->
+
+                <!-- Sub Column -->
+                <li class="mn-sub-multi">
+                  <ul>
+                    <li>
+                      <a href="#" class="multi_menu_item">
+                        <div class="multi_menu_item_img">
+                          <img src="./assets/icons/navbar/services_icon_2.svg" alt="">
+                        </div>
+                        <div class="multi_menu_item_title">
+                          <h4>UI/UX Design</h4>
+                          <p>We develop quality & Simple UI
+                            based websites</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="multi_menu_item">
+                        <div class="multi_menu_item_img">
+                          <img src="./assets/icons/navbar/services_icon_4.svg" alt="">
+                        </div>
+                        <div class="multi_menu_item_title">
+                          <h4>Graphics Design</h4>
+                          <p>We develop quality & Simple UI
+                            based websites</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Sub Column -->
+              </ul>
+              <!-- End Sub Megamenu -->
+            </li>
+            <!-- End Item With Sub -->
+
+            <!-- Item With Sub -->
+            <li>
+              <a href="#" class="mn-has-sub">Career <i class="fa-solid fa-chevron-down"></i></i></a>
+
+              <!-- Sub -->
+              <ul class="mn-sub">
+                <li>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <a href="#">UI/UX Design</a>
+                </li>
+                <li>
+                  <a href="./industrial-traning-en.html">Industrial Training</a>
+                </li>
+              </ul>
+              <!-- End Sub -->
+            </li>
+            <!-- End Item With Sub -->
+
+            <li>
+              <a href="./about-en.html" class="active">About Us</a>
+            </li>
+
+            <li>
+              <a href="./contact-en.html">Contact Us</a>
+            </li>
+
+            <a class="course-btn mobile_btn" href="./index-bn.html">বাংলা</a>
+
+          </ul>
+
+
+        </div>
+
+        <a class="course-btn desktop_btn" href="./index-bn.html">বাংলা</a>
+        <!-- End Main Menu -->
+      </div>
     </div>
-  </header>
-  <!-- Nav Bar End -->
+  </nav>
+  <!-- Navbar End -->
 
   <!-- About Hero Start -->
   <section id="about-hero">
