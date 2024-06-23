@@ -1,0 +1,95 @@
+{
+  "data": [
+    {
+      "project_name": ["Resort and Hotel"],
+      "title": "Ronghill - Resort & Hotel Website UI V2.0",
+      "desc": "Ronghill is a signature product for resort and hotel businesses. Which includes real-time booking system and checkout any hotel’s or resort’s offerings.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-01.png"
+    },
+    {
+      "project_name": ["Gadget Store", "E-commerce"],
+      "title": "Gadget Star - Gadget E-commerce Website",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-02.png"
+    },
+    {
+      "project_name": ["Hosting Company"],
+      "title": "HostOrient - Hosting Company Website",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-03.png"
+    },
+    {
+      "project_name": ["School"],
+      "title": "PIHSP - School Website",
+      "desc": "Ronghill is a signature product for resort and hotel businesses. Which includes real-time booking system and checkout any hotel’s or resort’s offerings.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-04.png"
+    },
+    {
+      "project_name": ["Lawfirm", "Lawyer"],
+      "title": "LAWFIRM- Lawyer and Attorney Website",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-05.png"
+    },
+    {
+      "project_name": ["Grocery Store", "E-commerce"],
+      "title": "Shalby Mart- Online Grocery Store Website",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-06.png"
+    },
+    {
+      "project_name": ["Construction", "Building"],
+      "title": "CN Construction - Construction Website UI",
+      "desc": "Ronghill is a signature product for resort and hotel businesses. Which includes real-time booking system and checkout any hotel’s or resort’s offerings.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-07.png"
+    },
+    {
+      "project_name": ["Resort", "Hotel"],
+      "title": "RONGHILL - Resort and Hotel Website UI ",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-08.png"
+    },
+    {
+      "project_name": ["Gadget Store", "E-commerce"],
+      "title": "Goozen - Gadgets Shop E-commerce Website",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-09.png"
+    },
+    {
+      "project_name": ["Restaurant", "Food"],
+      "title": "Banolata - Coffee Shop & Restaurant Website)",
+      "desc": "Ronghill is a signature product for resort and hotel businesses. Which includes real-time booking system and checkout any hotel’s or resort’s offerings.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-10.png"
+    },
+    {
+      "project_name": ["Hosting", "Web Hosting"],
+      "title": "Hexazn - Hosting Provider Company Website",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-11.png"
+    },
+    {
+      "project_name": ["Car Rent", "Rental"],
+      "title": "Rent Us.com - Car Rental Website UI ",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-12.png"
+    },
+    {
+      "project_name": ["UI/UX Designer", "UI Designer"],
+      "title": "Motive - Personal Portfolio Website UI Design",
+      "desc": "A dedicated website for Ronghill Resort and Hotel is not just a digital presence; it is a powerful tool that enhances visibility, drives direct bookings, engages customers, builds.",
+      "project_link": "index.html",
+      "img": "ui-ux-works-img-13.png"
+    }
+  ]
+}
