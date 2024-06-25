@@ -109,7 +109,7 @@ a {
   line-height: 28px;
   color: var(--text-color);
   margin-bottom: 0;
-  max-width: 480px;
+  max-width: 550px;
 }
 
 #hero .hero_img img {
@@ -707,6 +707,148 @@ a {
 }
 
 /* Special Service End */
+
+/* Offer Start */
+
+.offer_head h1 {
+  font-size: 2.4em;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offer_head p {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-color);
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.offer_item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 80px;
+  padding: 40px 0;
+  border-bottom: 1px solid #cccccc;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.offer_item:hover .offer_details {
+  height: 280px;
+}
+
+.offer_item:hover .offer_img {
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.offer_title h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+
+.offer_title h1 span:first-child {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.offer_title h1 span:last-child {
+  color: var(--header-color);
+  text-decoration: underline;
+}
+
+.offer_details {
+  height: 0px;
+  overflow: hidden;
+  margin-top: 30px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.offer_details p {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.offer_details_items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.offer_details_items li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-color);
+}
+
+.offer_details_items li img {
+  width: 18px;
+  height: 18px;
+}
+
+.offer_img_wrap {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.offer_img {
+  float: right;
+  width: 40%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.offer_img img {
+  width: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+@media screen and (max-width: 576px) {
+  .offer_head h1 {
+    font-size: 2em;
+  }
+}
+
+/* Offer End */
 
 /* Clients Start */
 
