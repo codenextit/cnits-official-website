@@ -74,143 +74,184 @@
   <!--Fb Chat Plugin-->
 
   <!-- Navbar Start -->
-  <nav class="main-nav wow-menubar">
-    <div class="container">
-      <div class="main-nav-sub">
-        <div class="nav-logo-wrap local-scroll">
-          <a href="index.html" class="logo">
-            <img src="./assets/img/cnits-logo-main.png" alt="Your Company Logo" />
-          </a>
+  <!-- offcanvas area start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas__wrapper">
+      <div class="offcanvas__close">
+        <button class="offcanvas__close-btn offcanvas-close-btn">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas__content">
+        <div class="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
+          <div class="offcanvas__logo logo">
+            <a href="index.html">
+              <img src="./assets/img/cnits-logo-main.png" alt="logo" />
+            </a>
+          </div>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <div class="mobile-nav" role="button" tabindex="0">
-          <i class="mobile-nav-icon"></i>
-        </div>
 
-        <!-- Main Menu -->
-        <div class="inner-nav desktop-nav">
-          <ul class="clearlist local-scroll main_nav">
+        <div class="tp-main-menu-mobile fix d-xl-none mt-5 mb-40"></div>
 
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-
-            <!-- Item With Sub -->
-            <li>
-              <a href="./services.html" class="mn-has-sub active">Services <i class="fa-solid fa-chevron-down"></i></a>
-
-              <!-- Sub Megamenu -->
-              <ul class="mn-sub mn-has-multi">
-                <!-- Sub Column -->
-                <li class="mn-sub-multi">
-                  <ul>
-                    <li>
-                      <a href="./management-software.html" class="multi_menu_item active">
-                        <div class="multi_menu_item_img">
-                          <img src="./assets/icons/navbar/services_icon_1.svg" alt="">
-                        </div>
-                        <div class="multi_menu_item_title">
-                          <h4>Management Softwares</h4>
-                          <p>We develop quality & Simple UI
-                            based websites</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="multi_menu_item">
-                        <div class="multi_menu_item_img">
-                          <img src="./assets/icons/navbar/services_icon_3.svg" alt="">
-                        </div>
-                        <div class="multi_menu_item_title">
-                          <h4>Web Development</h4>
-                          <p>We develop quality & Simple UI
-                            based websites</p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- End Sub Column -->
-
-                <!-- Sub Column -->
-                <li class="mn-sub-multi">
-                  <ul>
-                    <li>
-                      <a href="#" class="multi_menu_item">
-                        <div class="multi_menu_item_img">
-                          <img src="./assets/icons/navbar/services_icon_2.svg" alt="">
-                        </div>
-                        <div class="multi_menu_item_title">
-                          <h4>UI/UX Design</h4>
-                          <p>We develop quality & Simple UI
-                            based websites</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="multi_menu_item">
-                        <div class="multi_menu_item_img">
-                          <img src="./assets/icons/navbar/services_icon_4.svg" alt="">
-                        </div>
-                        <div class="multi_menu_item_title">
-                          <h4>Graphics Design</h4>
-                          <p>We develop quality & Simple UI
-                            based websites</p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- End Sub Column -->
-              </ul>
-              <!-- End Sub Megamenu -->
-            </li>
-            <!-- End Item With Sub -->
-
-            <!-- Item With Sub -->
-            <li>
-              <a href="#" class="mn-has-sub">Career <i class="fa-solid fa-chevron-down"></i></i></a>
-
-              <!-- Sub -->
-              <ul class="mn-sub">
-                <li>
-                  <a href="#">Web Design</a>
-                </li>
-                <li>
-                  <a href="#">Web Development</a>
-                </li>
-                <li>
-                  <a href="#">UI/UX Design</a>
-                </li>
-                <li>
-                  <a href="./industrial-traning-en.html">Industrial Training</a>
-                </li>
-              </ul>
-              <!-- End Sub -->
-            </li>
-            <!-- End Item With Sub -->
-
-            <li>
-              <a href="./about-en.html">About Us</a>
-            </li>
-
-            <li>
-              <a href="./contact-en.html">Contact Us</a>
-            </li>
-
-            <a class="course-btn mobile_btn" href="./index-bn.html">বাংলা</a>
-
-          </ul>
-
-
-        </div>
-
-        <a class="course-btn desktop_btn" href="./index-bn.html">বাংলা</a>
-        <!-- End Main Menu -->
+        <a class="lang_btn mobile_btn" href="./index-bn.html">বাংলা</a>
       </div>
     </div>
-  </nav>
+  </div>
+  <div class="body-overlay"></div>
+  <!-- offcanvas area end -->
+
+  <!-- header area start -->
+  <header class="tp-header-area p-relative">
+    <div class="tp-header-box container p-relative">
+      <div class="tp-header-wrapper-inner header__sticky p-relative">
+        <div class="tp-header-main-menu d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="logo">
+            <img src="./assets/img/cnits-logo-main.png" alt="">
+          </a>
+          <div class="tp-main-menu d-none d-lg-block">
+            <nav class="tp-main-menu-content">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+
+                <li class="has-dropdown">
+                  <a href="./services.html">Services</a>
+                  <div class="tp-submenu submenu has-homemenu">
+                    <div class="row gx-6 row-cols-1 row-cols-md-1 row-cols-xl-2">
+                      <div class="col multimenu">
+                        <a href="./management-software.html">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_1.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>Management Softwares</h4>
+                              <p>Optimize operations with our
+                                dynamic software services.</p>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="./web-development.html">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_3.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>Web Development</h4>
+                              <p>Elevate your online presence
+                                with our web expertise</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col multimenu">
+                        <a href="./ui-ux-design.html">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_2.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>UI/UX Design</h4>
+                              <p>Transforming concepts into
+                                seamless user experiences</p>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="./graphics-design.html">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_4.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>Graphics Design</h4>
+                              <p>Unleash creativity with our
+                                graphic design solutions</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="has-dropdown">
+                  <a href="./services.html">Career</a>
+                  <div class="tp-submenu submenu has-homemenu">
+                    <div class="row gx-6 row-cols-1 row-cols-md-1 row-cols-xl-2">
+                      <div class="col multimenu">
+                        <a href="#">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_3.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>Web Design</h4>
+                              <p>Optimize operations with our
+                                dynamic software services.</p>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="#">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_1.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>Web Development</h4>
+                              <p>Elevate your online presence
+                                with our web expertise</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col multimenu">
+                        <a href="#">
+                          <div class="multi_menu_item">
+                            <div class="multi_menu_item_img">
+                              <img src="./assets/icons/navbar/services_icon_2.svg" alt="">
+                            </div>
+                            <div class="multi_menu_item_title">
+                              <h4>UI/UX Design</h4>
+                              <p>Transforming concepts into
+                                seamless user experiences</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li><a href="./about-en.html">About Us</a></li>
+
+                <li><a href="./contact-en.html">Contact Us</a></li>
+              </ul>
+            </nav>
+
+          </div>
+          <a class="lang_btn desktop_btn" href="./index-bn.html">বাংলা</a>
+        </div>
+      </div>
+      <div class="tp-header-btn">
+        <div class="tp-header-main-right-hamburger-btn d-lg-none mt-3 offcanvas-open-btn">
+          <button class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header area end -->
   <!-- Navbar End -->
 
   <!-- Graphics Design Hero Start -->
@@ -487,7 +528,7 @@
   <!-- Custom Js -->
   <script src="./js/jquery.min.js"></script>
   <script src="./js/navbar.js"></script>
-  <script src="./js/plugins.js"></script>
+  <script src="./js/meanmenu.js"></script>
   <script src="./js/customer-logo-carousel.js"></script>
   <script src="./js/all.js"></script>
   <script src="./js/quick-view.js"></script>

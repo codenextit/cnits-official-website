@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -48,7 +49,7 @@ a {
   text-align: center;
   border: 2px solid #dd0000;
   text-decoration: none;
-  font-family: var(--text-font);
+  font-family: "Hind Siliguri";
   color: #fff;
   background: #dd0000;
   font-weight: 700;
@@ -106,14 +107,55 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .desktop_btn {
     display: none;
   }
 }
 
 .multimenu a {
+  position: relative;
+  display: block !important;
+  text-decoration: none;
+  font-family: var(--header-font);
+  color: var(--text-color);
   padding: 0 !important;
+  padding: 10px !important;
+  border-radius: 8px;
+  border: none !important;
+  margin-bottom: 15px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.multimenu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 7px);
+  width: 100%;
+  height: 1px;
+  background: #cccccc;
+}
+
+.multimenu a:hover {
+  background: #ffd1d1;
+}
+
+.multimenu a:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.multimenu a:last-child::after {
+  width: 0;
+  height: 0;
+  background: none;
 }
 
 .multi_menu_item {
@@ -148,6 +190,59 @@ a {
   font-weight: 400;
   margin-bottom: 0;
   max-width: 260px;
+}
+
+.tp-main-menu-content ul {
+  padding: 0;
+}
+
+.tp-main-menu-content ul li a {
+  text-decoration: none;
+  font-family: var(--header-font) !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.tp-main-menu ul li.has-dropdown > a::after {
+  font-size: 14px !important;
+}
+
+.tp-main-menu-content ul li a:hover {
+  color: var(--header-color) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .tp-header-area {
+    padding: 10px 0;
+  }
+
+  .multi_menu_item_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .multi_menu_item_title h4 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  .multi_menu_item_title p {
+    font-family: var(--header-font);
+    color: var(--text-color);
+    font-size: 14px;
+  }
+
+  .multimenu a:last-child {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .multimenu a:last-child::after {
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+  }
 }
 
 /*----------------------------------------*/
@@ -245,13 +340,13 @@ a {
 }
 .offcanvas__close {
   position: absolute;
-  top: 35px;
+  top: 40px;
   right: 30px;
 }
 @media (max-width: 575px) {
   .offcanvas__close {
     right: 20px;
-    top: 20px;
+    top: 30px;
   }
 }
 .offcanvas__close-btn {
@@ -262,8 +357,8 @@ a {
   width: 44px;
   line-height: 40px;
   border-radius: 10px;
+  border: 1px solid #cccccc;
   background-color: #f5f5f5;
-  color: var(--tp-text-1);
 }
 .offcanvas__close-btn::after {
   position: absolute;
@@ -273,7 +368,7 @@ a {
   top: 0;
   left: 0;
   border-radius: 10px;
-  background: linear-gradient(90deg, #ff0011 0%, #000000 100%);
+  background: linear-gradient(-220deg, #ff0011 0%, #000000 100%);
   opacity: 0;
   -webkit-transition: all 0.3s 0s ease-out;
   -moz-transition: all 0.3s 0s ease-out;
@@ -847,11 +942,11 @@ a {
   transition: none;
 }
 .tp-main-menu ul li:not(:last-of-type) {
-  margin-right: 20px;
+  margin-right: 24px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-main-menu ul li:not(:last-of-type) {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 }
 
@@ -873,7 +968,7 @@ a {
 .tp-main-menu ul li.has-dropdown > a::after {
   content: "\f107";
   font-size: 12px;
-  color: #000;
+  color: rgba(0, 0, 0, 0.5);
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 6px;
@@ -987,7 +1082,7 @@ a {
   top: calc(100% + 10px);
 }
 .tp-main-menu ul li .has-homemenu {
-  width: 710px;
+  width: 740px;
   padding: 20px;
   opacity: 0;
   visibility: hidden;
