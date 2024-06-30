@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", "Hind Siliguri";
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --header-font: "Sora", sans-serif;
+  --text-font: "Sora", sans-serif;
+  --header-color: #bd161d;
+  --text-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Start */
+
+#home_hero {
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  margin-top: 95px;
+}
+
+.hero_content h1 {
+  font-family: "Gilroy";
+  line-height: 1;
+  font-size: 90px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.hero_content h1 span {
+  color: #bd161d;
+}
+
+.hero_content p {
+  font-family: var(--header-font);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+  max-width: 600px;
+}
+
+.hero_slide_wrapper {
+  background: #141313;
+  overflow: hidden;
+  padding: 30px 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero_slide_wrapper p {
+  font-family: var(--header-font);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero_slide_wrapper p:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+@keyframes slide1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hero_slider1,
+.hero_slider2,
+.hero_ticket_slider {
+  overflow: hidden;
+  padding: 6px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos_slide_panel1 {
+  display: inline-block;
+  animation: 20s slide1 infinite linear;
+  -webkit-animation: 20s slide1 infinite linear;
+}
+
+.ticket_slide_panel {
+  display: inline-block;
+  animation: 35s slide1 infinite linear;
+  -webkit-animation: 35s slide1 infinite linear;
+}
+
+.logos_slide_panel2 {
+  display: inline-block;
+  animation: 20s slide2 infinite linear;
+  -webkit-animation: 20s slide2 infinite linear;
+}
+
+.logos_slide_panel1 img,
+.logos_slide_panel2 img {
+  width: 200px;
+  aspect-ratio: 16/12;
+  margin: 0 5px;
+}
+
+.hero_ticket_slider {
+  display: flex;
+}
+
+.ticket_slide_panel {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ticket_slide_panel:first-child {
+  margin-right: 30px;
+}
+
+.ticket_slide_panel span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.ticket_slide_panel p {
+  font-family: var(--header-font);
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.hero_ticket_slide {
+  padding: 16px 0;
+  background: linear-gradient(175deg, #ed1c24 4.12%, #000 223.86%);
+}
+
+.hero_btn {
+  text-decoration: none;
+  display: inline-block;
+  font-family: var(--header-font);
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 25px;
+  background: linear-gradient(175deg, #ed1c24 4.12%, #000 223.86%);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.hero_btn:hover {
+  color: #fff;
+}
+
+/* Hero End */
+
+/* Client Start */
+
+.logo_slider {
+  overflow: hidden;
+  padding: 6px 0;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 50px;
+}
+
+.logos_slide_panel3 {
+  display: inline-block;
+  animation: 40s slide1 infinite linear;
+}
+
+.logos_slide_panel4 {
+  display: inline-block;
+  animation: 40s slide2 infinite linear;
+}
+
+.logos_slide_panel4 img,
+.logos_slide_panel3 img {
+  height: 80px;
+  margin: 0 40px;
+}
+
+/* Client End */
