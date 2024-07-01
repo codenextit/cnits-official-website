@@ -111,6 +111,10 @@ a {
   .desktop_btn {
     display: none;
   }
+
+  .logo img {
+    width: 154px;
+  }
 }
 
 .multimenu a {
@@ -590,7 +594,7 @@ a {
   width: 100%;
 }
 .tp-header-sticky .tp-main-menu ul li a {
-  padding: 34px 0 34px 0;
+  padding: 26px 0;
 }
 
 .tp-header-main-right {
@@ -956,7 +960,7 @@ a {
 
 .tp-main-menu ul li a {
   display: inline-block;
-  padding: 34px 0 34px 0;
+  padding: 26px 0;
   font-weight: 600;
   font-size: 16px;
   text-transform: capitalize;
