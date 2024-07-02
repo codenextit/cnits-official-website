@@ -634,18 +634,20 @@ h4 {
 }
 
 .cnit-technoldgy-logo::before {
-  animation: pulse 4s ease-out infinite;
+  animation: pulse1 4s ease-out infinite;
+  -webkit-animation: pulse1 4s ease-out infinite;
 }
 
 .cnit-technoldgy-logo::after {
-  animation: pulse 4s 2s ease-out infinite;
+  animation: pulse1 4s 2s ease-out infinite;
+  -webkit-animation: pulse1 4s 2s ease-out infinite;
 }
 
 .cnit-technoldgy-logo img {
   width: 100%;
 }
 
-@keyframes pulse {
+@keyframes pulse1 {
   100% {
     transform: scale(1.5);
     opacity: 0;
@@ -867,6 +869,10 @@ h4 {
 }
 
 @media screen and (max-width: 575px) {
+  #technolodgy {
+    display: none;
+  }
+
   .laravel-icon {
     top: 15% !important;
     left: 47%;
