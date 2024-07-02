@@ -1569,48 +1569,6 @@ h4 {
 
 /* Footer Section */
 
-/* Copyright Footer Section */
-.copyright {
-  background-color: #dd0000;
-  padding: 24px 0;
-  bottom: 0;
-  margin-bottom: -50px;
-  align-items: center;
-}
-
-.copyright-title p {
-  color: #fff;
-  font-size: 1.1rem;
-  margin-bottom: 0;
-}
-
-.back-top-icon {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 10 !important;
-}
-
-.back-top-icon img {
-  max-width: 80%;
-}
-
-@media screen and (max-width: 575px) {
-  .copyright-title p {
-    font-size: 1rem;
-  }
-
-  .back-top-icon {
-    padding-bottom: 50px;
-  }
-
-  .copyright-title {
-    text-align: center;
-  }
-}
-
-/* Copyright Footer Section */
-
 /* Only for coming soon part */
 .coming-soon-banner {
   width: 80%;
